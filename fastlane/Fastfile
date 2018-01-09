@@ -3,21 +3,30 @@ fastlane_version "2.64.1"
 default_platform :ios
 
 platform :ios do
-  lane :push do
-    # increment_build_number
-    # build = get_build_number()
-    # version = get_version_number()
+  	lane :pushToSprint
 
-    # git_tag = "Version-" + version + "." + build
-    # add_git_tag(tag: git_tag)
-    git_add
-    commit_version_bump(message: 'This files pushed via Fastlane', force: true)
+  	  	version = get_version_number()
+    	git_tag = "Version-" + version
+    	add_git_tag(tag: git_tag)
 
-    push_to_git_remote(
-      remote: 'origin', 
-      # local_branch: 'master', 
-      # remote_branch: 'master'
-    )
+    	git_add
+    	commit_version_bump(message: 'These files pushed via Fastlane for PO', force: true)
+
+  		push_to_git_remote(remote: 'origin', 
+      		local_branch: 'dev', 
+      		remote_branch: 'sprint'
+      	)  
+
+	lane :pushToDev do
+
+    	increment_build_number
+
+    	commit_version_bump(message: 'These files pushed via Fastlane for Tester', force: true)
+
+    	push_to_git_remote(remote: 'origin', 
+      		local_branch: 'dev', 
+      		remote_branch: 'dev'
+      	)      
   end
 end
 

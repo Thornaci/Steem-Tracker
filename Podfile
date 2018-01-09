@@ -6,7 +6,7 @@ target 'SteemitApp' do
   use_frameworks!
 
   pod 'Alamofire', '~> 4.5'
-  pod 'RxSwift',    '~> 4.0'
-  pod 'RxCocoa',    '~> 4.0'
+  pod 'ObjectMapper', '~> 3.1'
+  pod 'SDWebImage', '~> 4.2.3'
 
 end
