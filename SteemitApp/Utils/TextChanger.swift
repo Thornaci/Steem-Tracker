@@ -11,12 +11,16 @@ import UIKit
 struct TextChanger {
     func changeCurrency(currency: String) -> CurrencyTypes {
         switch currency {
-        case "Dolar":
+        case "USD":
             return CurrencyTypes.dolar
         case "Euro":
             return CurrencyTypes.euro
-        case "Turkish Liras":
+        case "TL":
             return CurrencyTypes.turkishLiras
+        case "KRW":
+            return CurrencyTypes.koreanWon
+        case "Ruble":
+            return CurrencyTypes.ruble
         default:
             return CurrencyTypes.noType
         }

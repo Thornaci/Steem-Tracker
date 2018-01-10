@@ -18,6 +18,8 @@ struct CoinModel: Mappable {
     var usdPrice: String?       //"price_usd": "573.137",
     var euroPrice: String?      //"price_usd": "573.137",
     var tryPrice: String?       //"price_usd": "573.137",
+    var krwPrice: String?       //"price_usd": "573.137",
+    var rublePrice: String?       //"price_usd": "573.137",
     var lastUpdated: String?    //"last_updated": "1472762067"
                                 //"price_btc": "1.0",
                                 //"24h_volume_usd": "72855700.0",
@@ -39,6 +41,8 @@ struct CoinModel: Mappable {
         usdPrice        <- map["price_usd"]
         euroPrice       <- map["price_eur"]
         tryPrice        <- map["price_try"]
+        krwPrice        <- map["price_krw"]
+        rublePrice      <- map["price_rub"]
         lastUpdated     <- map["last_updated"]
     }
 }

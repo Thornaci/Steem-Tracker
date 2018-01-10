@@ -13,6 +13,8 @@ enum CurrencyTypes: String {
     case dolar = "usd"
     case euro = "eur"
     case turkishLiras = "try"
+    case ruble = "rub"
+    case koreanWon = "krw"
     case noType = "nothing"
 }
 
