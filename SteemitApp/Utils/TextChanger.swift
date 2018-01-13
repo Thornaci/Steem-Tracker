@@ -32,23 +32,23 @@ struct TextChanger {
             let index = temp[1].index(temp[1].startIndex, offsetBy: 2)
             switch currencyType {
             case .dolar:
-                return calculateTotalAmount(preMoney: temp[0],
+                return changeTotalAmountText(preMoney: temp[0],
                                             afterDot: String(temp[1].prefix(upTo: index)),
                                             symbol: CurrencySymbol.dolar.rawValue)
             case .euro:
-                return calculateTotalAmount(preMoney: temp[0],
+                return changeTotalAmountText(preMoney: temp[0],
                                             afterDot: String(temp[1].prefix(upTo: index)),
                                             symbol: CurrencySymbol.euro.rawValue)
             case .turkishLiras:
-                return calculateTotalAmount(preMoney: temp[0],
+                return changeTotalAmountText(preMoney: temp[0],
                                             afterDot: String(temp[1].prefix(upTo: index)),
                                             symbol: CurrencySymbol.turkishLiras.rawValue)
             case .koreanWon:
-                return calculateTotalAmount(preMoney: temp[0],
+                return changeTotalAmountText(preMoney: temp[0],
                                             afterDot: String(temp[1].prefix(upTo: index)),
                                             symbol: CurrencySymbol.koreanWon.rawValue)
             case .ruble:
-                return calculateTotalAmount(preMoney: temp[0],
+                return changeTotalAmountText(preMoney: temp[0],
                                             afterDot: String(temp[1].prefix(upTo: index)),
                                             symbol: CurrencySymbol.ruble.rawValue)
             default:
@@ -59,7 +59,7 @@ struct TextChanger {
         }
     }
     
-    private func calculateTotalAmount(preMoney: String, afterDot: String, symbol: String) -> String {
+    private func changeTotalAmountText(preMoney: String, afterDot: String, symbol: String) -> String {
         return ("SBD equals to " + preMoney + "." + afterDot + " " + symbol)
     }
 }
