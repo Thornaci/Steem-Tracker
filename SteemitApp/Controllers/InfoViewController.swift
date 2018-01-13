@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import MBProgressHUD
 
 class InfoViewController: BaseViewController {
     
@@ -20,10 +21,24 @@ class InfoViewController: BaseViewController {
     
     @IBOutlet weak var currenciesSegmentControl: UISegmentedControl!
     
+    var hud: MBProgressHUD?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        view.viewWithTag(300)?.applyGradient(colours: [UIColor.init(white: 0.5, alpha: 1), UIColor.init(white: 1, alpha: 1)])
         getUserAcoountInfo()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = false
+        for view in (navigationController?.navigationBar.subviews[0].subviews)! {
+            view.alpha = 0
+            for subview in view.subviews {
+                subview.alpha = 0
+            }
+        }
     }
     
     @IBAction func changeCurrency(_ sender: Any) {
@@ -33,12 +48,14 @@ class InfoViewController: BaseViewController {
     private func getEquivalentCurrencyPrice() {
         let converter = TextChanger.init()
         let currencyText = converter.changeCurrency(currency: self.currenciesSegmentControl.titleForSegment(at: self.currenciesSegmentControl.selectedSegmentIndex)!)
-        
+        hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud?.detailsLabel.text = "Your money is calculating.."
         let nm = NetworkManager.init()
-        nm.getSteemitPrice(currency: currencyText.rawValue, success: { (coin) in
+        nm.getSteemitPrice(currency: currencyText.rawValue, success: {[unowned self] coin in
             self.showMoneyInSpecifiedCurrency(coin)
-            
+            self.hud?.hide(animated: true)
         }) { (error) in
+            self.hud?.hide(animated: true)
             let pm = PopupManager.init()
             let cancelAction = UIAlertAction.init(title: "Kapat", style: .cancel, handler: nil)
             pm.showDefaultPopup(viewController: self, actions: [cancelAction], message: error, title: "Error")
@@ -46,8 +63,11 @@ class InfoViewController: BaseViewController {
     }
     
     private func getUserAcoountInfo() {
+        hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud?.detailsLabel.text = "Your account informations loading.."
         let nm = NetworkManager.init()
-        nm.getSteemitAccount(user: UserGlobals.sharedInstance.username, success: { (user) in
+        nm.getSteemitAccount(user: UserGlobals.sharedInstance.username, success: {[unowned self] user in
+            self.hud?.hide(animated: true)
             self.usernameLabel.text = user.username
             self.aboutLabel.text = user.aboutUser
             self.steemBalanceLabel.text = user.steemBalance
@@ -59,6 +79,7 @@ class InfoViewController: BaseViewController {
             
             self.getEquivalentCurrencyPrice()
         }) { (error) in
+            self.hud?.hide(animated: true)
             let pm = PopupManager.init()
             let cancelAction = UIAlertAction.init(title: "Kapat", style: .cancel, handler: nil)
             pm.showDefaultPopup(viewController: self, actions: [cancelAction], message: error, title: "Error")
@@ -68,26 +89,33 @@ class InfoViewController: BaseViewController {
     private func showMoneyInSpecifiedCurrency(_ coin: CoinModel) {
         switch self.currenciesSegmentControl.selectedSegmentIndex {
         case 0:
-            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.usdPrice)
+            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.usdPrice, .dolar)
             break
         case 1:
-            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.euroPrice)
+            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.euroPrice, .euro)
             break
         case 2:
-            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.tryPrice)
+            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.tryPrice, .turkishLiras)
+            break
+        case 3:
+            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.krwPrice, .koreanWon)
+            break
+        case 4:
+            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.rublePrice, .ruble)
             break
         default:
             break
         }
     }
     
-    private func calculateMoneyInSpecifiedCurrency(_ price: String?) -> String {
+    private func calculateMoneyInSpecifiedCurrency(_ price: String?, _ currencyType: CurrencyTypes) -> String {
         if var userMoney = UserGlobals.sharedInstance.userMoney, let coinPrice = price {
             
             userMoney = userMoney.replacingOccurrences(of: "[A-Z]|[a-z]", with: "", options: [.regularExpression]).replacingOccurrences(of: " ", with: "", options: [.regularExpression])
             
             let totalMoney = money(userMoney)! * money(coinPrice)!
-            return totalMoney.description
+            let tc = TextChanger.init()
+            return tc.changeCurrencyWithSymbol(currency: totalMoney.description, currencyType: currencyType)
         }
         return "an error appeared while calculating!"
     }

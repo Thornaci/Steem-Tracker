@@ -13,7 +13,18 @@ enum CurrencyTypes: String {
     case dolar = "usd"
     case euro = "eur"
     case turkishLiras = "try"
+    case ruble = "rub"
+    case koreanWon = "krw"
     case noType = "nothing"
+}
+
+enum CurrencySymbol: String {
+    
+    case dolar = "$"
+    case euro = "€"
+    case turkishLiras = "₺"
+    case ruble = "₽"
+    case koreanWon = "₩"
 }
 
 typealias money = Double

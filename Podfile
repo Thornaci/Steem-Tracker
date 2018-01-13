@@ -8,5 +8,6 @@ target 'SteemitApp' do
   pod 'Alamofire', '~> 4.5'
   pod 'ObjectMapper', '~> 3.1'
   pod 'SDWebImage', '~> 4.2.3'
+  pod 'MBProgressHUD', '~> 1.1.0'
 
 end
