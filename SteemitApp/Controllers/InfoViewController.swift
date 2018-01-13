@@ -89,32 +89,33 @@ class InfoViewController: BaseViewController {
     private func showMoneyInSpecifiedCurrency(_ coin: CoinModel) {
         switch self.currenciesSegmentControl.selectedSegmentIndex {
         case 0:
-            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.usdPrice)
+            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.usdPrice, .dolar)
             break
         case 1:
-            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.euroPrice)
+            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.euroPrice, .euro)
             break
         case 2:
-            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.tryPrice)
+            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.tryPrice, .turkishLiras)
             break
         case 3:
-            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.krwPrice)
+            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.krwPrice, .koreanWon)
             break
         case 4:
-            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.rublePrice)
+            self.equivalentCurrencyLabel.text = calculateMoneyInSpecifiedCurrency(coin.rublePrice, .ruble)
             break
         default:
             break
         }
     }
     
-    private func calculateMoneyInSpecifiedCurrency(_ price: String?) -> String {
+    private func calculateMoneyInSpecifiedCurrency(_ price: String?, _ currencyType: CurrencyTypes) -> String {
         if var userMoney = UserGlobals.sharedInstance.userMoney, let coinPrice = price {
             
             userMoney = userMoney.replacingOccurrences(of: "[A-Z]|[a-z]", with: "", options: [.regularExpression]).replacingOccurrences(of: " ", with: "", options: [.regularExpression])
             
             let totalMoney = money(userMoney)! * money(coinPrice)!
-            return totalMoney.description
+            let tc = TextChanger.init()
+            return tc.changeCurrencyWithSymbol(currency: totalMoney.description, currencyType: currencyType)
         }
         return "an error appeared while calculating!"
     }
