@@ -29,7 +29,13 @@ struct TextChanger {
     func changeCurrencyWithSymbol(currency: String, currencyType: CurrencyTypes) -> String {
         let temp = currency.components(separatedBy: ".")
         if temp.count == 2 {
-            let index = temp[1].index(temp[1].startIndex, offsetBy: 2)
+            var index:String.Index
+            if temp[1].count > 2 {
+                index = temp[1].index(temp[1].startIndex, offsetBy: 2)
+            } else {
+                index = temp[1].index(temp[1].startIndex, offsetBy: 1)
+            }
+            
             switch currencyType {
             case .dolar:
                 return changeTotalAmountText(preMoney: temp[0],
