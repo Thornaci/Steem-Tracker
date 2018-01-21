@@ -9,5 +9,11 @@ target 'SteemitApp' do
   pod 'ObjectMapper', '~> 3.1'
   pod 'SDWebImage', '~> 4.2.3'
   pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'HockeySDK', '~> 5.1.2'
+
+end
+
+target 'SteemitAppWidget' do
+use_frameworks!
 
 end

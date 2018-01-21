@@ -12,7 +12,7 @@ import ObjectMapper
 struct NetworkManager {
     
     let endPoint = "https://api.coinmarketcap.com/v1/ticker/"
-    let steemEndPoint = "https://steemit.com/"
+    let steemEndPoint = "https://api.steemjs.com/"
     
     func getSteemitPrice(currency: String,
                          success: @escaping (_ result: CoinModel) -> Void,
@@ -38,15 +38,15 @@ struct NetworkManager {
     func getSteemitAccount(user: String,
                          success: @escaping (_ result: UserModel) -> Void,
                          failure: @escaping (_ error: String) -> Void) {
-        let path = steemEndPoint + "@" + user + ".json"
+        let path = steemEndPoint + "get_accounts?names[]=" + user
         BaseNetwork.sharedInstance.getRequest(path: path, success: { (data) in
             
-            guard let responseJSON = data as? Dictionary<String, AnyObject> else {
+            guard let responseJSON = data as? Array<Dictionary<String, AnyObject>> else {
                 failure("Error reading response")
                 return
             }
             
-            guard let user: UserModel = Mapper<UserModel>().map(JSONObject: responseJSON) else {
+            guard let user: UserModel = Mapper<UserModel>().map(JSONObject: responseJSON.first) else {
                 failure("Error reading response")
                 return
             }
@@ -55,5 +55,9 @@ struct NetworkManager {
         }) { (error) in
             failure(error)
         }
+    }
+    
+    func cancelAllSessions() {
+        BaseNetwork.sharedInstance.cancelAllSessions()
     }
 }

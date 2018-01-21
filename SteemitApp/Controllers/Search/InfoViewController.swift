@@ -22,22 +22,38 @@ class InfoViewController: BaseViewController {
     @IBOutlet weak var currenciesSegmentControl: UISegmentedControl!
     
     var hud: MBProgressHUD?
+    var username = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        view.viewWithTag(300)?.applyGradient(colours: [UIColor.init(white: 0.5, alpha: 1), UIColor.init(white: 1, alpha: 1)])
         getUserAcoountInfo()
         
+        let leftBarButton = UIBarButtonItem.init(title: "Back", style: .plain, target: self, action: #selector(backTapped))
+        leftBarButton.tintColor = UIColor.barTintColor()
+        navigationItem.leftBarButtonItem = leftBarButton
+        
+        let rightBarButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
+        rightBarButton.tintColor = UIColor.barTintColor()
+        navigationItem.rightBarButtonItem = rightBarButton
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.isHidden = false
-        for view in (navigationController?.navigationBar.subviews[0].subviews)! {
-            view.alpha = 0
-            for subview in view.subviews {
-                subview.alpha = 0
-            }
+    @objc func backTapped() {
+        let nm = NetworkManager.init()
+        nm.cancelAllSessions()
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func addTapped() {
+        if username == "" {
+            return
+        }
+        
+        if canUserAdd() {
+            addUserToFavorites()
+        } else {
+            let pm = PopupManager.init()
+            pm.showDefaultPopup(viewController: self, actions: [UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil)], message: "This account is already in favorite list!", title: "Error")
         }
     }
     
@@ -66,7 +82,7 @@ class InfoViewController: BaseViewController {
         hud = MBProgressHUD.showAdded(to: view, animated: true)
         hud?.detailsLabel.text = "Your account informations loading.."
         let nm = NetworkManager.init()
-        nm.getSteemitAccount(user: UserGlobals.sharedInstance.username, success: {[unowned self] user in
+        nm.getSteemitAccount(user: username, success: {[unowned self] user in
             self.hud?.hide(animated: true)
             self.usernameLabel.text = user.username
             self.aboutLabel.text = user.aboutUser
@@ -118,5 +134,31 @@ class InfoViewController: BaseViewController {
             return tc.changeCurrencyWithSymbol(currency: totalMoney.description, currencyType: currencyType)
         }
         return "an error appeared while calculating!"
+    }
+    
+    private func canUserAdd() -> Bool {
+        if let userArray = UserDefaults.standard.array(forKey: "username") {
+            for user in userArray {
+                let accountname = user as! String
+                if username == accountname {
+                    return false
+                }
+            }
+        }
+        return true
+    }
+    
+    private func addUserToFavorites() {
+        let helper = Helpers.init()
+        if let userArray = UserDefaults.standard.array(forKey: "username") {
+            var newArray = userArray
+            newArray.append(username)
+            helper.setLocalDataVariables(newArray)
+            
+        } else {
+            var userArray = [String]()
+            userArray.append(username)
+            helper.setLocalDataVariables(userArray)
+        }
     }
 }
