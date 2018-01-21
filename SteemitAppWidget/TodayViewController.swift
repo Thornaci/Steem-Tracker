@@ -13,17 +13,21 @@ typealias CompletionBlock = (_ result: Bool) -> ()
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     
-    @IBOutlet weak var usernameLabel: UILabel!
-    @IBOutlet weak var sbdLabel: UILabel!
-    @IBOutlet weak var steemLabel: UILabel!
-    
     var session: URLSession!
+    var users = [UserModel]()
+    
+    @IBOutlet weak var infosTableView: UITableView!
     
     override func viewDidLoad() {
-        
+        self.extensionContext?.widgetLargestAvailableDisplayMode = .expanded
         getAccountInformation { [unowned self] result in
-            if result == false {
-                self.usernameLabel.text = "No account"
+            if result == true {
+                self.infosTableView.alpha = 1
+                DispatchQueue.main.async {
+                    self.infosTableView.reloadData()
+                }
+            } else {
+                self.infosTableView.alpha = 0
             }
         }
     }
@@ -33,32 +37,30 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         completionHandler(NCUpdateResult.newData)
     }
     
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        
+        if activeDisplayMode == .expanded {
+            let height = CGFloat(users.count) * 110.0
+            preferredContentSize = CGSize(width: maxSize.width, height: height)
+        } else {
+            preferredContentSize = maxSize
+        }
+    }
+    
     func getAccountInformation(_ completion: @escaping CompletionBlock) {
         let configuration = URLSessionConfiguration.default
         session = URLSession(configuration: configuration)
         
-        if let quoteFromApp = UserDefaults.init(suiteName: "group.SteemitApp.widget")?.value(forKey: "username") {
-            let endPoint = "https://steemit.com/"
-            let username = quoteFromApp as! String
-            let url = endPoint + "@" + username + ".json"
-            let fullUrl = URL(string: url)
-            let request = URLRequest(url: fullUrl!)
+        if let usernameArray = UserDefaults.init(suiteName: "group.SteemitApp.widget")?.array(forKey: "username") {
             
-            let task = session.dataTask(with: request) {[weak self] data, response, dataError in
+            let request = URLRequest(url: setUrl(usernameArray: usernameArray as! [String]))
+            
+            let task = session.dataTask(with: request) { [weak self] data, response, dataError in
                 if dataError == nil {
                     do {
-                        let userDictionary = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! Dictionary<String, Any>
-                        if let user = userDictionary["user"] as? Dictionary<String, Any> {
-                            if let username = user["name"] as? String {
-                                self?.usernameLabel.text = username
-                            }
-                            if let steemBalance = user["balance"] as? String {
-                                self?.sbdLabel.text = steemBalance
-                            }
-                            if let sbdBalance = user["sbd_balance"] as? String {
-                                self?.steemLabel.text = sbdBalance
-                            }
-                        }
+                        let userDictionary = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! Array<Dictionary<String, Any>>
+                        
+                        self?.users = (self?.serializeUsers(data: userDictionary))!
                         
                         completion(true)
                         
@@ -72,5 +74,40 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }
             task.resume()
         }
+    }
+    
+    func serializeUsers(data: Array<Dictionary<String, Any>>) -> [UserModel] {
+        var users = [UserModel]()
+        for user in data {
+            var newUser = UserModel.init()
+            if let username = user["name"] as? String {
+                newUser.username = username
+            }
+            if let steemBalance = user["balance"] as? String {
+                newUser.steemBalance = steemBalance
+            }
+            if let sbdBalance = user["sbd_balance"] as? String {
+                newUser.sbdBalance = sbdBalance
+            }
+            
+        users.append(newUser)
+        }
+        
+        return users
+    }
+    
+    func setUrl(usernameArray: [String]) -> URL {
+        let endPoint = "https://api.steemjs.com/"
+        var usernamesString = "%5B%22"
+        for index in 0...usernameArray.count - 1 {
+            usernamesString = usernamesString + "\(usernameArray[index])"
+            if usernameArray.count != 1 && index < usernameArray.count - 1 {
+                usernamesString = usernamesString + "%22%2C%20%22"
+            }
+        }
+        usernamesString = usernamesString + "%22%5D"
+        
+        let url = endPoint + "getAccounts?names[]=" + usernamesString
+        return URL(string: url)!
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F0D2DA319ADFBAC93253D59 /* Pods_SteemitAppWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */; };
 		ABFFC2526324D20A127D4979 /* Pods_SteemitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEC947916BFFF1BA92135A0 /* Pods_SteemitApp.framework */; };
 		C062EF472003649500B9C3D2 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF462003649500B9C3D2 /* InfoViewController.swift */; };
 		C062EF49200364A900B9C3D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF48200364A900B9C3D2 /* NetworkManager.swift */; };
@@ -19,8 +20,17 @@
 		C062EF5B2003A89100B9C3D2 /* UserGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF5A2003A89100B9C3D2 /* UserGlobals.swift */; };
 		C062EF5D2003B06600B9C3D2 /* CurrencyTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF5C2003B06600B9C3D2 /* CurrencyTypes.swift */; };
 		C062EF5F2003B10200B9C3D2 /* TextChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF5E2003B10200B9C3D2 /* TextChanger.swift */; };
-		C062EF612003B31500B9C3D2 /* EntranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF602003B31500B9C3D2 /* EntranceViewController.swift */; };
+		C062EF612003B31500B9C3D2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF602003B31500B9C3D2 /* SearchViewController.swift */; };
 		C062EF632003B6EE00B9C3D2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF622003B6EE00B9C3D2 /* UserModel.swift */; };
+		C0B899DF2014A03800A45554 /* FavoriteUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899DE2014A03800A45554 /* FavoriteUsersViewController.swift */; };
+		C0B899E12014A78B00A45554 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899E02014A78B00A45554 /* UIColorExtension.swift */; };
+		C0B899E52014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899E42014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift */; };
+		C0B899E92014C15100A45554 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899E72014C15100A45554 /* FavoriteTableViewCell.swift */; };
+		C0B899EA2014C15100A45554 /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0B899E82014C15100A45554 /* FavoriteTableViewCell.xib */; };
+		C0B899EC2014D21600A45554 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899EB2014D21600A45554 /* Helpers.swift */; };
+		C0B899EE2014D3F500A45554 /* TodayViewControllerTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899ED2014D3F500A45554 /* TodayViewControllerTableViewExtension.swift */; };
+		C0B899F32014D47700A45554 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899F22014D47700A45554 /* UserModel.swift */; };
+		C0B899F52014E5D900A45554 /* InfosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899F42014E5D900A45554 /* InfosTableViewCell.swift */; };
 		C0F8BF182004FBFB009C1585 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F8BF172004FBFB009C1585 /* PopupManager.swift */; };
 		C0F8BF1A200503B2009C1585 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F8BF19200503B2009C1585 /* UIViewExtension.swift */; };
 		C0F8BF2220063807009C1585 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F8BF2120063807009C1585 /* NotificationCenter.framework */; };
@@ -58,7 +68,10 @@
 
 /* Begin PBXFileReference section */
 		27BF7076AEE3214DC3D50282 /* Pods-SteemitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteemitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SteemitApp/Pods-SteemitApp.debug.xcconfig"; sourceTree = "<group>"; };
+		48F10E37E9A471DBBEE6AB16 /* Pods-SteemitAppWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteemitAppWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-SteemitAppWidget/Pods-SteemitAppWidget.release.xcconfig"; sourceTree = "<group>"; };
 		5CEC947916BFFF1BA92135A0 /* Pods_SteemitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemitAppWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0007AF82013A40700C533F7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C062EF462003649500B9C3D2 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		C062EF48200364A900B9C3D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C062EF4A200364B800B9C3D2 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -70,8 +83,17 @@
 		C062EF5A2003A89100B9C3D2 /* UserGlobals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGlobals.swift; sourceTree = "<group>"; };
 		C062EF5C2003B06600B9C3D2 /* CurrencyTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTypes.swift; sourceTree = "<group>"; };
 		C062EF5E2003B10200B9C3D2 /* TextChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextChanger.swift; sourceTree = "<group>"; };
-		C062EF602003B31500B9C3D2 /* EntranceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntranceViewController.swift; sourceTree = "<group>"; };
+		C062EF602003B31500B9C3D2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C062EF622003B6EE00B9C3D2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C0B899DE2014A03800A45554 /* FavoriteUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUsersViewController.swift; sourceTree = "<group>"; };
+		C0B899E02014A78B00A45554 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		C0B899E42014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUsersTableViewExtension.swift; sourceTree = "<group>"; };
+		C0B899E72014C15100A45554 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		C0B899E82014C15100A45554 /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
+		C0B899EB2014D21600A45554 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		C0B899ED2014D3F500A45554 /* TodayViewControllerTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewControllerTableViewExtension.swift; sourceTree = "<group>"; };
+		C0B899F22014D47700A45554 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C0B899F42014E5D900A45554 /* InfosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosTableViewCell.swift; sourceTree = "<group>"; };
 		C0F8BF172004FBFB009C1585 /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
 		C0F8BF19200503B2009C1585 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C0F8BF2020063807009C1585 /* SteemitAppWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SteemitAppWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +108,7 @@
 		C0FBCA6A2001288C0098633F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0FBCA6D2001288C0098633F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0FBCA6F2001288C0098633F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA0219D4F81438D9F9135D69 /* Pods-SteemitAppWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteemitAppWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SteemitAppWidget/Pods-SteemitAppWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		F6B15CA4796AE835B98F4CCF /* Pods-SteemitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteemitApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SteemitApp/Pods-SteemitApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +118,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0F8BF2220063807009C1585 /* NotificationCenter.framework in Frameworks */,
+				8F0D2DA319ADFBAC93253D59 /* Pods_SteemitAppWidget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +138,8 @@
 			children = (
 				27BF7076AEE3214DC3D50282 /* Pods-SteemitApp.debug.xcconfig */,
 				F6B15CA4796AE835B98F4CCF /* Pods-SteemitApp.release.xcconfig */,
+				EA0219D4F81438D9F9135D69 /* Pods-SteemitAppWidget.debug.xcconfig */,
+				48F10E37E9A471DBBEE6AB16 /* Pods-SteemitAppWidget.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -130,8 +156,8 @@
 		C062EF442003645100B9C3D2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C062EF602003B31500B9C3D2 /* EntranceViewController.swift */,
-				C062EF462003649500B9C3D2 /* InfoViewController.swift */,
+				C0B899E22014C09500A45554 /* Search */,
+				C0B899E32014C09D00A45554 /* Favorites */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +195,8 @@
 				C062EF5520038FE500B9C3D2 /* DateExtension.swift */,
 				C062EF5E2003B10200B9C3D2 /* TextChanger.swift */,
 				C0F8BF19200503B2009C1585 /* UIViewExtension.swift */,
+				C0B899E02014A78B00A45554 /* UIColorExtension.swift */,
+				C0B899EB2014D21600A45554 /* Helpers.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -182,11 +210,41 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		C0B899E22014C09500A45554 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C062EF602003B31500B9C3D2 /* SearchViewController.swift */,
+				C062EF462003649500B9C3D2 /* InfoViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C0B899E32014C09D00A45554 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				C0B899DE2014A03800A45554 /* FavoriteUsersViewController.swift */,
+				C0B899E42014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		C0B899E62014C13300A45554 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C0B899E72014C15100A45554 /* FavoriteTableViewCell.swift */,
+				C0B899E82014C15100A45554 /* FavoriteTableViewCell.xib */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
 		C0F8BF2320063807009C1585 /* SteemitAppWidget */ = {
 			isa = PBXGroup;
 			children = (
 				C0F8BF3220063B11009C1585 /* SteemitAppWidget.entitlements */,
 				C0F8BF2420063807009C1585 /* TodayViewController.swift */,
+				C0B899ED2014D3F500A45554 /* TodayViewControllerTableViewExtension.swift */,
+				C0B899F42014E5D900A45554 /* InfosTableViewCell.swift */,
+				C0B899F22014D47700A45554 /* UserModel.swift */,
 				C0F8BF2620063807009C1585 /* MainInterface.storyboard */,
 				C0F8BF2920063807009C1585 /* Info.plist */,
 			);
@@ -221,6 +279,7 @@
 				C062EF432003644A00B9C3D2 /* Manager */,
 				C062EF452003645C00B9C3D2 /* Storyboards */,
 				C062EF572003967100B9C3D2 /* Constants */,
+				C0B899E62014C13300A45554 /* Custom Cells */,
 				C062EF5420038FD400B9C3D2 /* Utils */,
 				C062EF512003682600B9C3D2 /* Models */,
 				C062EF4C200364D700B9C3D2 /* Base */,
@@ -235,8 +294,10 @@
 		C62F8F808C49CB57FB8FE8A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0007AF82013A40700C533F7 /* Alamofire.framework */,
 				5CEC947916BFFF1BA92135A0 /* Pods_SteemitApp.framework */,
 				C0F8BF2120063807009C1585 /* NotificationCenter.framework */,
+				852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -248,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F8BF2F20063807009C1585 /* Build configuration list for PBXNativeTarget "SteemitAppWidget" */;
 			buildPhases = (
+				1C8CD625887A1857E256834F /* [CP] Check Pods Manifest.lock */,
 				C0F8BF1C20063807009C1585 /* Sources */,
 				C0F8BF1D20063807009C1585 /* Frameworks */,
 				C0F8BF1E20063807009C1585 /* Resources */,
+				6E8E43B6C85149FC686A5BCB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -346,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C062EF4B200364B800B9C3D2 /* Home.storyboard in Resources */,
+				C0B899EA2014C15100A45554 /* FavoriteTableViewCell.xib in Resources */,
 				C0FBCA6E2001288C0098633F /* LaunchScreen.storyboard in Resources */,
 				C0FBCA6B2001288C0098633F /* Assets.xcassets in Resources */,
 			);
@@ -354,7 +418,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		91B0B7B824DFF4B80EA85759 /* [CP] Copy Pods Resources */ = {
+		1C8CD625887A1857E256834F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SteemitAppWidget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E8E43B6C85149FC686A5BCB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -363,6 +445,24 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SteemitAppWidget/Pods-SteemitAppWidget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91B0B7B824DFF4B80EA85759 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SteemitApp/Pods-SteemitApp-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/HockeySDK/HockeySDKResources.bundle,
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -418,6 +518,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B899EE2014D3F500A45554 /* TodayViewControllerTableViewExtension.swift in Sources */,
+				C0B899F52014E5D900A45554 /* InfosTableViewCell.swift in Sources */,
+				C0B899F32014D47700A45554 /* UserModel.swift in Sources */,
 				C0F8BF2520063807009C1585 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,18 +529,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B899E12014A78B00A45554 /* UIColorExtension.swift in Sources */,
 				C0F8BF1A200503B2009C1585 /* UIViewExtension.swift in Sources */,
 				C062EF592003968500B9C3D2 /* CoinTypes.swift in Sources */,
+				C0B899EC2014D21600A45554 /* Helpers.swift in Sources */,
+				C0B899E92014C15100A45554 /* FavoriteTableViewCell.swift in Sources */,
 				C062EF49200364A900B9C3D2 /* NetworkManager.swift in Sources */,
 				C062EF4E200364EB00B9C3D2 /* BaseViewController.swift in Sources */,
 				C062EF5F2003B10200B9C3D2 /* TextChanger.swift in Sources */,
 				C062EF5620038FE500B9C3D2 /* DateExtension.swift in Sources */,
 				C062EF632003B6EE00B9C3D2 /* UserModel.swift in Sources */,
+				C0B899DF2014A03800A45554 /* FavoriteUsersViewController.swift in Sources */,
 				C0FBCA642001288C0098633F /* AppDelegate.swift in Sources */,
-				C062EF612003B31500B9C3D2 /* EntranceViewController.swift in Sources */,
+				C062EF612003B31500B9C3D2 /* SearchViewController.swift in Sources */,
 				C0F8BF182004FBFB009C1585 /* PopupManager.swift in Sources */,
 				C062EF472003649500B9C3D2 /* InfoViewController.swift in Sources */,
 				C062EF5D2003B06600B9C3D2 /* CurrencyTypes.swift in Sources */,
+				C0B899E52014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift in Sources */,
 				C062EF5320036ACF00B9C3D2 /* CoinModel.swift in Sources */,
 				C062EF5B2003A89100B9C3D2 /* UserGlobals.swift in Sources */,
 				C062EF502003650F00B9C3D2 /* BaseNetwork.swift in Sources */,
@@ -476,6 +584,7 @@
 /* Begin XCBuildConfiguration section */
 		C0F8BF2D20063807009C1585 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA0219D4F81438D9F9135D69 /* Pods-SteemitAppWidget.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SteemitAppWidget/SteemitAppWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -492,6 +601,7 @@
 		};
 		C0F8BF2E20063807009C1585 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48F10E37E9A471DBBEE6AB16 /* Pods-SteemitAppWidget.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SteemitAppWidget/SteemitAppWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;

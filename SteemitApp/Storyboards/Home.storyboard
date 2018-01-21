@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="obT-0h-0Ys">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ylg-5b-McB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,32 +9,56 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kefa.ttf">
+            <string>Kefa-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Entrance View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="UTe-37-MyM">
+            <objects>
+                <tabBarController id="Ylg-5b-McB" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cEi-Mv-Qnc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="obT-0h-0Ys" kind="relationship" relationship="viewControllers" id="51t-5D-UlP"/>
+                        <segue destination="sKN-gy-o7g" kind="relationship" relationship="viewControllers" id="dft-OL-Cuz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLp-V1-m5i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466" y="-744"/>
+        </scene>
+        <!--Search View Controller-->
         <scene sceneID="2ub-gi-H1C">
             <objects>
-                <viewController id="GDo-vh-XL9" customClass="EntranceViewController" customModule="SteemitApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GDo-vh-XL9" customClass="SearchViewController" customModule="SteemitApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0jN-CI-Oxh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="1z3-2o-LVO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qv-gi-gf8">
-                                <rect key="frame" x="20" y="339" width="335" height="30"/>
+                                <rect key="frame" x="20" y="337.5" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter username which wants to get info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVb-wI-3ev">
-                                <rect key="frame" x="20" y="278" width="335" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="278" width="335" height="39.5"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2f-u5-VHs">
-                                <rect key="frame" x="293" y="339" width="62" height="30"/>
+                                <rect key="frame" x="293" y="337.5" width="62" height="30"/>
                                 <color key="backgroundColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="62" id="Bnm-jV-j6D"/>
@@ -80,7 +104,7 @@
                         <viewLayoutGuide key="safeArea" id="RLZ-Bw-5BY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Wnu-bL-GVw">
-                        <barButtonItem key="backBarButtonItem" title=" " id="FHH-O2-DIs">
+                        <barButtonItem key="backBarButtonItem" id="FHH-O2-DIs">
                             <color key="tintColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
@@ -91,24 +115,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pyc-Aq-5LO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="543.20000000000005" y="121.88905547226388"/>
+            <point key="canvasLocation" x="-300" y="979"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="fqh-SS-F5B">
             <objects>
-                <viewController id="EcK-AL-Qt4" customClass="InfoViewController" customModule="SteemitApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="infoVC" id="EcK-AL-Qt4" customClass="InfoViewController" customModule="SteemitApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zs4-Rh-EMq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3hR-0j-CLA">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundWhite" translatesAutoresizingMaskIntoConstraints="NO" id="0UD-O0-vPl">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="300" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBZ-cl-ZFz">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="freeProfile" translatesAutoresizingMaskIntoConstraints="NO" id="ZgC-Nj-bN2">
                                         <rect key="frame" x="113" y="30" width="150" height="150"/>
@@ -119,37 +143,37 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTB-Od-xVt">
-                                        <rect key="frame" x="184.5" y="200" width="8" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="185" y="200" width="7" height="20"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZc-TE-l8J">
-                                        <rect key="frame" x="20" y="241" width="336" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="20" y="240" width="336" height="20"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98K-Rv-0Hg">
-                                        <rect key="frame" x="184" y="282" width="8" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="185" y="280" width="6.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZM-5o-Tsm">
-                                        <rect key="frame" x="184" y="323" width="8" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="184.5" y="320" width="7" height="20"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGr-c5-8Ng">
-                                        <rect key="frame" x="184.5" y="364" width="8" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="185" y="360" width="7" height="20"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aFU-X0-s7Y">
-                                        <rect key="frame" x="20" y="405" width="336" height="29"/>
+                                        <rect key="frame" x="20" y="400" width="336" height="29"/>
                                         <segments>
                                             <segment title="USD"/>
                                             <segment title="Euro"/>
@@ -216,12 +240,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ofW-ei-xTE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1375.2" y="121.88905547226388"/>
+            <point key="canvasLocation" x="-300" y="1785"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="70L-4X-93c">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="obT-0h-0Ys" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="search" id="TkN-yx-QW5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" alpha="0.29999999999999999" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IdJ-hY-orp">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -241,6 +266,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1NG-Fh-04C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-300" y="122"/>
+        </scene>
+        <!--Favorite Users View Controller-->
+        <scene sceneID="8yY-fW-P8H">
+            <objects>
+                <viewController id="Q5V-nl-LEx" customClass="FavoriteUsersViewController" customModule="SteemitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ows-tt-gIE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="MNE-GQ-O2e">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EgH-ZT-m9Q">
+                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Q5V-nl-LEx" id="j4P-8E-d4H"/>
+                                    <outlet property="delegate" destination="Q5V-nl-LEx" id="J3W-4U-GDs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MNE-GQ-O2e" firstAttribute="top" secondItem="ows-tt-gIE" secondAttribute="top" id="4Jx-qx-kjk"/>
+                            <constraint firstItem="TxZ-Cj-7wb" firstAttribute="bottom" secondItem="MNE-GQ-O2e" secondAttribute="bottom" id="6qX-Nc-Hp0"/>
+                            <constraint firstItem="EgH-ZT-m9Q" firstAttribute="top" secondItem="TxZ-Cj-7wb" secondAttribute="top" constant="20" id="Iy1-dy-DHX"/>
+                            <constraint firstItem="MNE-GQ-O2e" firstAttribute="leading" secondItem="TxZ-Cj-7wb" secondAttribute="leading" id="ONv-9K-cu7"/>
+                            <constraint firstItem="TxZ-Cj-7wb" firstAttribute="bottom" secondItem="EgH-ZT-m9Q" secondAttribute="bottom" id="TLk-Y8-aft"/>
+                            <constraint firstItem="TxZ-Cj-7wb" firstAttribute="trailing" secondItem="EgH-ZT-m9Q" secondAttribute="trailing" id="dk7-tL-T62"/>
+                            <constraint firstItem="TxZ-Cj-7wb" firstAttribute="trailing" secondItem="MNE-GQ-O2e" secondAttribute="trailing" id="gKx-jr-tZo"/>
+                            <constraint firstItem="EgH-ZT-m9Q" firstAttribute="leading" secondItem="TxZ-Cj-7wb" secondAttribute="leading" id="y5z-Ja-qYD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TxZ-Cj-7wb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="51B-XW-z9E"/>
+                    <connections>
+                        <outlet property="favoriteListTableView" destination="EgH-ZT-m9Q" id="vCi-WS-U2y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GA2-w1-yad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="978"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tGS-w3-9ew">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sKN-gy-o7g" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="HKL-P5-3bF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hbK-lR-gEh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Q5V-nl-LEx" kind="relationship" relationship="rootViewController" id="kzG-PQ-Ucl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D16-Ml-5aQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="122"/>
         </scene>
     </scenes>
     <resources>
