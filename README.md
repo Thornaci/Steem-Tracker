@@ -26,7 +26,7 @@ $ pod install
 
 <strong> 5. Open using Xcode: </strong>
 ```shell
-$ open SteemitApp.xcodeproj
+$ open SteemitApp.xcworkspace
 ```
 
 Don't forget to set identifiers for widget usage or run app on a device.
@@ -37,6 +37,11 @@ Don't forget to set identifiers for widget usage or run app on a device.
 * Display name, description, Steem amount, SBD amount
 * Display SBD equals amount in 5 currencies (Dolar, Euro, Turkish Liras, Korean Won, Russian Ruble)
 * Widget support (name, Steem amount, SBD amount)
+
+#### 1.1
+
+* Favorite list added. Now you can add or remove anyone.
+* Multiple track on widget added.
 
 The app is in progress, but already functional.
 
