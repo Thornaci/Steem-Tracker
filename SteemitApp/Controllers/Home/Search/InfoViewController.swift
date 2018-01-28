@@ -19,6 +19,8 @@ class InfoViewController: BaseViewController {
     @IBOutlet weak var equivalentCurrencyLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
     
+    @IBOutlet weak var showFollowerListView: UIView!
+    
     @IBOutlet weak var currenciesSegmentControl: UISegmentedControl!
     
     var hud: MBProgressHUD?
@@ -29,19 +31,15 @@ class InfoViewController: BaseViewController {
         
         getUserAcoountInfo()
         
-        let leftBarButton = UIBarButtonItem.init(title: "Back", style: .plain, target: self, action: #selector(backTapped))
-        leftBarButton.tintColor = UIColor.barTintColor()
-        navigationItem.leftBarButtonItem = leftBarButton
-        
-        let rightBarButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
+        navigationController?.navigationBar.topItem?.title = ""
+
+        let rightBarButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(addTapped))
         rightBarButton.tintColor = UIColor.barTintColor()
         navigationItem.rightBarButtonItem = rightBarButton
-    }
-    
-    @objc func backTapped() {
-        let nm = NetworkManager.init()
-        nm.cancelAllSessions()
-        navigationController?.popViewController(animated: true)
+        
+        showFollowerListView.layer.cornerRadius = 10
+        showFollowerListView.layer.borderWidth = 3
+        showFollowerListView.layer.borderColor = UIColor.barTintColor().cgColor
     }
     
     @objc func addTapped() {
@@ -60,6 +58,15 @@ class InfoViewController: BaseViewController {
     @IBAction func changeCurrency(_ sender: Any) {
         getEquivalentCurrencyPrice()
     }
+    
+    @IBAction func showFollowerList(_ sender: Any) {
+        let storyboard = UIStoryboard.init(name: "Follower",
+                                           bundle: nil)
+        let followerVC = storyboard.instantiateViewController(withIdentifier: "followerVC") as! FollowersViewController
+        followerVC.username = username
+        navigationController?.pushViewController(followerVC, animated: true)
+    }
+    
     
     private func getEquivalentCurrencyPrice() {
         let converter = TextChanger.init()

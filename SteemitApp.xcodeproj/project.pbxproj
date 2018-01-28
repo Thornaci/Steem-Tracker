@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8F0D2DA319ADFBAC93253D59 /* Pods_SteemitAppWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */; };
 		ABFFC2526324D20A127D4979 /* Pods_SteemitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEC947916BFFF1BA92135A0 /* Pods_SteemitApp.framework */; };
+		C0420037201E04A700311654 /* FollowersViewControllerTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */; };
+		C042003A201E0F2000311654 /* FollowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0420038201E0F2000311654 /* FollowerTableViewCell.swift */; };
+		C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0420039201E0F2000311654 /* FollowerTableViewCell.xib */; };
 		C062EF472003649500B9C3D2 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF462003649500B9C3D2 /* InfoViewController.swift */; };
 		C062EF49200364A900B9C3D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF48200364A900B9C3D2 /* NetworkManager.swift */; };
 		C062EF4B200364B800B9C3D2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C062EF4A200364B800B9C3D2 /* Home.storyboard */; };
@@ -22,6 +25,8 @@
 		C062EF5F2003B10200B9C3D2 /* TextChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF5E2003B10200B9C3D2 /* TextChanger.swift */; };
 		C062EF612003B31500B9C3D2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF602003B31500B9C3D2 /* SearchViewController.swift */; };
 		C062EF632003B6EE00B9C3D2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF622003B6EE00B9C3D2 /* UserModel.swift */; };
+		C091EE352019D8710010209F /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091EE342019D8710010209F /* FollowersViewController.swift */; };
+		C091EE372019DA120010209F /* Follower.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C091EE362019DA120010209F /* Follower.storyboard */; };
 		C0B899DF2014A03800A45554 /* FavoriteUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899DE2014A03800A45554 /* FavoriteUsersViewController.swift */; };
 		C0B899E12014A78B00A45554 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899E02014A78B00A45554 /* UIColorExtension.swift */; };
 		C0B899E52014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899E42014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift */; };
@@ -72,6 +77,9 @@
 		5CEC947916BFFF1BA92135A0 /* Pods_SteemitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemitAppWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0007AF82013A40700C533F7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewControllerTableViewExtension.swift; sourceTree = "<group>"; };
+		C0420038201E0F2000311654 /* FollowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerTableViewCell.swift; sourceTree = "<group>"; };
+		C0420039201E0F2000311654 /* FollowerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowerTableViewCell.xib; sourceTree = "<group>"; };
 		C062EF462003649500B9C3D2 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		C062EF48200364A900B9C3D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C062EF4A200364B800B9C3D2 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -85,6 +93,8 @@
 		C062EF5E2003B10200B9C3D2 /* TextChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextChanger.swift; sourceTree = "<group>"; };
 		C062EF602003B31500B9C3D2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C062EF622003B6EE00B9C3D2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C091EE342019D8710010209F /* FollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
+		C091EE362019DA120010209F /* Follower.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Follower.storyboard; sourceTree = "<group>"; };
 		C0B899DE2014A03800A45554 /* FavoriteUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUsersViewController.swift; sourceTree = "<group>"; };
 		C0B899E02014A78B00A45554 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		C0B899E42014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUsersTableViewExtension.swift; sourceTree = "<group>"; };
@@ -156,8 +166,8 @@
 		C062EF442003645100B9C3D2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C0B899E22014C09500A45554 /* Search */,
-				C0B899E32014C09D00A45554 /* Favorites */,
+				C091EE392019DA310010209F /* Follower */,
+				C091EE382019DA290010209F /* Home */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -166,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				C062EF4A200364B800B9C3D2 /* Home.storyboard */,
+				C091EE362019DA120010209F /* Follower.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -210,6 +221,32 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		C091EE332019D85C0010209F /* Followers */ = {
+			isa = PBXGroup;
+			children = (
+				C091EE342019D8710010209F /* FollowersViewController.swift */,
+				C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */,
+			);
+			path = Followers;
+			sourceTree = "<group>";
+		};
+		C091EE382019DA290010209F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C0B899E22014C09500A45554 /* Search */,
+				C0B899E32014C09D00A45554 /* Favorites */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C091EE392019DA310010209F /* Follower */ = {
+			isa = PBXGroup;
+			children = (
+				C091EE332019D85C0010209F /* Followers */,
+			);
+			path = Follower;
+			sourceTree = "<group>";
+		};
 		C0B899E22014C09500A45554 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +270,8 @@
 			children = (
 				C0B899E72014C15100A45554 /* FavoriteTableViewCell.swift */,
 				C0B899E82014C15100A45554 /* FavoriteTableViewCell.xib */,
+				C0420038201E0F2000311654 /* FollowerTableViewCell.swift */,
+				C0420039201E0F2000311654 /* FollowerTableViewCell.xib */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -410,6 +449,8 @@
 			files = (
 				C062EF4B200364B800B9C3D2 /* Home.storyboard in Resources */,
 				C0B899EA2014C15100A45554 /* FavoriteTableViewCell.xib in Resources */,
+				C091EE372019DA120010209F /* Follower.storyboard in Resources */,
+				C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */,
 				C0FBCA6E2001288C0098633F /* LaunchScreen.storyboard in Resources */,
 				C0FBCA6B2001288C0098633F /* Assets.xcassets in Resources */,
 			);
@@ -537,7 +578,9 @@
 				C062EF49200364A900B9C3D2 /* NetworkManager.swift in Sources */,
 				C062EF4E200364EB00B9C3D2 /* BaseViewController.swift in Sources */,
 				C062EF5F2003B10200B9C3D2 /* TextChanger.swift in Sources */,
+				C0420037201E04A700311654 /* FollowersViewControllerTableViewExtension.swift in Sources */,
 				C062EF5620038FE500B9C3D2 /* DateExtension.swift in Sources */,
+				C091EE352019D8710010209F /* FollowersViewController.swift in Sources */,
 				C062EF632003B6EE00B9C3D2 /* UserModel.swift in Sources */,
 				C0B899DF2014A03800A45554 /* FavoriteUsersViewController.swift in Sources */,
 				C0FBCA642001288C0098633F /* AppDelegate.swift in Sources */,
@@ -545,6 +588,7 @@
 				C0F8BF182004FBFB009C1585 /* PopupManager.swift in Sources */,
 				C062EF472003649500B9C3D2 /* InfoViewController.swift in Sources */,
 				C062EF5D2003B06600B9C3D2 /* CurrencyTypes.swift in Sources */,
+				C042003A201E0F2000311654 /* FollowerTableViewCell.swift in Sources */,
 				C0B899E52014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift in Sources */,
 				C062EF5320036ACF00B9C3D2 /* CoinModel.swift in Sources */,
 				C062EF5B2003A89100B9C3D2 /* UserGlobals.swift in Sources */,
