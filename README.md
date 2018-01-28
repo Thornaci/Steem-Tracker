@@ -43,6 +43,10 @@ Don't forget to set identifiers for widget usage or run app on a device.
 * Favorite list added. Now you can add or remove anyone.
 * Multiple track on widget added.
 
+#### 1.2
+
+* Following list added. Now you can see that your followings are following you or not.
+
 The app is in progress, but already functional.
 
 You can contribute to the app, just do a pull request.
