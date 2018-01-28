@@ -25,7 +25,7 @@ class FollowersViewController: BaseViewController {
         
         followerTableView.register(UINib.init(nibName: followerCellReuseIdentifier, bundle: nil), forCellReuseIdentifier: followerCellReuseIdentifier)
         
-        navigationItem.title = "Follower List"
+        navigationItem.title = "Following List"
         navigationController?.navigationBar.topItem?.title = ""
         getFollowerList()
     }
