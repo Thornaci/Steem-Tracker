@@ -57,6 +57,80 @@ struct NetworkManager {
         }
     }
     
+    func getSteemitAccountFollowerCount(user: String,
+                           success: @escaping (_ result: Dictionary<String, Any>) -> Void,
+                           failure: @escaping (_ error: String) -> Void) {
+        let path = steemEndPoint + "get_follow_count?account=" + user
+        BaseNetwork.sharedInstance.getRequest(path: path, success: { (data) in
+            
+            guard let responseJSON = data as? Dictionary<String, AnyObject> else {
+                failure("Error reading response")
+                return
+            }
+            
+            var dict = Dictionary<String, Any>()
+            if let count = responseJSON["follower_count"] as? Int {
+                dict["followerCount"] = count
+            }
+            
+            if let count = responseJSON["following_count"] as? Int {
+                dict["followingCount"] = count
+            }
+            
+            success(dict)
+        }) { (error) in
+            failure(error)
+        }
+    }
+    
+    func getSteemitAccountFollowings(user: String,
+                                    limit: String,
+                                    success: @escaping (_ result: [String]) -> Void,
+                                    failure: @escaping (_ error: String) -> Void) {
+        let path = steemEndPoint + "get_following?follower=" + user +  "&startFollower=a&followType=blog&limit=" + limit
+        BaseNetwork.sharedInstance.getRequest(path: path, success: { (data) in
+            
+            guard let responseJSON = data as? Array<Dictionary<String, AnyObject>> else {
+                failure("Error reading response")
+                return
+            }
+            var followingArray = [String]()
+            for followInfo in responseJSON {
+                if let follower = followInfo["following"] as? String {
+                    followingArray.append(follower)
+                }
+            }
+            
+            success(followingArray)
+        }) { (error) in
+            failure(error)
+        }
+    }
+    
+    func getSteemitAccountFollowers(user: String,
+                                    limit: String,
+                                        success: @escaping (_ result: [String]) -> Void,
+                                        failure: @escaping (_ error: String) -> Void) {
+        let path = steemEndPoint + "get_followers?following=" + user +  "&startFollower=a&followType=blog&limit=" + limit
+        BaseNetwork.sharedInstance.getRequest(path: path, success: { (data) in
+            
+            guard let responseJSON = data as? Array<Dictionary<String, AnyObject>> else {
+                failure("Error reading response")
+                return
+            }
+            var followerArray = [String]()
+            for followInfo in responseJSON {
+                if let follower = followInfo["follower"] as? String {
+                    followerArray.append(follower)
+                }
+            }
+            
+            success(followerArray)
+        }) { (error) in
+            failure(error)
+        }
+    }
+    
     func cancelAllSessions() {
         BaseNetwork.sharedInstance.cancelAllSessions()
     }
