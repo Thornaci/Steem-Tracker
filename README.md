@@ -47,6 +47,10 @@ Don't forget to set identifiers for widget usage or run app on a device.
 
 * Following list added. Now you can see that your followings are following you or not.
 
+#### 1.3
+
+* Tag history page added. Now you can display comments, total payouts (in sbd), net votes and posts top 10 category.
+
 The app is in progress, but already functional.
 
 You can contribute to the app, just do a pull request.
