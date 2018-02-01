@@ -25,8 +25,15 @@
 		C062EF5F2003B10200B9C3D2 /* TextChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF5E2003B10200B9C3D2 /* TextChanger.swift */; };
 		C062EF612003B31500B9C3D2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF602003B31500B9C3D2 /* SearchViewController.swift */; };
 		C062EF632003B6EE00B9C3D2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF622003B6EE00B9C3D2 /* UserModel.swift */; };
+		C073B1802022F26E00598305 /* TagHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073B17F2022F26E00598305 /* TagHistoryModel.swift */; };
 		C091EE352019D8710010209F /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091EE342019D8710010209F /* FollowersViewController.swift */; };
 		C091EE372019DA120010209F /* Follower.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C091EE362019DA120010209F /* Follower.storyboard */; };
+		C0ADEB712020E85B0053C3BF /* Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0ADEB702020E85B0053C3BF /* Information.storyboard */; };
+		C0ADEB742020E8E70053C3BF /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADEB732020E8E70053C3BF /* OptionsViewController.swift */; };
+		C0ADEB762020EA290053C3BF /* OptionsViewControllerTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADEB752020EA290053C3BF /* OptionsViewControllerTableViewExtension.swift */; };
+		C0ADEB792020EBDE0053C3BF /* OptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADEB782020EBDE0053C3BF /* OptionModel.swift */; };
+		C0ADEB7C2020F7B80053C3BF /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0ADEB7B2020F7B80053C3BF /* History.storyboard */; };
+		C0ADEB7F2020F7F60053C3BF /* TagHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ADEB7E2020F7F60053C3BF /* TagHistoryViewController.swift */; };
 		C0B899DF2014A03800A45554 /* FavoriteUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899DE2014A03800A45554 /* FavoriteUsersViewController.swift */; };
 		C0B899E12014A78B00A45554 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899E02014A78B00A45554 /* UIColorExtension.swift */; };
 		C0B899E52014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899E42014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift */; };
@@ -36,6 +43,7 @@
 		C0B899EE2014D3F500A45554 /* TodayViewControllerTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899ED2014D3F500A45554 /* TodayViewControllerTableViewExtension.swift */; };
 		C0B899F32014D47700A45554 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899F22014D47700A45554 /* UserModel.swift */; };
 		C0B899F52014E5D900A45554 /* InfosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899F42014E5D900A45554 /* InfosTableViewCell.swift */; };
+		C0BD90432023A329009B58E7 /* ThoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD90422023A329009B58E7 /* ThoButton.swift */; };
 		C0F8BF182004FBFB009C1585 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F8BF172004FBFB009C1585 /* PopupManager.swift */; };
 		C0F8BF1A200503B2009C1585 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F8BF19200503B2009C1585 /* UIViewExtension.swift */; };
 		C0F8BF2220063807009C1585 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F8BF2120063807009C1585 /* NotificationCenter.framework */; };
@@ -93,8 +101,15 @@
 		C062EF5E2003B10200B9C3D2 /* TextChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextChanger.swift; sourceTree = "<group>"; };
 		C062EF602003B31500B9C3D2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C062EF622003B6EE00B9C3D2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C073B17F2022F26E00598305 /* TagHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagHistoryModel.swift; sourceTree = "<group>"; };
 		C091EE342019D8710010209F /* FollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
 		C091EE362019DA120010209F /* Follower.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Follower.storyboard; sourceTree = "<group>"; };
+		C0ADEB702020E85B0053C3BF /* Information.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Information.storyboard; sourceTree = "<group>"; };
+		C0ADEB732020E8E70053C3BF /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		C0ADEB752020EA290053C3BF /* OptionsViewControllerTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewControllerTableViewExtension.swift; sourceTree = "<group>"; };
+		C0ADEB782020EBDE0053C3BF /* OptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionModel.swift; sourceTree = "<group>"; };
+		C0ADEB7B2020F7B80053C3BF /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		C0ADEB7E2020F7F60053C3BF /* TagHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagHistoryViewController.swift; sourceTree = "<group>"; };
 		C0B899DE2014A03800A45554 /* FavoriteUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUsersViewController.swift; sourceTree = "<group>"; };
 		C0B899E02014A78B00A45554 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		C0B899E42014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUsersTableViewExtension.swift; sourceTree = "<group>"; };
@@ -104,6 +119,7 @@
 		C0B899ED2014D3F500A45554 /* TodayViewControllerTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewControllerTableViewExtension.swift; sourceTree = "<group>"; };
 		C0B899F22014D47700A45554 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		C0B899F42014E5D900A45554 /* InfosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosTableViewCell.swift; sourceTree = "<group>"; };
+		C0BD90422023A329009B58E7 /* ThoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoButton.swift; sourceTree = "<group>"; };
 		C0F8BF172004FBFB009C1585 /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
 		C0F8BF19200503B2009C1585 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C0F8BF2020063807009C1585 /* SteemitAppWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SteemitAppWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +184,8 @@
 			children = (
 				C091EE392019DA310010209F /* Follower */,
 				C091EE382019DA290010209F /* Home */,
+				C0ADEB722020E8C90053C3BF /* Information */,
+				C0ADEB7D2020F7C40053C3BF /* Rewards */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -177,6 +195,8 @@
 			children = (
 				C062EF4A200364B800B9C3D2 /* Home.storyboard */,
 				C091EE362019DA120010209F /* Follower.storyboard */,
+				C0ADEB702020E85B0053C3BF /* Information.storyboard */,
+				C0ADEB7B2020F7B80053C3BF /* History.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -195,7 +215,9 @@
 			children = (
 				C062EF5220036ACF00B9C3D2 /* CoinModel.swift */,
 				C062EF622003B6EE00B9C3D2 /* UserModel.swift */,
+				C0ADEB782020EBDE0053C3BF /* OptionModel.swift */,
 				C062EF5A2003A89100B9C3D2 /* UserGlobals.swift */,
+				C073B17F2022F26E00598305 /* TagHistoryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,11 +269,28 @@
 			path = Follower;
 			sourceTree = "<group>";
 		};
+		C0ADEB722020E8C90053C3BF /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				C062EF462003649500B9C3D2 /* InfoViewController.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		C0ADEB7D2020F7C40053C3BF /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				C0ADEB7E2020F7F60053C3BF /* TagHistoryViewController.swift */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
 		C0B899E22014C09500A45554 /* Search */ = {
 			isa = PBXGroup;
 			children = (
 				C062EF602003B31500B9C3D2 /* SearchViewController.swift */,
-				C062EF462003649500B9C3D2 /* InfoViewController.swift */,
+				C0ADEB732020E8E70053C3BF /* OptionsViewController.swift */,
+				C0ADEB752020EA290053C3BF /* OptionsViewControllerTableViewExtension.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -274,6 +313,14 @@
 				C0420039201E0F2000311654 /* FollowerTableViewCell.xib */,
 			);
 			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		C0BD90412023A30F009B58E7 /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD90422023A329009B58E7 /* ThoButton.swift */,
+			);
+			path = "Custom Components";
 			sourceTree = "<group>";
 		};
 		C0F8BF2320063807009C1585 /* SteemitAppWidget */ = {
@@ -319,6 +366,7 @@
 				C062EF452003645C00B9C3D2 /* Storyboards */,
 				C062EF572003967100B9C3D2 /* Constants */,
 				C0B899E62014C13300A45554 /* Custom Cells */,
+				C0BD90412023A30F009B58E7 /* Custom Components */,
 				C062EF5420038FD400B9C3D2 /* Utils */,
 				C062EF512003682600B9C3D2 /* Models */,
 				C062EF4C200364D700B9C3D2 /* Base */,
@@ -448,8 +496,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C062EF4B200364B800B9C3D2 /* Home.storyboard in Resources */,
+				C0ADEB7C2020F7B80053C3BF /* History.storyboard in Resources */,
 				C0B899EA2014C15100A45554 /* FavoriteTableViewCell.xib in Resources */,
 				C091EE372019DA120010209F /* Follower.storyboard in Resources */,
+				C0ADEB712020E85B0053C3BF /* Information.storyboard in Resources */,
 				C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */,
 				C0FBCA6E2001288C0098633F /* LaunchScreen.storyboard in Resources */,
 				C0FBCA6B2001288C0098633F /* Assets.xcassets in Resources */,
@@ -518,6 +568,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SteemitApp/Pods-SteemitApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -525,6 +577,8 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -571,15 +625,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0B899E12014A78B00A45554 /* UIColorExtension.swift in Sources */,
+				C0ADEB762020EA290053C3BF /* OptionsViewControllerTableViewExtension.swift in Sources */,
 				C0F8BF1A200503B2009C1585 /* UIViewExtension.swift in Sources */,
 				C062EF592003968500B9C3D2 /* CoinTypes.swift in Sources */,
 				C0B899EC2014D21600A45554 /* Helpers.swift in Sources */,
+				C073B1802022F26E00598305 /* TagHistoryModel.swift in Sources */,
 				C0B899E92014C15100A45554 /* FavoriteTableViewCell.swift in Sources */,
+				C0ADEB792020EBDE0053C3BF /* OptionModel.swift in Sources */,
 				C062EF49200364A900B9C3D2 /* NetworkManager.swift in Sources */,
 				C062EF4E200364EB00B9C3D2 /* BaseViewController.swift in Sources */,
 				C062EF5F2003B10200B9C3D2 /* TextChanger.swift in Sources */,
 				C0420037201E04A700311654 /* FollowersViewControllerTableViewExtension.swift in Sources */,
+				C0ADEB7F2020F7F60053C3BF /* TagHistoryViewController.swift in Sources */,
 				C062EF5620038FE500B9C3D2 /* DateExtension.swift in Sources */,
+				C0ADEB742020E8E70053C3BF /* OptionsViewController.swift in Sources */,
 				C091EE352019D8710010209F /* FollowersViewController.swift in Sources */,
 				C062EF632003B6EE00B9C3D2 /* UserModel.swift in Sources */,
 				C0B899DF2014A03800A45554 /* FavoriteUsersViewController.swift in Sources */,
@@ -587,6 +646,7 @@
 				C062EF612003B31500B9C3D2 /* SearchViewController.swift in Sources */,
 				C0F8BF182004FBFB009C1585 /* PopupManager.swift in Sources */,
 				C062EF472003649500B9C3D2 /* InfoViewController.swift in Sources */,
+				C0BD90432023A329009B58E7 /* ThoButton.swift in Sources */,
 				C062EF5D2003B06600B9C3D2 /* CurrencyTypes.swift in Sources */,
 				C042003A201E0F2000311654 /* FollowerTableViewCell.swift in Sources */,
 				C0B899E52014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift in Sources */,

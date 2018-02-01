@@ -10,6 +10,8 @@ import UIKit
 
 class BaseViewController: UIViewController {
     
+    var username = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let versionLabel = UILabel.init(frame: CGRect.init(x: 0, y: view.frame.height - 80, width: view.frame.width - 20, height: 20))

@@ -19,12 +19,9 @@ class InfoViewController: BaseViewController {
     @IBOutlet weak var equivalentCurrencyLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
     
-    @IBOutlet weak var showFollowerListView: UIView!
-    
     @IBOutlet weak var currenciesSegmentControl: UISegmentedControl!
     
     var hud: MBProgressHUD?
-    var username = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,10 +33,7 @@ class InfoViewController: BaseViewController {
         let rightBarButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(addTapped))
         rightBarButton.tintColor = UIColor.barTintColor()
         navigationItem.rightBarButtonItem = rightBarButton
-        
-        showFollowerListView.layer.cornerRadius = 10
-        showFollowerListView.layer.borderWidth = 3
-        showFollowerListView.layer.borderColor = UIColor.barTintColor().cgColor
+
     }
     
     @objc func addTapped() {
@@ -58,15 +52,6 @@ class InfoViewController: BaseViewController {
     @IBAction func changeCurrency(_ sender: Any) {
         getEquivalentCurrencyPrice()
     }
-    
-    @IBAction func showFollowerList(_ sender: Any) {
-        let storyboard = UIStoryboard.init(name: "Follower",
-                                           bundle: nil)
-        let followerVC = storyboard.instantiateViewController(withIdentifier: "followerVC") as! FollowersViewController
-        followerVC.username = username
-        navigationController?.pushViewController(followerVC, animated: true)
-    }
-    
     
     private func getEquivalentCurrencyPrice() {
         let converter = TextChanger.init()

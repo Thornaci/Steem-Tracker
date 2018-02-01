@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sVB-O9-Via">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tag History View Controller-->
+        <scene sceneID="y6Y-Xp-KJt">
+            <objects>
+                <viewController storyboardIdentifier="tagHistoryVC" id="sVB-O9-Via" customClass="TagHistoryViewController" customModule="SteemitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I72-c3-bhK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="tdp-6d-OKP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OlF-6S-m9S" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="140" width="375" height="467"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbP-W9-eUM">
+                                <rect key="frame" x="0.0" y="58" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnA-GV-4zR">
+                                <rect key="frame" x="0.0" y="99" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYX-8J-CUf" customClass="ThoButton" customModule="SteemitApp" customModuleProvider="target">
+                                <rect key="frame" x="4" y="607" width="89" height="60"/>
+                                <state key="normal" title="Comments">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeTag:" destination="sVB-O9-Via" eventType="touchUpInside" id="dTq-h8-VT6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INf-hp-a8Z" customClass="ThoButton" customModule="SteemitApp" customModuleProvider="target">
+                                <rect key="frame" x="97" y="607" width="88.5" height="60"/>
+                                <state key="normal" title="SBD Payouts">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeTag:" destination="sVB-O9-Via" eventType="touchUpInside" id="qdX-eF-6Ae"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ko-kW-EIx" customClass="ThoButton" customModule="SteemitApp" customModuleProvider="target">
+                                <rect key="frame" x="189.5" y="607" width="89" height="60"/>
+                                <state key="normal" title="Posts">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeTag:" destination="sVB-O9-Via" eventType="touchUpInside" id="IRD-dZ-ONY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iM-r8-MaW" customClass="ThoButton" customModule="SteemitApp" customModuleProvider="target">
+                                <rect key="frame" x="282.5" y="607" width="88.5" height="60"/>
+                                <state key="normal" title="Net Votes">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeTag:" destination="sVB-O9-Via" eventType="touchUpInside" id="2XG-9E-fzN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4iM-r8-MaW" firstAttribute="top" secondItem="OlF-6S-m9S" secondAttribute="bottom" id="0CW-du-64X"/>
+                            <constraint firstItem="xbP-W9-eUM" firstAttribute="leading" secondItem="csR-T9-Ifw" secondAttribute="leading" id="0KJ-av-mfs"/>
+                            <constraint firstItem="4ko-kW-EIx" firstAttribute="top" secondItem="OlF-6S-m9S" secondAttribute="bottom" id="2dd-dR-tAa"/>
+                            <constraint firstAttribute="trailing" secondItem="tdp-6d-OKP" secondAttribute="trailing" id="4bp-uE-XNo"/>
+                            <constraint firstItem="QYX-8J-CUf" firstAttribute="top" secondItem="OlF-6S-m9S" secondAttribute="bottom" id="8Uf-Sr-kWL"/>
+                            <constraint firstItem="jnA-GV-4zR" firstAttribute="top" secondItem="xbP-W9-eUM" secondAttribute="bottom" constant="20" id="8a5-Ua-mE5"/>
+                            <constraint firstItem="jnA-GV-4zR" firstAttribute="leading" secondItem="csR-T9-Ifw" secondAttribute="leading" id="9jl-De-Ek3"/>
+                            <constraint firstItem="4iM-r8-MaW" firstAttribute="height" secondItem="QYX-8J-CUf" secondAttribute="height" id="BBW-ya-wM1"/>
+                            <constraint firstItem="4ko-kW-EIx" firstAttribute="leading" secondItem="INf-hp-a8Z" secondAttribute="trailing" constant="4" id="GNy-Nc-hHn"/>
+                            <constraint firstItem="csR-T9-Ifw" firstAttribute="trailing" secondItem="xbP-W9-eUM" secondAttribute="trailing" id="IIr-3Z-uyS"/>
+                            <constraint firstItem="4iM-r8-MaW" firstAttribute="width" secondItem="QYX-8J-CUf" secondAttribute="width" id="Iya-cB-2nO"/>
+                            <constraint firstItem="csR-T9-Ifw" firstAttribute="trailing" secondItem="jnA-GV-4zR" secondAttribute="trailing" id="JJQ-Qu-sR6"/>
+                            <constraint firstItem="OlF-6S-m9S" firstAttribute="top" secondItem="csR-T9-Ifw" secondAttribute="top" constant="120" id="JdW-NV-SW1"/>
+                            <constraint firstItem="OlF-6S-m9S" firstAttribute="top" secondItem="jnA-GV-4zR" secondAttribute="bottom" constant="20" id="N0t-oC-FdM"/>
+                            <constraint firstItem="INf-hp-a8Z" firstAttribute="leading" secondItem="QYX-8J-CUf" secondAttribute="trailing" constant="4" id="Qnv-q8-4Vi"/>
+                            <constraint firstItem="tdp-6d-OKP" firstAttribute="leading" secondItem="I72-c3-bhK" secondAttribute="leading" id="X1M-gg-tOd"/>
+                            <constraint firstItem="INf-hp-a8Z" firstAttribute="top" secondItem="OlF-6S-m9S" secondAttribute="bottom" id="Yp4-Et-Ns1"/>
+                            <constraint firstItem="OlF-6S-m9S" firstAttribute="leading" secondItem="I72-c3-bhK" secondAttribute="leading" id="ZQL-a1-Pg0"/>
+                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="4iM-r8-MaW" secondAttribute="bottom" id="Zcd-8W-4rq"/>
+                            <constraint firstItem="4ko-kW-EIx" firstAttribute="height" secondItem="QYX-8J-CUf" secondAttribute="height" id="aIj-za-xt6"/>
+                            <constraint firstItem="csR-T9-Ifw" firstAttribute="trailing" secondItem="4iM-r8-MaW" secondAttribute="trailing" constant="4" id="cLg-64-iIp"/>
+                            <constraint firstItem="QYX-8J-CUf" firstAttribute="leading" secondItem="csR-T9-Ifw" secondAttribute="leading" constant="4" id="cUk-Yn-kiN"/>
+                            <constraint firstItem="4iM-r8-MaW" firstAttribute="leading" secondItem="4ko-kW-EIx" secondAttribute="trailing" constant="4" id="cXp-FU-eug"/>
+                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="INf-hp-a8Z" secondAttribute="bottom" id="dtR-Rj-zmV"/>
+                            <constraint firstAttribute="trailing" secondItem="OlF-6S-m9S" secondAttribute="trailing" id="fGG-aC-EAQ"/>
+                            <constraint firstItem="tdp-6d-OKP" firstAttribute="top" secondItem="I72-c3-bhK" secondAttribute="top" id="iUZ-jK-i6m"/>
+                            <constraint firstItem="INf-hp-a8Z" firstAttribute="height" secondItem="QYX-8J-CUf" secondAttribute="height" id="k4a-Cm-J18"/>
+                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="OlF-6S-m9S" secondAttribute="bottom" constant="60" id="mjF-HR-cBl"/>
+                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="4ko-kW-EIx" secondAttribute="bottom" id="nnO-i5-CoU"/>
+                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="QYX-8J-CUf" secondAttribute="bottom" id="q9N-67-8iP"/>
+                            <constraint firstItem="4ko-kW-EIx" firstAttribute="width" secondItem="QYX-8J-CUf" secondAttribute="width" id="wog-oP-rUe"/>
+                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="tdp-6d-OKP" secondAttribute="bottom" id="xBL-tp-Eds"/>
+                            <constraint firstItem="INf-hp-a8Z" firstAttribute="width" secondItem="QYX-8J-CUf" secondAttribute="width" id="yi0-uT-ITm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="csR-T9-Ifw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hte-Fq-XDv"/>
+                    <connections>
+                        <outlet property="chartView" destination="OlF-6S-m9S" id="gfV-eI-v4j"/>
+                        <outlet property="tagHistoryCountLabel" destination="jnA-GV-4zR" id="IKk-Xr-FRH"/>
+                        <outlet property="tagLabel" destination="xbP-W9-eUM" id="PyZ-70-0jd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ta-wn-gzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.59999999999999" y="16.641679160419791"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="720" height="960"/>
+    </resources>
+</document>

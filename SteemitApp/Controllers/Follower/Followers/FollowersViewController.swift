@@ -17,7 +17,6 @@ class FollowersViewController: BaseViewController {
     var followers = [String]()
     var following = [String]()
     var displayingCount = 0
-    var username = ""
     var hud: MBProgressHUD?
     
     override func viewDidLoad() {

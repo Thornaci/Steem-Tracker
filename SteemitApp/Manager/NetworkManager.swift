@@ -131,6 +131,35 @@ struct NetworkManager {
         }
     }
     
+    func getSteemitTagsHistory(success: @escaping (_ result: [TagHistoryModel]) -> Void,
+                               failure: @escaping (_ error: String) -> Void) {
+        
+        let path = steemEndPoint + "get_trending_tags?afterTag=steem&limit=1000"
+        BaseNetwork.sharedInstance.getRequest(path: path, success: { (data) in
+            
+            guard let responseJSON = data as? Array<Dictionary<String, AnyObject>> else {
+                failure("Error reading response")
+                return
+            }
+            
+            var tagsHistoryArray = [TagHistoryModel]()
+            
+            for tagsHistory in responseJSON {
+                
+                guard let tagHistory: TagHistoryModel = Mapper<TagHistoryModel>().map(JSONObject: tagsHistory) else {
+                    failure("Error reading tag")
+                    return
+                }
+                
+                tagsHistoryArray.append(tagHistory)
+            }
+            
+            success(tagsHistoryArray)
+        }) { (error) in
+            failure(error)
+        }
+    }
+    
     func cancelAllSessions() {
         BaseNetwork.sharedInstance.cancelAllSessions()
     }
