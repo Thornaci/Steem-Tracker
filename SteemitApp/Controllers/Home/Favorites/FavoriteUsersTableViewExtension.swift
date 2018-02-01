@@ -24,7 +24,7 @@ extension FavoriteUsersViewController: UITableViewDataSource {
 
 extension FavoriteUsersViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let InfoVC = storyboard?.instantiateViewController(withIdentifier: "infoVC") as! InfoViewController
+        let InfoVC = UIStoryboard.init(name: "Information", bundle: nil).instantiateViewController(withIdentifier: "infoVC") as! InfoViewController
         InfoVC.username = userArray[indexPath.row]
         navigationController?.pushViewController(InfoVC, animated: true)
     }

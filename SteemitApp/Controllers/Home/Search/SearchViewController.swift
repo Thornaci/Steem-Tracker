@@ -20,12 +20,12 @@ class SearchViewController: BaseViewController {
     }
     
     @IBAction func showInfo(_ sender: Any) {
-        performSegue(withIdentifier: "infoPage", sender: nil)
+        performSegue(withIdentifier: "chooseAction", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let InfoVC = segue.destination as! InfoViewController
-        InfoVC.username = usernameTextField.text!
+        let OptionVC = segue.destination as! OptionsViewController
+        OptionVC.username = usernameTextField.text!
     }
     
     @objc private func dismissKeyboard() {

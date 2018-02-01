@@ -10,6 +10,8 @@ target 'SteemitApp' do
   pod 'SDWebImage', '~> 4.2.3'
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'HockeySDK', '~> 5.1.2'
+  pod 'Charts', '~> 3.0.5'
+  pod 'DateToolsSwift', '~> 2.0.1'
 
 end
 
