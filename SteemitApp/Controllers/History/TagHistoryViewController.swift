@@ -8,6 +8,7 @@
 
 import UIKit
 import Charts
+import MBProgressHUD
 
 class TagHistoryViewController: BaseViewController {
 
@@ -18,20 +19,23 @@ class TagHistoryViewController: BaseViewController {
     let nm = NetworkManager.init()
     let helper = Helpers.init()
     
+    var hud: MBProgressHUD?
     var tagsHistory = [TagHistoryModel]()
     var filteredTagsHistory = [TagHistoryModel]()
     var lastSelectedButtonIndex = 101
     
     override func viewDidLoad() {
+        hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud?.detailsLabel.text = "Tags are loading.."
         nm.getSteemitTagsHistory(success: { (tagsHistoryData) in
             
             if tagsHistoryData.count > 10 {
                 self.tagsHistory = tagsHistoryData
                 self.setChartValues(index: 101)
             }
-            
+            self.hud?.hide(animated: true)
         }) { (error) in
-            
+            self.hud?.hide(animated: true)
         }
         
         navigationItem.title = "Tag History"

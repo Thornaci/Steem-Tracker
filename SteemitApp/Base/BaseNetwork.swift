@@ -19,10 +19,10 @@ final class BaseNetwork {
         
         let headers: HTTPHeaders = [ "Content-Type": "application/json",
                                      "Accept": "application/json" ]
-        
-        Alamofire.request(path,
+
+        let pathUrl = URL.init(string: path)!
+        Alamofire.request(pathUrl,
                           method: .get,
-                          parameters: nil,
                           headers: headers).responseJSON { (response: DataResponse<Any>) in
                             
             switch response.result {
