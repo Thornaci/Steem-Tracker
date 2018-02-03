@@ -46,4 +46,23 @@ struct Helpers {
         
         return Array(tags)
     }
+    
+    func filterLastWeekData(postsHistory: [PostHistoryModel]) -> [[PostHistoryModel]] {
+        let maxSize = 7
+        var filteredPostsHistory = [[PostHistoryModel]]()
+        for _ in 0...maxSize {
+            let postArray = [PostHistoryModel]()
+            filteredPostsHistory.append(postArray)
+        }
+        
+        for postHistory in postsHistory {
+            let postDate = Date.iso8601Formatter.date(from: (postHistory.createdTime?.replacingOccurrences(of: "T", with: " "))!)
+            for i in 0...maxSize {
+                if i.days.earlier.day == postDate?.day && i.days.earlier.month == postDate?.month && i.days.earlier.year == postDate?.year {
+                    filteredPostsHistory[maxSize-i].append(postHistory)
+                }
+            }
+        }
+        return filteredPostsHistory
+    }
 }

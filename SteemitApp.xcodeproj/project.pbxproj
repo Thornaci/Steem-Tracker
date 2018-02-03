@@ -14,6 +14,7 @@
 		C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0420039201E0F2000311654 /* FollowerTableViewCell.xib */; };
 		C055BDBF2026049E002CFFDE /* PostHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055BDBE2026049E002CFFDE /* PostHistoryModel.swift */; };
 		C055BDC2202608B5002CFFDE /* PostHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055BDC1202608B5002CFFDE /* PostHistoryViewController.swift */; };
+		C055BDC5202676A1002CFFDE /* DayValueXAxisFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055BDC4202676A1002CFFDE /* DayValueXAxisFormatter.swift */; };
 		C062EF472003649500B9C3D2 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF462003649500B9C3D2 /* InfoViewController.swift */; };
 		C062EF49200364A900B9C3D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF48200364A900B9C3D2 /* NetworkManager.swift */; };
 		C062EF4B200364B800B9C3D2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C062EF4A200364B800B9C3D2 /* Home.storyboard */; };
@@ -92,6 +93,7 @@
 		C0420039201E0F2000311654 /* FollowerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowerTableViewCell.xib; sourceTree = "<group>"; };
 		C055BDBE2026049E002CFFDE /* PostHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryModel.swift; sourceTree = "<group>"; };
 		C055BDC1202608B5002CFFDE /* PostHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryViewController.swift; sourceTree = "<group>"; };
+		C055BDC4202676A1002CFFDE /* DayValueXAxisFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayValueXAxisFormatter.swift; sourceTree = "<group>"; };
 		C062EF462003649500B9C3D2 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		C062EF48200364A900B9C3D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C062EF4A200364B800B9C3D2 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				C0F8BF19200503B2009C1585 /* UIViewExtension.swift */,
 				C0B899E02014A78B00A45554 /* UIColorExtension.swift */,
 				C0B899EB2014D21600A45554 /* Helpers.swift */,
+				C055BDC4202676A1002CFFDE /* DayValueXAxisFormatter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -649,6 +652,7 @@
 				C0ADEB742020E8E70053C3BF /* OptionsViewController.swift in Sources */,
 				C091EE352019D8710010209F /* FollowersViewController.swift in Sources */,
 				C062EF632003B6EE00B9C3D2 /* UserModel.swift in Sources */,
+				C055BDC5202676A1002CFFDE /* DayValueXAxisFormatter.swift in Sources */,
 				C0B899DF2014A03800A45554 /* FavoriteUsersViewController.swift in Sources */,
 				C0FBCA642001288C0098633F /* AppDelegate.swift in Sources */,
 				C062EF612003B31500B9C3D2 /* SearchViewController.swift in Sources */,

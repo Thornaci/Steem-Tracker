@@ -174,9 +174,26 @@
                     <view key="view" contentMode="scaleToFill" id="N33-K6-lES">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wby-2A-MGc" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="367" width="375" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="CHd-5E-agS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wby-2A-MGc" firstAttribute="leading" secondItem="KeF-3u-zou" secondAttribute="leading" id="S8p-wI-Av0"/>
+                            <constraint firstItem="KeF-3u-zou" firstAttribute="trailing" secondItem="wby-2A-MGc" secondAttribute="trailing" id="oDs-cz-Ago"/>
+                            <constraint firstItem="KeF-3u-zou" firstAttribute="bottom" secondItem="wby-2A-MGc" secondAttribute="bottom" id="qDT-Or-XUQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KeF-3u-zou"/>
                     </view>
+                    <connections>
+                        <outlet property="chartView" destination="wby-2A-MGc" id="7Bc-ci-8RL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BhM-om-7SY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

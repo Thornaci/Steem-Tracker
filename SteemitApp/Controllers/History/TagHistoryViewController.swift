@@ -25,6 +25,7 @@ class TagHistoryViewController: BaseViewController {
     var lastSelectedButtonIndex = 101
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         hud = MBProgressHUD.showAdded(to: view, animated: true)
         hud?.detailsLabel.text = "Tags are loading.."
         nm.getSteemitTagsHistory(success: { (tagsHistoryData) in

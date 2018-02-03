@@ -21,3 +21,9 @@ extension Date {
         return Date.iso8601Formatter.string(from: self)
     }
 }
+
+extension Date {
+    var dayOfYear: Int {
+        return Calendar.current.ordinality(of: .day, in: .year, for: self)!
+    }
+}
