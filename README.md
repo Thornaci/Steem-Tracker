@@ -51,6 +51,10 @@ Don't forget to set identifiers for widget usage or run app on a device.
 
 * Tag history page added. Now you can display comments, total payouts (in sbd), net votes and posts top 10 category.
 
+#### 1.4
+
+* Post history page added. Now you can display a user's posts and pending payouts history for last week (0-7 days).
+
 The app is in progress, but already functional.
 
 You can contribute to the app, just do a pull request.
