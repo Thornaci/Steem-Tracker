@@ -31,6 +31,9 @@ class OptionsViewController: BaseViewController {
                                storyboardName: "Follower"),
                    OptionModel(title: "Tag History",
                                vcIdentifier: "tagHistoryVC",
+                               storyboardName: "History"),
+                   OptionModel(title: "Post History",
+                               vcIdentifier: "postHistoryVC",
                                storyboardName: "History")]
     }
 }

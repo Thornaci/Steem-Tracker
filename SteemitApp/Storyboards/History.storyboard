@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kefa.ttf">
+            <string>Kefa-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Tag History View Controller-->
         <scene sceneID="y6Y-Xp-KJt">
@@ -166,6 +171,116 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ta-wn-gzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="157.59999999999999" y="16.641679160419791"/>
+        </scene>
+        <!--Post History View Controller-->
+        <scene sceneID="L1j-HZ-g3u">
+            <objects>
+                <viewController storyboardIdentifier="postHistoryVC" id="EMP-TD-gyg" customClass="PostHistoryViewController" customModule="SteemitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N33-K6-lES">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ldP-41-J2K">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wby-2A-MGc" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="120" width="375" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIL-yO-aNZ">
+                                <rect key="frame" x="0.0" y="80" width="375" height="20"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                <color key="textColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="asE-5L-U9G">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBz-LF-NPN" customClass="ThoButton" customModule="SteemitApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="183.5" height="60"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Last Week Posts">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeAction:" destination="EMP-TD-gyg" eventType="touchUpInside" id="0EQ-Sp-aeK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOD-eG-hTy" customClass="ThoButton" customModule="SteemitApp" customModuleProvider="target">
+                                        <rect key="frame" x="191.5" y="0.0" width="183.5" height="60"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Pending Payouts">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeAction:" destination="EMP-TD-gyg" eventType="touchUpInside" id="z8N-Ac-j4f"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="JOD-eG-hTy" firstAttribute="leading" secondItem="aBz-LF-NPN" secondAttribute="trailing" constant="8" id="CM9-EE-oM4"/>
+                                    <constraint firstAttribute="bottom" secondItem="aBz-LF-NPN" secondAttribute="bottom" id="Eze-Xb-MxE"/>
+                                    <constraint firstAttribute="height" constant="60" id="Kh4-01-vVF"/>
+                                    <constraint firstItem="aBz-LF-NPN" firstAttribute="leading" secondItem="asE-5L-U9G" secondAttribute="leading" id="SHX-pD-VGp"/>
+                                    <constraint firstAttribute="bottom" secondItem="JOD-eG-hTy" secondAttribute="bottom" id="SZU-I4-NYO"/>
+                                    <constraint firstItem="JOD-eG-hTy" firstAttribute="top" secondItem="asE-5L-U9G" secondAttribute="top" id="UwJ-Dh-HHe"/>
+                                    <constraint firstItem="aBz-LF-NPN" firstAttribute="top" secondItem="asE-5L-U9G" secondAttribute="top" id="X5P-Bm-ns7"/>
+                                    <constraint firstItem="JOD-eG-hTy" firstAttribute="width" secondItem="aBz-LF-NPN" secondAttribute="width" id="coZ-9R-qo5"/>
+                                    <constraint firstAttribute="trailing" secondItem="JOD-eG-hTy" secondAttribute="trailing" id="fX4-Ee-4pt"/>
+                                    <constraint firstItem="JOD-eG-hTy" firstAttribute="height" secondItem="aBz-LF-NPN" secondAttribute="height" id="hav-F7-Y1V"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wIL-yO-aNZ" firstAttribute="leading" secondItem="KeF-3u-zou" secondAttribute="leading" id="0ze-V1-aja"/>
+                            <constraint firstItem="ldP-41-J2K" firstAttribute="leading" secondItem="N33-K6-lES" secondAttribute="leading" id="7Eb-xX-R91"/>
+                            <constraint firstItem="wIL-yO-aNZ" firstAttribute="top" secondItem="KeF-3u-zou" secondAttribute="top" constant="60" id="7oA-UR-qBF"/>
+                            <constraint firstAttribute="trailing" secondItem="ldP-41-J2K" secondAttribute="trailing" id="Bz6-S5-EYd"/>
+                            <constraint firstItem="KeF-3u-zou" firstAttribute="trailing" secondItem="wIL-yO-aNZ" secondAttribute="trailing" id="FyJ-Jf-Vdq"/>
+                            <constraint firstItem="asE-5L-U9G" firstAttribute="top" secondItem="wby-2A-MGc" secondAttribute="bottom" id="Ju1-Qa-gRA"/>
+                            <constraint firstItem="KeF-3u-zou" firstAttribute="bottom" secondItem="ldP-41-J2K" secondAttribute="bottom" id="K5S-MZ-4uk"/>
+                            <constraint firstItem="asE-5L-U9G" firstAttribute="leading" secondItem="KeF-3u-zou" secondAttribute="leading" id="NFQ-Rk-ENo"/>
+                            <constraint firstItem="asE-5L-U9G" firstAttribute="bottom" secondItem="KeF-3u-zou" secondAttribute="bottom" id="PIH-7a-iUW"/>
+                            <constraint firstItem="wby-2A-MGc" firstAttribute="leading" secondItem="KeF-3u-zou" secondAttribute="leading" id="S8p-wI-Av0"/>
+                            <constraint firstItem="ldP-41-J2K" firstAttribute="top" secondItem="N33-K6-lES" secondAttribute="top" id="kuM-oP-o2s"/>
+                            <constraint firstItem="wby-2A-MGc" firstAttribute="top" secondItem="wIL-yO-aNZ" secondAttribute="bottom" constant="20" id="nfL-ex-P45"/>
+                            <constraint firstItem="KeF-3u-zou" firstAttribute="trailing" secondItem="wby-2A-MGc" secondAttribute="trailing" id="oDs-cz-Ago"/>
+                            <constraint firstItem="KeF-3u-zou" firstAttribute="trailing" secondItem="asE-5L-U9G" secondAttribute="trailing" id="pr6-Ea-H3o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KeF-3u-zou"/>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="wby-2A-MGc" id="7Bc-ci-8RL"/>
+                        <outlet property="postContentLabel" destination="wIL-yO-aNZ" id="U24-TO-Rlb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BhM-om-7SY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144.8" y="16.641679160419791"/>
         </scene>
     </scenes>
     <resources>

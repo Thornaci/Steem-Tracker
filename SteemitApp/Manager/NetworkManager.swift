@@ -160,6 +160,38 @@ struct NetworkManager {
         }
     }
     
+    func getSteemitAccountPostHistory(username: String,
+                                      success: @escaping (_ result: [PostHistoryModel]) -> Void,
+                                      failure: @escaping (_ error: String) -> Void) {
+        
+        var path = (steemEndPoint + "get_discussions_by_blog?query=%7B%22tag%22%3A%22\(username)%22%2C%20%22limit%22%3A%20%22100%22%7D")
+        print(path)
+        
+        BaseNetwork.sharedInstance.getRequest(path: path, success: { (data) in
+            
+            guard let responseJSON = data as? Array<Dictionary<String, AnyObject>> else {
+                failure("Error reading response")
+                return
+            }
+            
+            var postsHistoryArray = [PostHistoryModel]()
+            
+            for postsHistory in responseJSON {
+                
+                guard let postHistory: PostHistoryModel = Mapper<PostHistoryModel>().map(JSONObject: postsHistory) else {
+                    failure("Error reading tag")
+                    return
+                }
+                
+                postsHistoryArray.append(postHistory)
+            }
+            
+            success(postsHistoryArray)
+        }) { (error) in
+            failure(error)
+        }
+    }
+    
     func cancelAllSessions() {
         BaseNetwork.sharedInstance.cancelAllSessions()
     }

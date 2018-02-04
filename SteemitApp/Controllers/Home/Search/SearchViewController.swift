@@ -16,7 +16,6 @@ class SearchViewController: BaseViewController {
         super.viewDidLoad()
         let dismissGesture = UITapGestureRecognizer.init(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(dismissGesture)
-        
     }
     
     @IBAction func showInfo(_ sender: Any) {

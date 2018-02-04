@@ -19,8 +19,6 @@ struct TagHistoryModel: Mappable {
     var comments: Int = 0                                    // 23807
     var trending: String?                                    // "164298665"
     
-    
-    
     init?(map: Map) {
         
     }
