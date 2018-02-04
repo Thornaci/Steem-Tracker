@@ -54,6 +54,7 @@ class TagHistoryViewController: BaseViewController {
     // 4 type categories. 101, 102, 103, 104.
     @IBAction func changeTag(_ sender: Any) {
         let button = sender as! UIButton
+        lastSelectedButtonIndex = button.tag
         setChartValues(index: button.tag)
     }
     
@@ -70,7 +71,6 @@ class TagHistoryViewController: BaseViewController {
                 i += 1
                 barChartDatas.append(val)
             }
-            lastSelectedButtonIndex = 101
             set1 = BarChartDataSet(values: barChartDatas, label: "Comment")
             break
         case 102:
@@ -80,7 +80,6 @@ class TagHistoryViewController: BaseViewController {
                 i += 1
                 barChartDatas.append(val)
             }
-            lastSelectedButtonIndex = 102
             set1 = BarChartDataSet(values: barChartDatas, label: "Total Payouts SBD")
             break
         case 103:
@@ -90,7 +89,6 @@ class TagHistoryViewController: BaseViewController {
                 i += 1
                 barChartDatas.append(val)
             }
-            lastSelectedButtonIndex = 103
             set1 = BarChartDataSet(values: barChartDatas, label: "Top Posts")
             break
         case 104:
@@ -100,7 +98,6 @@ class TagHistoryViewController: BaseViewController {
                 i += 1
                 barChartDatas.append(val)
             }
-            lastSelectedButtonIndex = 104
             set1 = BarChartDataSet(values: barChartDatas, label: "Net Votes")
             break
         default:
