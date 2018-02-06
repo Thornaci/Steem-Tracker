@@ -164,7 +164,7 @@ struct NetworkManager {
                                       success: @escaping (_ result: [PostHistoryModel]) -> Void,
                                       failure: @escaping (_ error: String) -> Void) {
         
-        var path = (steemEndPoint + "get_discussions_by_blog?query=%7B%22tag%22%3A%22\(username)%22%2C%20%22limit%22%3A%20%22100%22%7D")
+        let path = (steemEndPoint + "get_discussions_by_blog?query=%7B%22tag%22%3A%22\(username)%22%2C%20%22limit%22%3A%20%22100%22%7D")
         print(path)
         
         BaseNetwork.sharedInstance.getRequest(path: path, success: { (data) in

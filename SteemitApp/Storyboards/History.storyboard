@@ -276,11 +276,50 @@
                     <connections>
                         <outlet property="chartView" destination="wby-2A-MGc" id="7Bc-ci-8RL"/>
                         <outlet property="postContentLabel" destination="wIL-yO-aNZ" id="U24-TO-Rlb"/>
+                        <segue destination="HHo-g4-zPk" kind="show" identifier="showContent" id="vma-bJ-N0C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BhM-om-7SY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1144.8" y="16.641679160419791"/>
+        </scene>
+        <!--Post History Contents View Controller-->
+        <scene sceneID="SOq-Lw-ipP">
+            <objects>
+                <viewController id="HHo-g4-zPk" customClass="PostHistoryContentsViewController" customModule="SteemitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xhv-2W-8DJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kee-Qh-qUX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v68-Rw-hCJ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="HHo-g4-zPk" id="Ozo-nh-uUD"/>
+                                    <outlet property="delegate" destination="HHo-g4-zPk" id="kyy-p1-KU7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D9c-6w-C5t" firstAttribute="bottom" secondItem="kee-Qh-qUX" secondAttribute="bottom" id="4C8-uP-JUh"/>
+                            <constraint firstItem="v68-Rw-hCJ" firstAttribute="leading" secondItem="Xhv-2W-8DJ" secondAttribute="leading" id="9LW-ZE-3kn"/>
+                            <constraint firstItem="kee-Qh-qUX" firstAttribute="top" secondItem="Xhv-2W-8DJ" secondAttribute="top" id="HeO-Ko-CKg"/>
+                            <constraint firstAttribute="trailing" secondItem="v68-Rw-hCJ" secondAttribute="trailing" id="Qb6-Gh-Xqf"/>
+                            <constraint firstItem="kee-Qh-qUX" firstAttribute="leading" secondItem="Xhv-2W-8DJ" secondAttribute="leading" id="bd5-sB-Uhf"/>
+                            <constraint firstAttribute="trailing" secondItem="kee-Qh-qUX" secondAttribute="trailing" id="gRN-zw-Cth"/>
+                            <constraint firstItem="D9c-6w-C5t" firstAttribute="bottom" secondItem="v68-Rw-hCJ" secondAttribute="bottom" id="teK-Uc-DO5"/>
+                            <constraint firstItem="v68-Rw-hCJ" firstAttribute="top" secondItem="D9c-6w-C5t" secondAttribute="top" id="ydq-nj-JlV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D9c-6w-C5t"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5x-y5-696" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1980" y="17"/>
         </scene>
     </scenes>
     <resources>
