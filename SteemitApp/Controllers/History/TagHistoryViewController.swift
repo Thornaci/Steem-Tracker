@@ -13,8 +13,8 @@ import MBProgressHUD
 class TagHistoryViewController: BaseViewController {
 
     @IBOutlet weak var chartView: BarChartView!
-    @IBOutlet weak var tagLabel: UILabel!
-    @IBOutlet weak var tagHistoryCountLabel: UILabel!
+    @IBOutlet weak var tagLabel: ThoLabel!
+    @IBOutlet weak var tagHistoryCountLabel: ThoLabel!
     
     let nm = NetworkManager.init()
     let helper = Helpers.init()

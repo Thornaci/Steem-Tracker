@@ -12,11 +12,11 @@ import MBProgressHUD
 
 class InfoViewController: BaseViewController {
     
-    @IBOutlet weak var usernameLabel: UILabel!
-    @IBOutlet weak var aboutLabel: UILabel!
-    @IBOutlet weak var steemBalanceLabel: UILabel!
-    @IBOutlet weak var sbdBalanceLabel: UILabel!
-    @IBOutlet weak var equivalentCurrencyLabel: UILabel!
+    @IBOutlet weak var usernameLabel: ThoLabel!
+    @IBOutlet weak var aboutLabel: ThoLabel!
+    @IBOutlet weak var steemBalanceLabel: ThoLabel!
+    @IBOutlet weak var sbdBalanceLabel: ThoLabel!
+    @IBOutlet weak var equivalentCurrencyLabel: ThoLabel!
     @IBOutlet weak var profileImageView: UIImageView!
     
     @IBOutlet weak var currenciesSegmentControl: UISegmentedControl!

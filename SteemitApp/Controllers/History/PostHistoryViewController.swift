@@ -14,7 +14,7 @@ import Charts
 class PostHistoryViewController: BaseViewController {
 
     @IBOutlet weak var chartView: BarChartView!
-    @IBOutlet weak var postContentLabel: UILabel!
+    @IBOutlet weak var postContentLabel: ThoLabel!
     
     let nm = NetworkManager.init()
     let helper = Helpers.init()
