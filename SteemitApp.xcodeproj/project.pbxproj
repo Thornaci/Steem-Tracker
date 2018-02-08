@@ -28,7 +28,11 @@
 		C062EF5F2003B10200B9C3D2 /* TextChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF5E2003B10200B9C3D2 /* TextChanger.swift */; };
 		C062EF612003B31500B9C3D2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF602003B31500B9C3D2 /* SearchViewController.swift */; };
 		C062EF632003B6EE00B9C3D2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF622003B6EE00B9C3D2 /* UserModel.swift */; };
+		C0656515202CC08C005F9089 /* PostContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0656513202CC08C005F9089 /* PostContentTableViewCell.swift */; };
+		C0656516202CC08C005F9089 /* PostContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0656514202CC08C005F9089 /* PostContentTableViewCell.xib */; };
 		C073B1802022F26E00598305 /* TagHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073B17F2022F26E00598305 /* TagHistoryModel.swift */; };
+		C07C623D202A21AB004A5378 /* PostHistoryContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07C623C202A21AB004A5378 /* PostHistoryContentsViewController.swift */; };
+		C07C6240202A2900004A5378 /* PostHistoryContentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07C623F202A2900004A5378 /* PostHistoryContentsTableViewController.swift */; };
 		C091EE352019D8710010209F /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091EE342019D8710010209F /* FollowersViewController.swift */; };
 		C091EE372019DA120010209F /* Follower.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C091EE362019DA120010209F /* Follower.storyboard */; };
 		C0ADEB712020E85B0053C3BF /* Information.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0ADEB702020E85B0053C3BF /* Information.storyboard */; };
@@ -47,6 +51,7 @@
 		C0B899F32014D47700A45554 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899F22014D47700A45554 /* UserModel.swift */; };
 		C0B899F52014E5D900A45554 /* InfosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899F42014E5D900A45554 /* InfosTableViewCell.swift */; };
 		C0BD90432023A329009B58E7 /* ThoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD90422023A329009B58E7 /* ThoButton.swift */; };
+		C0CDD8F02028730E004C8A28 /* ThoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CDD8EF2028730E004C8A28 /* ThoLabel.swift */; };
 		C0F8BF182004FBFB009C1585 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F8BF172004FBFB009C1585 /* PopupManager.swift */; };
 		C0F8BF1A200503B2009C1585 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F8BF19200503B2009C1585 /* UIViewExtension.swift */; };
 		C0F8BF2220063807009C1585 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F8BF2120063807009C1585 /* NotificationCenter.framework */; };
@@ -107,7 +112,11 @@
 		C062EF5E2003B10200B9C3D2 /* TextChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextChanger.swift; sourceTree = "<group>"; };
 		C062EF602003B31500B9C3D2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C062EF622003B6EE00B9C3D2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C0656513202CC08C005F9089 /* PostContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentTableViewCell.swift; sourceTree = "<group>"; };
+		C0656514202CC08C005F9089 /* PostContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostContentTableViewCell.xib; sourceTree = "<group>"; };
 		C073B17F2022F26E00598305 /* TagHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagHistoryModel.swift; sourceTree = "<group>"; };
+		C07C623C202A21AB004A5378 /* PostHistoryContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryContentsViewController.swift; sourceTree = "<group>"; };
+		C07C623F202A2900004A5378 /* PostHistoryContentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryContentsTableViewController.swift; sourceTree = "<group>"; };
 		C091EE342019D8710010209F /* FollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
 		C091EE362019DA120010209F /* Follower.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Follower.storyboard; sourceTree = "<group>"; };
 		C0ADEB702020E85B0053C3BF /* Information.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Information.storyboard; sourceTree = "<group>"; };
@@ -126,6 +135,7 @@
 		C0B899F22014D47700A45554 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		C0B899F42014E5D900A45554 /* InfosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosTableViewCell.swift; sourceTree = "<group>"; };
 		C0BD90422023A329009B58E7 /* ThoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoButton.swift; sourceTree = "<group>"; };
+		C0CDD8EF2028730E004C8A28 /* ThoLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoLabel.swift; sourceTree = "<group>"; };
 		C0F8BF172004FBFB009C1585 /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
 		C0F8BF19200503B2009C1585 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C0F8BF2020063807009C1585 /* SteemitAppWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SteemitAppWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +261,15 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		C07C623E202A21B0004A5378 /* Post History Content */ = {
+			isa = PBXGroup;
+			children = (
+				C07C623C202A21AB004A5378 /* PostHistoryContentsViewController.swift */,
+				C07C623F202A2900004A5378 /* PostHistoryContentsTableViewController.swift */,
+			);
+			path = "Post History Content";
+			sourceTree = "<group>";
+		};
 		C091EE332019D85C0010209F /* Followers */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +309,7 @@
 			children = (
 				C0ADEB7E2020F7F60053C3BF /* TagHistoryViewController.swift */,
 				C055BDC1202608B5002CFFDE /* PostHistoryViewController.swift */,
+				C07C623E202A21B0004A5378 /* Post History Content */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -320,6 +340,8 @@
 				C0B899E82014C15100A45554 /* FavoriteTableViewCell.xib */,
 				C0420038201E0F2000311654 /* FollowerTableViewCell.swift */,
 				C0420039201E0F2000311654 /* FollowerTableViewCell.xib */,
+				C0656513202CC08C005F9089 /* PostContentTableViewCell.swift */,
+				C0656514202CC08C005F9089 /* PostContentTableViewCell.xib */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -328,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				C0BD90422023A329009B58E7 /* ThoButton.swift */,
+				C0CDD8EF2028730E004C8A28 /* ThoLabel.swift */,
 			);
 			path = "Custom Components";
 			sourceTree = "<group>";
@@ -507,6 +530,7 @@
 				C062EF4B200364B800B9C3D2 /* Home.storyboard in Resources */,
 				C0ADEB7C2020F7B80053C3BF /* History.storyboard in Resources */,
 				C0B899EA2014C15100A45554 /* FavoriteTableViewCell.xib in Resources */,
+				C0656516202CC08C005F9089 /* PostContentTableViewCell.xib in Resources */,
 				C091EE372019DA120010209F /* Follower.storyboard in Resources */,
 				C0ADEB712020E85B0053C3BF /* Information.storyboard in Resources */,
 				C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */,
@@ -635,15 +659,18 @@
 			files = (
 				C0B899E12014A78B00A45554 /* UIColorExtension.swift in Sources */,
 				C0ADEB762020EA290053C3BF /* OptionsViewControllerTableViewExtension.swift in Sources */,
+				C0CDD8F02028730E004C8A28 /* ThoLabel.swift in Sources */,
 				C055BDBF2026049E002CFFDE /* PostHistoryModel.swift in Sources */,
 				C0F8BF1A200503B2009C1585 /* UIViewExtension.swift in Sources */,
 				C055BDC2202608B5002CFFDE /* PostHistoryViewController.swift in Sources */,
 				C062EF592003968500B9C3D2 /* CoinTypes.swift in Sources */,
 				C0B899EC2014D21600A45554 /* Helpers.swift in Sources */,
 				C073B1802022F26E00598305 /* TagHistoryModel.swift in Sources */,
+				C07C623D202A21AB004A5378 /* PostHistoryContentsViewController.swift in Sources */,
 				C0B899E92014C15100A45554 /* FavoriteTableViewCell.swift in Sources */,
 				C0ADEB792020EBDE0053C3BF /* OptionModel.swift in Sources */,
 				C062EF49200364A900B9C3D2 /* NetworkManager.swift in Sources */,
+				C0656515202CC08C005F9089 /* PostContentTableViewCell.swift in Sources */,
 				C062EF4E200364EB00B9C3D2 /* BaseViewController.swift in Sources */,
 				C062EF5F2003B10200B9C3D2 /* TextChanger.swift in Sources */,
 				C0420037201E04A700311654 /* FollowersViewControllerTableViewExtension.swift in Sources */,
@@ -665,6 +692,7 @@
 				C062EF5320036ACF00B9C3D2 /* CoinModel.swift in Sources */,
 				C062EF5B2003A89100B9C3D2 /* UserGlobals.swift in Sources */,
 				C062EF502003650F00B9C3D2 /* BaseNetwork.swift in Sources */,
+				C07C6240202A2900004A5378 /* PostHistoryContentsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

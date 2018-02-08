@@ -14,7 +14,7 @@ import Charts
 class PostHistoryViewController: BaseViewController {
 
     @IBOutlet weak var chartView: BarChartView!
-    @IBOutlet weak var postContentLabel: UILabel!
+    @IBOutlet weak var postContentLabel: ThoLabel!
     
     let nm = NetworkManager.init()
     let helper = Helpers.init()
@@ -22,16 +22,17 @@ class PostHistoryViewController: BaseViewController {
     var postsHistory = [PostHistoryModel]()
     var filteredPostsHistory = [[PostHistoryModel]]()
     var hud: MBProgressHUD?
+    var lastSelecttedButtonIndex = 101
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Post History"
         navigationController?.navigationBar.topItem?.title = ""
         setChartSettings()
-        getPostDatas()
+        getPostData()
     }
     
-    func getPostDatas() {
+    private func getPostData() {
         hud = MBProgressHUD.showAdded(to: view, animated: true)
         hud?.detailsLabel.text = "Posts information are loading.."
         nm.getSteemitAccountPostHistory(username: username, success: { (postsHistoryData) in
@@ -47,6 +48,7 @@ class PostHistoryViewController: BaseViewController {
     //Tag 101 last week posts, 102 pending payouts button
     @IBAction func changeAction(_ sender: Any) {
         let button = sender as! UIButton
+        lastSelecttedButtonIndex = button.tag
         setChartValues(index: button.tag)
     }
     
@@ -95,7 +97,7 @@ class PostHistoryViewController: BaseViewController {
         chartView.animate(yAxisDuration: 2)
     }
     
-    func setChartSettings() {
+    private func setChartSettings() {
         let xAxis = chartView.xAxis
         xAxis.labelPosition = .bottom
         xAxis.labelFont = .systemFont(ofSize: 10)
@@ -103,11 +105,36 @@ class PostHistoryViewController: BaseViewController {
         xAxis.labelCount = 7
         xAxis.valueFormatter = DayAxisValueFormatter(chart: chartView)
         
+        chartView.delegate = self
         chartView.drawBarShadowEnabled = false
         chartView.drawValueAboveBarEnabled = true
         chartView.chartDescription?.enabled = false
         chartView.dragEnabled = false
         chartView.setScaleEnabled(false)
         chartView.pinchZoomEnabled = false
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let day = sender as! Int
+        let index = Date().dayOfYear - day
+        let phcVC = segue.destination as! PostHistoryContentsViewController
+        phcVC.contentArray = filteredPostsHistory[filteredPostsHistory.count - index - 1]
+        phcVC.day = day
+        switch lastSelecttedButtonIndex {
+        case 101:
+            phcVC.category = "Post Contents"
+            break
+        case 102:
+            phcVC.category = "Pending Payouts"
+            break
+        default:
+            break
+        }
+    }
+}
+
+extension PostHistoryViewController: ChartViewDelegate {
+    func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
+        performSegue(withIdentifier: "showContent", sender: highlight.x)
     }
 }

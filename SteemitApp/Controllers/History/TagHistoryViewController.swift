@@ -13,8 +13,8 @@ import MBProgressHUD
 class TagHistoryViewController: BaseViewController {
 
     @IBOutlet weak var chartView: BarChartView!
-    @IBOutlet weak var tagLabel: UILabel!
-    @IBOutlet weak var tagHistoryCountLabel: UILabel!
+    @IBOutlet weak var tagLabel: ThoLabel!
+    @IBOutlet weak var tagHistoryCountLabel: ThoLabel!
     
     let nm = NetworkManager.init()
     let helper = Helpers.init()
@@ -26,6 +26,25 @@ class TagHistoryViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setChartSetting()
+        getPostData()
+        
+        navigationItem.title = "Tag History"
+        navigationController?.navigationBar.topItem?.title = ""
+        
+    }
+    
+    private func setChartSetting() {
+        chartView.delegate = self
+        chartView.drawBarShadowEnabled = false
+        chartView.drawValueAboveBarEnabled = false
+        chartView.chartDescription?.enabled = false
+        chartView.dragEnabled = false
+        chartView.setScaleEnabled(false)
+        chartView.pinchZoomEnabled = false
+    }
+    
+    private func getPostData() {
         hud = MBProgressHUD.showAdded(to: view, animated: true)
         hud?.detailsLabel.text = "Tags are loading.."
         nm.getSteemitTagsHistory(success: { (tagsHistoryData) in
@@ -38,17 +57,6 @@ class TagHistoryViewController: BaseViewController {
         }) { (error) in
             self.hud?.hide(animated: true)
         }
-        
-        navigationItem.title = "Tag History"
-        navigationController?.navigationBar.topItem?.title = ""
-        
-        chartView.delegate = self
-        chartView.drawBarShadowEnabled = false
-        chartView.drawValueAboveBarEnabled = false
-        chartView.chartDescription?.enabled = false
-        chartView.dragEnabled = false
-        chartView.setScaleEnabled(false)
-        chartView.pinchZoomEnabled = false
     }
     
     // 4 type categories. 101, 102, 103, 104.
