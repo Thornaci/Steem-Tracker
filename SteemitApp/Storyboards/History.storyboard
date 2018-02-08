@@ -294,9 +294,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kee-Qh-qUX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundWhite" translatesAutoresizingMaskIntoConstraints="NO" id="fpc-qb-VfC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v68-Rw-hCJ">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="HHo-g4-zPk" id="Ozo-nh-uUD"/>
                                     <outlet property="delegate" destination="HHo-g4-zPk" id="kyy-p1-KU7"/>
@@ -306,16 +311,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="D9c-6w-C5t" firstAttribute="bottom" secondItem="kee-Qh-qUX" secondAttribute="bottom" id="4C8-uP-JUh"/>
+                            <constraint firstItem="D9c-6w-C5t" firstAttribute="bottom" secondItem="fpc-qb-VfC" secondAttribute="bottom" id="8cs-PJ-vHm"/>
                             <constraint firstItem="v68-Rw-hCJ" firstAttribute="leading" secondItem="Xhv-2W-8DJ" secondAttribute="leading" id="9LW-ZE-3kn"/>
+                            <constraint firstItem="fpc-qb-VfC" firstAttribute="top" secondItem="D9c-6w-C5t" secondAttribute="top" id="BQb-Rp-rOV"/>
                             <constraint firstItem="kee-Qh-qUX" firstAttribute="top" secondItem="Xhv-2W-8DJ" secondAttribute="top" id="HeO-Ko-CKg"/>
                             <constraint firstAttribute="trailing" secondItem="v68-Rw-hCJ" secondAttribute="trailing" id="Qb6-Gh-Xqf"/>
+                            <constraint firstItem="fpc-qb-VfC" firstAttribute="leading" secondItem="Xhv-2W-8DJ" secondAttribute="leading" id="XXe-9r-PIl"/>
                             <constraint firstItem="kee-Qh-qUX" firstAttribute="leading" secondItem="Xhv-2W-8DJ" secondAttribute="leading" id="bd5-sB-Uhf"/>
                             <constraint firstAttribute="trailing" secondItem="kee-Qh-qUX" secondAttribute="trailing" id="gRN-zw-Cth"/>
+                            <constraint firstAttribute="trailing" secondItem="fpc-qb-VfC" secondAttribute="trailing" id="rzF-wZ-fYc"/>
                             <constraint firstItem="D9c-6w-C5t" firstAttribute="bottom" secondItem="v68-Rw-hCJ" secondAttribute="bottom" id="teK-Uc-DO5"/>
                             <constraint firstItem="v68-Rw-hCJ" firstAttribute="top" secondItem="D9c-6w-C5t" secondAttribute="top" id="ydq-nj-JlV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D9c-6w-C5t"/>
                     </view>
+                    <connections>
+                        <outlet property="postContentTableView" destination="v68-Rw-hCJ" id="gQ0-Zy-jrA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5x-y5-696" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -324,5 +336,6 @@
     </scenes>
     <resources>
         <image name="background" width="720" height="960"/>
+        <image name="backgroundWhite" width="400" height="666"/>
     </resources>
 </document>

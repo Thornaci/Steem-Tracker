@@ -14,7 +14,16 @@ extension PostHistoryContentsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: postContentCellReuseIdentifier, for: indexPath) as! PostContentTableViewCell
+        let postContent = contentArray[indexPath.row]
+        cell.categoryLabel.text = postContent.category?.description
+        cell.titleLabel.text = postContent.title?.description
+        cell.pendingPayoutLabel.text = postContent.pendingPayoutValue?.description
+        
+        let date = Date.init(dateString: (postContent.createdTime)!, format: "yyyy-MM-dd'T'HH:mm:ss")
+        cell.timeLabel.text = "\(date.dateWithFormat(format: "HH:mm"))"
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -25,5 +34,7 @@ extension PostHistoryContentsViewController: UITableViewDataSource {
 }
 
 extension PostHistoryContentsViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140
+    }
 }

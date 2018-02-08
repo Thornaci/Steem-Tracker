@@ -28,6 +28,8 @@
 		C062EF5F2003B10200B9C3D2 /* TextChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF5E2003B10200B9C3D2 /* TextChanger.swift */; };
 		C062EF612003B31500B9C3D2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF602003B31500B9C3D2 /* SearchViewController.swift */; };
 		C062EF632003B6EE00B9C3D2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF622003B6EE00B9C3D2 /* UserModel.swift */; };
+		C0656515202CC08C005F9089 /* PostContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0656513202CC08C005F9089 /* PostContentTableViewCell.swift */; };
+		C0656516202CC08C005F9089 /* PostContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0656514202CC08C005F9089 /* PostContentTableViewCell.xib */; };
 		C073B1802022F26E00598305 /* TagHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073B17F2022F26E00598305 /* TagHistoryModel.swift */; };
 		C07C623D202A21AB004A5378 /* PostHistoryContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07C623C202A21AB004A5378 /* PostHistoryContentsViewController.swift */; };
 		C07C6240202A2900004A5378 /* PostHistoryContentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07C623F202A2900004A5378 /* PostHistoryContentsTableViewController.swift */; };
@@ -110,6 +112,8 @@
 		C062EF5E2003B10200B9C3D2 /* TextChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextChanger.swift; sourceTree = "<group>"; };
 		C062EF602003B31500B9C3D2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C062EF622003B6EE00B9C3D2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C0656513202CC08C005F9089 /* PostContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentTableViewCell.swift; sourceTree = "<group>"; };
+		C0656514202CC08C005F9089 /* PostContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostContentTableViewCell.xib; sourceTree = "<group>"; };
 		C073B17F2022F26E00598305 /* TagHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagHistoryModel.swift; sourceTree = "<group>"; };
 		C07C623C202A21AB004A5378 /* PostHistoryContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryContentsViewController.swift; sourceTree = "<group>"; };
 		C07C623F202A2900004A5378 /* PostHistoryContentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryContentsTableViewController.swift; sourceTree = "<group>"; };
@@ -336,6 +340,8 @@
 				C0B899E82014C15100A45554 /* FavoriteTableViewCell.xib */,
 				C0420038201E0F2000311654 /* FollowerTableViewCell.swift */,
 				C0420039201E0F2000311654 /* FollowerTableViewCell.xib */,
+				C0656513202CC08C005F9089 /* PostContentTableViewCell.swift */,
+				C0656514202CC08C005F9089 /* PostContentTableViewCell.xib */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -524,6 +530,7 @@
 				C062EF4B200364B800B9C3D2 /* Home.storyboard in Resources */,
 				C0ADEB7C2020F7B80053C3BF /* History.storyboard in Resources */,
 				C0B899EA2014C15100A45554 /* FavoriteTableViewCell.xib in Resources */,
+				C0656516202CC08C005F9089 /* PostContentTableViewCell.xib in Resources */,
 				C091EE372019DA120010209F /* Follower.storyboard in Resources */,
 				C0ADEB712020E85B0053C3BF /* Information.storyboard in Resources */,
 				C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */,
@@ -663,6 +670,7 @@
 				C0B899E92014C15100A45554 /* FavoriteTableViewCell.swift in Sources */,
 				C0ADEB792020EBDE0053C3BF /* OptionModel.swift in Sources */,
 				C062EF49200364A900B9C3D2 /* NetworkManager.swift in Sources */,
+				C0656515202CC08C005F9089 /* PostContentTableViewCell.swift in Sources */,
 				C062EF4E200364EB00B9C3D2 /* BaseViewController.swift in Sources */,
 				C062EF5F2003B10200B9C3D2 /* TextChanger.swift in Sources */,
 				C0420037201E04A700311654 /* FollowersViewControllerTableViewExtension.swift in Sources */,
