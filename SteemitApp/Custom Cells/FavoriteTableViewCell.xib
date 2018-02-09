@@ -17,11 +17,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteTableViewCell" id="KGk-i7-Jjw" customClass="FavoriteTableViewCell" customModule="SteemitApp" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FavoriteTableViewCell" id="KGk-i7-Jjw" customClass="FavoriteTableViewCell" customModule="SteemitApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="286" height="69.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steemImage" translatesAutoresizingMaskIntoConstraints="NO" id="Hvj-J3-ePU">
@@ -37,12 +37,22 @@
                         <color key="textColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBm-sb-akO">
+                        <rect key="frame" x="0.0" y="69" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="qfH-aW-bbG"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="eBm-sb-akO" secondAttribute="bottom" id="4uV-oK-EQs"/>
                     <constraint firstItem="Hvj-J3-ePU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="78m-gb-2Vc"/>
                     <constraint firstItem="IqR-tK-d3L" firstAttribute="leading" secondItem="Hvj-J3-ePU" secondAttribute="trailing" constant="20" id="R4D-Xa-3RP"/>
                     <constraint firstItem="IqR-tK-d3L" firstAttribute="centerY" secondItem="Hvj-J3-ePU" secondAttribute="centerY" id="Uev-g1-kAP"/>
                     <constraint firstItem="Hvj-J3-ePU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="XAi-Vw-uKG"/>
+                    <constraint firstAttribute="trailing" secondItem="eBm-sb-akO" secondAttribute="trailing" constant="-34" id="c7O-mD-LZS"/>
+                    <constraint firstItem="eBm-sb-akO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ev5-Ia-N3S"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

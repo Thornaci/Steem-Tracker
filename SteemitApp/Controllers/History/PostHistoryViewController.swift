@@ -34,8 +34,10 @@ class PostHistoryViewController: BaseViewController {
     
     private func getPostData() {
         hud = MBProgressHUD.showAdded(to: view, animated: true)
-        hud?.detailsLabel.text = "Posts information are loading.."
+        hud?.detailsLabel.text = "Post informations are loading.."
         nm.getSteemitAccountPostHistory(username: username, success: { (postsHistoryData) in
+            let button = self.view.viewWithTag(101) as! UIButton
+            button.layer.borderColor = UIColor.init(white: 1, alpha: 0.5).cgColor
             self.postsHistory = postsHistoryData
             self.filteredPostsHistory = self.helper.filterLastWeekData(postsHistory: postsHistoryData)
             self.setChartValues(index: 101)
@@ -47,7 +49,12 @@ class PostHistoryViewController: BaseViewController {
     
     //Tag 101 last week posts, 102 pending payouts button
     @IBAction func changeAction(_ sender: Any) {
+        for index in 101...104 {
+            let button = view.viewWithTag(index)
+            button?.layer.borderColor = UIColor.navBarBorderColor().cgColor
+        }
         let button = sender as! UIButton
+        button.layer.borderColor = UIColor.init(white: 1, alpha: 0.5).cgColor
         lastSelecttedButtonIndex = button.tag
         setChartValues(index: button.tag)
     }
@@ -56,6 +63,8 @@ class PostHistoryViewController: BaseViewController {
         var barChartDatas = [BarChartDataEntry]()
         var i = 0
         var set1 = BarChartDataSet(values: barChartDatas, label: "")
+        set1.valueTextColor = UIColor.barTintColor()
+        
         switch index {
         case 101:
             var totalPostCount = 0
@@ -89,10 +98,15 @@ class PostHistoryViewController: BaseViewController {
             break
         }
 
+        set1.setColor(UIColor.white)
         set1.colors = ChartColorTemplates.material()
+        set1.valueTextColor = UIColor.white
+        set1.highlightAlpha = 0
+        
         let data = BarChartData(dataSet: set1)
         data.setValueFont(UIFont(name: "HelveticaNeue-Light", size: 10)!)
         data.barWidth = 0.9
+        data.setValueTextColor(UIColor.white)
         chartView.data = data
         chartView.animate(yAxisDuration: 2)
     }
@@ -104,6 +118,11 @@ class PostHistoryViewController: BaseViewController {
         xAxis.granularity = 1
         xAxis.labelCount = 7
         xAxis.valueFormatter = DayAxisValueFormatter(chart: chartView)
+        
+        chartView.xAxis.labelTextColor = UIColor.barTintColor()
+        chartView.leftAxis.labelTextColor = UIColor.barTintColor()
+        chartView.rightAxis.labelTextColor = UIColor.barTintColor()
+        chartView.legend.textColor = .white
         
         chartView.delegate = self
         chartView.drawBarShadowEnabled = false

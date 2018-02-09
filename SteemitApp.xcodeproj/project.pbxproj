@@ -52,6 +52,9 @@
 		C0B899F52014E5D900A45554 /* InfosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B899F42014E5D900A45554 /* InfosTableViewCell.swift */; };
 		C0BD90432023A329009B58E7 /* ThoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD90422023A329009B58E7 /* ThoButton.swift */; };
 		C0CDD8F02028730E004C8A28 /* ThoLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CDD8EF2028730E004C8A28 /* ThoLabel.swift */; };
+		C0E56AE7202D9B7B00E0A249 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E56AE6202D9B7B00E0A249 /* BaseNavigationViewController.swift */; };
+		C0E56AE9202DA26600E0A249 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E56AE8202DA26600E0A249 /* BaseTabBarViewController.swift */; };
+		C0E56AEB202DA45100E0A249 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E56AEA202DA45100E0A249 /* UIImageExtension.swift */; };
 		C0F8BF182004FBFB009C1585 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F8BF172004FBFB009C1585 /* PopupManager.swift */; };
 		C0F8BF1A200503B2009C1585 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F8BF19200503B2009C1585 /* UIViewExtension.swift */; };
 		C0F8BF2220063807009C1585 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F8BF2120063807009C1585 /* NotificationCenter.framework */; };
@@ -136,6 +139,9 @@
 		C0B899F42014E5D900A45554 /* InfosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosTableViewCell.swift; sourceTree = "<group>"; };
 		C0BD90422023A329009B58E7 /* ThoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoButton.swift; sourceTree = "<group>"; };
 		C0CDD8EF2028730E004C8A28 /* ThoLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoLabel.swift; sourceTree = "<group>"; };
+		C0E56AE6202D9B7B00E0A249 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		C0E56AE8202DA26600E0A249 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		C0E56AEA202DA45100E0A249 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		C0F8BF172004FBFB009C1585 /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
 		C0F8BF19200503B2009C1585 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C0F8BF2020063807009C1585 /* SteemitAppWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SteemitAppWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,6 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				C062EF4D200364EB00B9C3D2 /* BaseViewController.swift */,
+				C0E56AE8202DA26600E0A249 /* BaseTabBarViewController.swift */,
+				C0E56AE6202D9B7B00E0A249 /* BaseNavigationViewController.swift */,
 				C062EF4F2003650F00B9C3D2 /* BaseNetwork.swift */,
 			);
 			path = Base;
@@ -248,6 +256,7 @@
 				C0B899E02014A78B00A45554 /* UIColorExtension.swift */,
 				C0B899EB2014D21600A45554 /* Helpers.swift */,
 				C055BDC4202676A1002CFFDE /* DayValueXAxisFormatter.swift */,
+				C0E56AEA202DA45100E0A249 /* UIImageExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -603,18 +612,22 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -679,10 +692,12 @@
 				C0ADEB742020E8E70053C3BF /* OptionsViewController.swift in Sources */,
 				C091EE352019D8710010209F /* FollowersViewController.swift in Sources */,
 				C062EF632003B6EE00B9C3D2 /* UserModel.swift in Sources */,
+				C0E56AE7202D9B7B00E0A249 /* BaseNavigationViewController.swift in Sources */,
 				C055BDC5202676A1002CFFDE /* DayValueXAxisFormatter.swift in Sources */,
 				C0B899DF2014A03800A45554 /* FavoriteUsersViewController.swift in Sources */,
 				C0FBCA642001288C0098633F /* AppDelegate.swift in Sources */,
 				C062EF612003B31500B9C3D2 /* SearchViewController.swift in Sources */,
+				C0E56AE9202DA26600E0A249 /* BaseTabBarViewController.swift in Sources */,
 				C0F8BF182004FBFB009C1585 /* PopupManager.swift in Sources */,
 				C062EF472003649500B9C3D2 /* InfoViewController.swift in Sources */,
 				C0BD90432023A329009B58E7 /* ThoButton.swift in Sources */,
@@ -690,6 +705,7 @@
 				C042003A201E0F2000311654 /* FollowerTableViewCell.swift in Sources */,
 				C0B899E52014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift in Sources */,
 				C062EF5320036ACF00B9C3D2 /* CoinModel.swift in Sources */,
+				C0E56AEB202DA45100E0A249 /* UIImageExtension.swift in Sources */,
 				C062EF5B2003A89100B9C3D2 /* UserGlobals.swift in Sources */,
 				C062EF502003650F00B9C3D2 /* BaseNetwork.swift in Sources */,
 				C07C6240202A2900004A5378 /* PostHistoryContentsTableViewController.swift in Sources */,

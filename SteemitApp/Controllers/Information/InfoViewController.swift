@@ -33,7 +33,7 @@ class InfoViewController: BaseViewController {
         let rightBarButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(addTapped))
         rightBarButton.tintColor = UIColor.barTintColor()
         navigationItem.rightBarButtonItem = rightBarButton
-
+        
     }
     
     @objc func addTapped() {

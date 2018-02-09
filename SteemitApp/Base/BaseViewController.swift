@@ -20,13 +20,8 @@ class BaseViewController: UIViewController {
             versionLabel.text = "Version = " + version
         }
         
-        for view in (navigationController?.navigationBar.subviews[0].subviews)! {
-            view.alpha = 0
-            for subview in view.subviews {
-                subview.alpha = 0
-            }
-        }
-        
+        navigationController?.navigationBar.tintColor = UIColor.barTintColor()
+
         view.addSubview(versionLabel)
     }
 }

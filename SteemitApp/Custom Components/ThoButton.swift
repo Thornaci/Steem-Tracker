@@ -40,5 +40,6 @@ import UIKit
     
     private func setupDefaults() {
         titleLabel?.font = UIFont.init(name: "Kefa", size: 17)
+        setTitleColor(UIColor.barTintColor(), for: .normal)
     }
 }

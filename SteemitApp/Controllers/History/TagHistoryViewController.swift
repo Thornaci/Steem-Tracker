@@ -42,6 +42,10 @@ class TagHistoryViewController: BaseViewController {
         chartView.dragEnabled = false
         chartView.setScaleEnabled(false)
         chartView.pinchZoomEnabled = false
+        chartView.xAxis.labelTextColor = UIColor.barTintColor()
+        chartView.leftAxis.labelTextColor = UIColor.barTintColor()
+        chartView.rightAxis.labelTextColor = UIColor.barTintColor()
+        chartView.legend.textColor = .white
     }
     
     private func getPostData() {
@@ -51,6 +55,8 @@ class TagHistoryViewController: BaseViewController {
             
             if tagsHistoryData.count > 10 {
                 self.tagsHistory = tagsHistoryData
+                let button = self.view.viewWithTag(101) as! UIButton
+                button.layer.borderColor = UIColor.init(white: 1, alpha: 0.5).cgColor
                 self.setChartValues(index: 101)
             }
             self.hud?.hide(animated: true)
@@ -61,7 +67,12 @@ class TagHistoryViewController: BaseViewController {
     
     // 4 type categories. 101, 102, 103, 104.
     @IBAction func changeTag(_ sender: Any) {
+        for index in 101...104 {
+            let button = view.viewWithTag(index)
+            button?.layer.borderColor = UIColor.navBarBorderColor().cgColor
+        }
         let button = sender as! UIButton
+        button.layer.borderColor = UIColor.init(white: 1, alpha: 0.5).cgColor
         lastSelectedButtonIndex = button.tag
         setChartValues(index: button.tag)
     }
@@ -112,12 +123,16 @@ class TagHistoryViewController: BaseViewController {
             break
         }
         
+        set1.setColor(UIColor.white)
         set1.colors = ChartColorTemplates.material()
         set1.drawValuesEnabled = false
+        set1.valueTextColor = UIColor.white
+        set1.highlightAlpha = 0
         
         let data = BarChartData(dataSet: set1)
         data.setValueFont(UIFont(name: "HelveticaNeue-Light", size: 10)!)
         data.barWidth = 0.9
+        data.setValueTextColor(UIColor.white)
         chartView.data = data
         chartView.animate(yAxisDuration: 2)
     }
