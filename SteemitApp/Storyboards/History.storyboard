@@ -299,11 +299,42 @@
                     </view>
                     <connections>
                         <outlet property="postContentTableView" destination="v68-Rw-hCJ" id="gQ0-Zy-jrA"/>
+                        <segue destination="NhN-WK-avK" kind="show" identifier="showPostOnWeb" id="Aba-hs-zo3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5x-y5-696" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1980" y="17"/>
+        </scene>
+        <!--Post History Web View Controller-->
+        <scene sceneID="PBJ-Ip-OWD">
+            <objects>
+                <viewController id="NhN-WK-avK" customClass="PostHistoryWebViewController" customModule="SteemitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lct-bm-w1H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEo-hD-yp6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qXe-fc-51K" firstAttribute="bottom" secondItem="AEo-hD-yp6" secondAttribute="bottom" id="Ok5-KX-RfP"/>
+                            <constraint firstItem="AEo-hD-yp6" firstAttribute="leading" secondItem="lct-bm-w1H" secondAttribute="leading" id="Pf6-O3-mM4"/>
+                            <constraint firstAttribute="trailing" secondItem="AEo-hD-yp6" secondAttribute="trailing" id="Zm1-xM-SNV"/>
+                            <constraint firstItem="AEo-hD-yp6" firstAttribute="top" secondItem="qXe-fc-51K" secondAttribute="top" id="qUf-HH-w9s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qXe-fc-51K"/>
+                    </view>
+                    <connections>
+                        <outlet property="webViewView" destination="AEo-hD-yp6" id="SF3-bg-Y7v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wo7-g6-CTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2844" y="17"/>
         </scene>
     </scenes>
 </document>

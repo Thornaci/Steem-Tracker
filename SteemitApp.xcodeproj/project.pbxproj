@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8F0D2DA319ADFBAC93253D59 /* Pods_SteemitAppWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */; };
 		ABFFC2526324D20A127D4979 /* Pods_SteemitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEC947916BFFF1BA92135A0 /* Pods_SteemitApp.framework */; };
+		C00B710E202E45DE00219433 /* PostHistoryWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B710D202E45DE00219433 /* PostHistoryWebViewController.swift */; };
 		C0420037201E04A700311654 /* FollowersViewControllerTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */; };
 		C042003A201E0F2000311654 /* FollowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0420038201E0F2000311654 /* FollowerTableViewCell.swift */; };
 		C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0420039201E0F2000311654 /* FollowerTableViewCell.xib */; };
@@ -96,6 +97,7 @@
 		5CEC947916BFFF1BA92135A0 /* Pods_SteemitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemitAppWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0007AF82013A40700C533F7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00B710D202E45DE00219433 /* PostHistoryWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryWebViewController.swift; sourceTree = "<group>"; };
 		C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewControllerTableViewExtension.swift; sourceTree = "<group>"; };
 		C0420038201E0F2000311654 /* FollowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerTableViewCell.swift; sourceTree = "<group>"; };
 		C0420039201E0F2000311654 /* FollowerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowerTableViewCell.xib; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 			children = (
 				C07C623C202A21AB004A5378 /* PostHistoryContentsViewController.swift */,
 				C07C623F202A2900004A5378 /* PostHistoryContentsTableViewController.swift */,
+				C00B710D202E45DE00219433 /* PostHistoryWebViewController.swift */,
 			);
 			path = "Post History Content";
 			sourceTree = "<group>";
@@ -704,6 +707,7 @@
 				C062EF5D2003B06600B9C3D2 /* CurrencyTypes.swift in Sources */,
 				C042003A201E0F2000311654 /* FollowerTableViewCell.swift in Sources */,
 				C0B899E52014C0CC00A45554 /* FavoriteUsersTableViewExtension.swift in Sources */,
+				C00B710E202E45DE00219433 /* PostHistoryWebViewController.swift in Sources */,
 				C062EF5320036ACF00B9C3D2 /* CoinModel.swift in Sources */,
 				C0E56AEB202DA45100E0A249 /* UIImageExtension.swift in Sources */,
 				C062EF5B2003A89100B9C3D2 /* UserGlobals.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 import HockeySDK
-import Firebase
+//import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         BITHockeyManager.shared().authenticator.authenticateInstallation()
         BITHockeyManager.shared().isStoreUpdateManagerEnabled = true
         
-        FirebaseApp.configure()
+//        FirebaseApp.configure()
         
         return true
     }

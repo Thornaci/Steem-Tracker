@@ -15,6 +15,7 @@ extension PostHistoryContentsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: postContentCellReuseIdentifier, for: indexPath) as! PostContentTableViewCell
+        cell.selectionStyle = .none
         let postContent = contentArray[indexPath.row]
         cell.categoryLabel.text = postContent.category?.description
         cell.titleLabel.text = postContent.title?.description
@@ -36,5 +37,9 @@ extension PostHistoryContentsViewController: UITableViewDataSource {
 extension PostHistoryContentsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showPostOnWeb", sender: contentArray[indexPath.row])
     }
 }
