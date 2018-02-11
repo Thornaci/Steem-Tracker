@@ -21,4 +21,10 @@ class PostHistoryContentsViewController: BaseViewController {
         navigationController?.navigationBar.topItem?.title = ""
         postContentTableView.register(UINib.init(nibName: postContentCellReuseIdentifier, bundle: nil), forCellReuseIdentifier: postContentCellReuseIdentifier)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let pswVC = segue.destination as! PostHistoryWebViewController
+        let postModel = sender as! PostHistoryModel
+        pswVC.post = postModel
+    }
 }

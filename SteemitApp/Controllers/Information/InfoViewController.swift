@@ -33,7 +33,7 @@ class InfoViewController: BaseViewController {
         let rightBarButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(addTapped))
         rightBarButton.tintColor = UIColor.barTintColor()
         navigationItem.rightBarButtonItem = rightBarButton
-
+        
     }
     
     @objc func addTapped() {
@@ -72,7 +72,7 @@ class InfoViewController: BaseViewController {
     
     private func getUserAcoountInfo() {
         hud = MBProgressHUD.showAdded(to: view, animated: true)
-        hud?.detailsLabel.text = "Your account informations loading.."
+        hud?.detailsLabel.text = "Your account informations are loading.."
         let nm = NetworkManager.init()
         nm.getSteemitAccount(user: username, success: {[unowned self] user in
             self.hud?.hide(animated: true)

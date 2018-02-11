@@ -44,18 +44,28 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmc-ta-dBR">
+                        <rect key="frame" x="0.0" y="139" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.19215686274509802" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="OZG-S7-Sxz"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="okB-jw-sfu" secondAttribute="trailing" constant="16" id="0b6-KV-o5h"/>
                     <constraint firstItem="tqt-Kq-owL" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="3dW-Ei-YUv"/>
+                    <constraint firstItem="vmc-ta-dBR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9a1-FM-Thu"/>
                     <constraint firstItem="tqt-Kq-owL" firstAttribute="top" secondItem="okB-jw-sfu" secondAttribute="bottom" constant="8" id="Fk0-gN-vZH"/>
+                    <constraint firstAttribute="bottom" secondItem="vmc-ta-dBR" secondAttribute="bottom" id="M0t-Ve-Zh4"/>
                     <constraint firstAttribute="trailingMargin" secondItem="NMc-Pf-l2D" secondAttribute="trailing" id="QTv-XK-jhc"/>
                     <constraint firstItem="okB-jw-sfu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Vv4-5Q-r64"/>
                     <constraint firstItem="okB-jw-sfu" firstAttribute="top" secondItem="iQM-Rw-szS" secondAttribute="bottom" constant="8" id="c7M-fe-NF5"/>
                     <constraint firstItem="iQM-Rw-szS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="dfD-hf-Hvh"/>
                     <constraint firstItem="NMc-Pf-l2D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="ora-Ja-WOH"/>
                     <constraint firstItem="okB-jw-sfu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="plZ-l6-9IP"/>
+                    <constraint firstAttribute="trailing" secondItem="vmc-ta-dBR" secondAttribute="trailing" id="uCy-NH-Lyh"/>
                     <constraint firstItem="iQM-Rw-szS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="uYA-xL-ifG"/>
                     <constraint firstAttribute="bottom" secondItem="tqt-Kq-owL" secondAttribute="bottom" constant="16" id="vhB-Qc-M8Z"/>
                 </constraints>

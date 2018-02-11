@@ -18,6 +18,7 @@ struct PostHistoryModel: Mappable {
     var netVotes: Int = 0
     var pendingPayoutValue: String?
     var pendingPayoutValueDouble: Double = 0
+    var url: String?
     
     init?(map: Map) {
         
@@ -30,6 +31,7 @@ struct PostHistoryModel: Mappable {
         createdTime             <- map["created"]
         netVotes                <- map["net_votes"]
         pendingPayoutValue      <- map["pending_payout_value"]
+        url                     <- map["url"]
         
         let clearPayout = pendingPayoutValue?.replacingOccurrences(of: "[A-Z]|[a-z]", with: "", options: [.regularExpression]).replacingOccurrences(of: " ", with: "", options: [.regularExpression])
         pendingPayoutValueDouble = Double(clearPayout!)!

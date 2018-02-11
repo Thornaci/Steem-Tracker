@@ -23,9 +23,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="tdp-6d-OKP">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OlF-6S-m9S" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="140" width="375" height="467"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,13 +40,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYX-8J-CUf" customClass="ThoButton" customModule="SteemitApp" customModuleProvider="target">
-                                <rect key="frame" x="4" y="607" width="89" height="60"/>
+                                <rect key="frame" x="4" y="615" width="89" height="44"/>
                                 <state key="normal" title="Comments">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
@@ -63,13 +60,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INf-hp-a8Z" customClass="ThoButton" customModule="SteemitApp" customModuleProvider="target">
-                                <rect key="frame" x="97" y="607" width="88.5" height="60"/>
-                                <state key="normal" title="SBD Payouts">
+                                <rect key="frame" x="97" y="615" width="88.5" height="44"/>
+                                <state key="normal" title="P.Payouts">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
@@ -83,13 +80,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ko-kW-EIx" customClass="ThoButton" customModule="SteemitApp" customModuleProvider="target">
-                                <rect key="frame" x="189.5" y="607" width="89" height="60"/>
+                                <rect key="frame" x="189.5" y="615" width="89" height="44"/>
                                 <state key="normal" title="Posts">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
@@ -103,13 +100,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iM-r8-MaW" customClass="ThoButton" customModule="SteemitApp" customModuleProvider="target">
-                                <rect key="frame" x="282.5" y="607" width="88.5" height="60"/>
+                                <rect key="frame" x="282.5" y="615" width="88.5" height="44"/>
                                 <state key="normal" title="Net Votes">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
@@ -123,13 +120,12 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="4iM-r8-MaW" firstAttribute="top" secondItem="OlF-6S-m9S" secondAttribute="bottom" id="0CW-du-64X"/>
+                            <constraint firstItem="4iM-r8-MaW" firstAttribute="top" secondItem="OlF-6S-m9S" secondAttribute="bottom" constant="8" id="0CW-du-64X"/>
                             <constraint firstItem="xbP-W9-eUM" firstAttribute="leading" secondItem="csR-T9-Ifw" secondAttribute="leading" id="0KJ-av-mfs"/>
-                            <constraint firstItem="4ko-kW-EIx" firstAttribute="top" secondItem="OlF-6S-m9S" secondAttribute="bottom" id="2dd-dR-tAa"/>
-                            <constraint firstAttribute="trailing" secondItem="tdp-6d-OKP" secondAttribute="trailing" id="4bp-uE-XNo"/>
-                            <constraint firstItem="QYX-8J-CUf" firstAttribute="top" secondItem="OlF-6S-m9S" secondAttribute="bottom" id="8Uf-Sr-kWL"/>
+                            <constraint firstItem="4ko-kW-EIx" firstAttribute="top" secondItem="OlF-6S-m9S" secondAttribute="bottom" constant="8" id="2dd-dR-tAa"/>
+                            <constraint firstItem="QYX-8J-CUf" firstAttribute="top" secondItem="OlF-6S-m9S" secondAttribute="bottom" constant="8" id="8Uf-Sr-kWL"/>
                             <constraint firstItem="jnA-GV-4zR" firstAttribute="top" secondItem="xbP-W9-eUM" secondAttribute="bottom" constant="20" id="8a5-Ua-mE5"/>
                             <constraint firstItem="jnA-GV-4zR" firstAttribute="leading" secondItem="csR-T9-Ifw" secondAttribute="leading" id="9jl-De-Ek3"/>
                             <constraint firstItem="4iM-r8-MaW" firstAttribute="height" secondItem="QYX-8J-CUf" secondAttribute="height" id="BBW-ya-wM1"/>
@@ -140,23 +136,20 @@
                             <constraint firstItem="OlF-6S-m9S" firstAttribute="top" secondItem="csR-T9-Ifw" secondAttribute="top" constant="120" id="JdW-NV-SW1"/>
                             <constraint firstItem="OlF-6S-m9S" firstAttribute="top" secondItem="jnA-GV-4zR" secondAttribute="bottom" constant="20" id="N0t-oC-FdM"/>
                             <constraint firstItem="INf-hp-a8Z" firstAttribute="leading" secondItem="QYX-8J-CUf" secondAttribute="trailing" constant="4" id="Qnv-q8-4Vi"/>
-                            <constraint firstItem="tdp-6d-OKP" firstAttribute="leading" secondItem="I72-c3-bhK" secondAttribute="leading" id="X1M-gg-tOd"/>
-                            <constraint firstItem="INf-hp-a8Z" firstAttribute="top" secondItem="OlF-6S-m9S" secondAttribute="bottom" id="Yp4-Et-Ns1"/>
+                            <constraint firstItem="INf-hp-a8Z" firstAttribute="top" secondItem="OlF-6S-m9S" secondAttribute="bottom" constant="8" id="Yp4-Et-Ns1"/>
                             <constraint firstItem="OlF-6S-m9S" firstAttribute="leading" secondItem="I72-c3-bhK" secondAttribute="leading" id="ZQL-a1-Pg0"/>
-                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="4iM-r8-MaW" secondAttribute="bottom" id="Zcd-8W-4rq"/>
+                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="4iM-r8-MaW" secondAttribute="bottom" constant="8" id="Zcd-8W-4rq"/>
                             <constraint firstItem="4ko-kW-EIx" firstAttribute="height" secondItem="QYX-8J-CUf" secondAttribute="height" id="aIj-za-xt6"/>
                             <constraint firstItem="csR-T9-Ifw" firstAttribute="trailing" secondItem="4iM-r8-MaW" secondAttribute="trailing" constant="4" id="cLg-64-iIp"/>
                             <constraint firstItem="QYX-8J-CUf" firstAttribute="leading" secondItem="csR-T9-Ifw" secondAttribute="leading" constant="4" id="cUk-Yn-kiN"/>
                             <constraint firstItem="4iM-r8-MaW" firstAttribute="leading" secondItem="4ko-kW-EIx" secondAttribute="trailing" constant="4" id="cXp-FU-eug"/>
-                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="INf-hp-a8Z" secondAttribute="bottom" id="dtR-Rj-zmV"/>
+                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="INf-hp-a8Z" secondAttribute="bottom" constant="8" id="dtR-Rj-zmV"/>
                             <constraint firstAttribute="trailing" secondItem="OlF-6S-m9S" secondAttribute="trailing" id="fGG-aC-EAQ"/>
-                            <constraint firstItem="tdp-6d-OKP" firstAttribute="top" secondItem="I72-c3-bhK" secondAttribute="top" id="iUZ-jK-i6m"/>
                             <constraint firstItem="INf-hp-a8Z" firstAttribute="height" secondItem="QYX-8J-CUf" secondAttribute="height" id="k4a-Cm-J18"/>
                             <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="OlF-6S-m9S" secondAttribute="bottom" constant="60" id="mjF-HR-cBl"/>
-                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="4ko-kW-EIx" secondAttribute="bottom" id="nnO-i5-CoU"/>
-                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="QYX-8J-CUf" secondAttribute="bottom" id="q9N-67-8iP"/>
+                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="4ko-kW-EIx" secondAttribute="bottom" constant="8" id="nnO-i5-CoU"/>
+                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="QYX-8J-CUf" secondAttribute="bottom" constant="8" id="q9N-67-8iP"/>
                             <constraint firstItem="4ko-kW-EIx" firstAttribute="width" secondItem="QYX-8J-CUf" secondAttribute="width" id="wog-oP-rUe"/>
-                            <constraint firstItem="csR-T9-Ifw" firstAttribute="bottom" secondItem="tdp-6d-OKP" secondAttribute="bottom" id="xBL-tp-Eds"/>
                             <constraint firstItem="INf-hp-a8Z" firstAttribute="width" secondItem="QYX-8J-CUf" secondAttribute="width" id="yi0-uT-ITm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="csR-T9-Ifw"/>
@@ -180,9 +173,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ldP-41-J2K">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wby-2A-MGc" customClass="BarChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="120" width="375" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -197,7 +187,7 @@
                                 <rect key="frame" x="0.0" y="607" width="375" height="60"/>
                                 <subviews>
                                     <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBz-LF-NPN" customClass="ThoButton" customModule="SteemitApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="183.5" height="60"/>
+                                        <rect key="frame" x="8" y="8" width="175.5" height="44"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Last Week Posts">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -210,7 +200,7 @@
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="value" red="0.19215686274509802" green="0.19215686274509802" blue="0.19215686274509802" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -218,7 +208,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOD-eG-hTy" customClass="ThoButton" customModule="SteemitApp" customModuleProvider="target">
-                                        <rect key="frame" x="191.5" y="0.0" width="183.5" height="60"/>
+                                        <rect key="frame" x="191.5" y="8" width="175.5" height="44"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Pending Payouts">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -228,7 +218,7 @@
                                                 <real key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="value" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="4"/>
@@ -242,31 +232,27 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="JOD-eG-hTy" firstAttribute="leading" secondItem="aBz-LF-NPN" secondAttribute="trailing" constant="8" id="CM9-EE-oM4"/>
-                                    <constraint firstAttribute="bottom" secondItem="aBz-LF-NPN" secondAttribute="bottom" id="Eze-Xb-MxE"/>
+                                    <constraint firstAttribute="bottom" secondItem="aBz-LF-NPN" secondAttribute="bottom" constant="8" id="Eze-Xb-MxE"/>
                                     <constraint firstAttribute="height" constant="60" id="Kh4-01-vVF"/>
-                                    <constraint firstItem="aBz-LF-NPN" firstAttribute="leading" secondItem="asE-5L-U9G" secondAttribute="leading" id="SHX-pD-VGp"/>
-                                    <constraint firstAttribute="bottom" secondItem="JOD-eG-hTy" secondAttribute="bottom" id="SZU-I4-NYO"/>
-                                    <constraint firstItem="JOD-eG-hTy" firstAttribute="top" secondItem="asE-5L-U9G" secondAttribute="top" id="UwJ-Dh-HHe"/>
-                                    <constraint firstItem="aBz-LF-NPN" firstAttribute="top" secondItem="asE-5L-U9G" secondAttribute="top" id="X5P-Bm-ns7"/>
+                                    <constraint firstItem="aBz-LF-NPN" firstAttribute="leading" secondItem="asE-5L-U9G" secondAttribute="leading" constant="8" id="SHX-pD-VGp"/>
+                                    <constraint firstAttribute="bottom" secondItem="JOD-eG-hTy" secondAttribute="bottom" constant="8" id="SZU-I4-NYO"/>
+                                    <constraint firstItem="JOD-eG-hTy" firstAttribute="top" secondItem="asE-5L-U9G" secondAttribute="top" constant="8" id="UwJ-Dh-HHe"/>
+                                    <constraint firstItem="aBz-LF-NPN" firstAttribute="top" secondItem="asE-5L-U9G" secondAttribute="top" constant="8" id="X5P-Bm-ns7"/>
                                     <constraint firstItem="JOD-eG-hTy" firstAttribute="width" secondItem="aBz-LF-NPN" secondAttribute="width" id="coZ-9R-qo5"/>
-                                    <constraint firstAttribute="trailing" secondItem="JOD-eG-hTy" secondAttribute="trailing" id="fX4-Ee-4pt"/>
+                                    <constraint firstAttribute="trailing" secondItem="JOD-eG-hTy" secondAttribute="trailing" constant="8" id="fX4-Ee-4pt"/>
                                     <constraint firstItem="JOD-eG-hTy" firstAttribute="height" secondItem="aBz-LF-NPN" secondAttribute="height" id="hav-F7-Y1V"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wIL-yO-aNZ" firstAttribute="leading" secondItem="KeF-3u-zou" secondAttribute="leading" id="0ze-V1-aja"/>
-                            <constraint firstItem="ldP-41-J2K" firstAttribute="leading" secondItem="N33-K6-lES" secondAttribute="leading" id="7Eb-xX-R91"/>
                             <constraint firstItem="wIL-yO-aNZ" firstAttribute="top" secondItem="KeF-3u-zou" secondAttribute="top" constant="60" id="7oA-UR-qBF"/>
-                            <constraint firstAttribute="trailing" secondItem="ldP-41-J2K" secondAttribute="trailing" id="Bz6-S5-EYd"/>
                             <constraint firstItem="KeF-3u-zou" firstAttribute="trailing" secondItem="wIL-yO-aNZ" secondAttribute="trailing" id="FyJ-Jf-Vdq"/>
                             <constraint firstItem="asE-5L-U9G" firstAttribute="top" secondItem="wby-2A-MGc" secondAttribute="bottom" id="Ju1-Qa-gRA"/>
-                            <constraint firstItem="KeF-3u-zou" firstAttribute="bottom" secondItem="ldP-41-J2K" secondAttribute="bottom" id="K5S-MZ-4uk"/>
                             <constraint firstItem="asE-5L-U9G" firstAttribute="leading" secondItem="KeF-3u-zou" secondAttribute="leading" id="NFQ-Rk-ENo"/>
                             <constraint firstItem="asE-5L-U9G" firstAttribute="bottom" secondItem="KeF-3u-zou" secondAttribute="bottom" id="PIH-7a-iUW"/>
                             <constraint firstItem="wby-2A-MGc" firstAttribute="leading" secondItem="KeF-3u-zou" secondAttribute="leading" id="S8p-wI-Av0"/>
-                            <constraint firstItem="ldP-41-J2K" firstAttribute="top" secondItem="N33-K6-lES" secondAttribute="top" id="kuM-oP-o2s"/>
                             <constraint firstItem="wby-2A-MGc" firstAttribute="top" secondItem="wIL-yO-aNZ" secondAttribute="bottom" constant="20" id="nfL-ex-P45"/>
                             <constraint firstItem="KeF-3u-zou" firstAttribute="trailing" secondItem="wby-2A-MGc" secondAttribute="trailing" id="oDs-cz-Ago"/>
                             <constraint firstItem="KeF-3u-zou" firstAttribute="trailing" secondItem="asE-5L-U9G" secondAttribute="trailing" id="pr6-Ea-H3o"/>
@@ -291,15 +277,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kee-Qh-qUX">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundWhite" translatesAutoresizingMaskIntoConstraints="NO" id="fpc-qb-VfC">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v68-Rw-hCJ">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v68-Rw-hCJ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -310,16 +290,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="D9c-6w-C5t" firstAttribute="bottom" secondItem="kee-Qh-qUX" secondAttribute="bottom" id="4C8-uP-JUh"/>
-                            <constraint firstItem="D9c-6w-C5t" firstAttribute="bottom" secondItem="fpc-qb-VfC" secondAttribute="bottom" id="8cs-PJ-vHm"/>
                             <constraint firstItem="v68-Rw-hCJ" firstAttribute="leading" secondItem="Xhv-2W-8DJ" secondAttribute="leading" id="9LW-ZE-3kn"/>
-                            <constraint firstItem="fpc-qb-VfC" firstAttribute="top" secondItem="D9c-6w-C5t" secondAttribute="top" id="BQb-Rp-rOV"/>
-                            <constraint firstItem="kee-Qh-qUX" firstAttribute="top" secondItem="Xhv-2W-8DJ" secondAttribute="top" id="HeO-Ko-CKg"/>
                             <constraint firstAttribute="trailing" secondItem="v68-Rw-hCJ" secondAttribute="trailing" id="Qb6-Gh-Xqf"/>
-                            <constraint firstItem="fpc-qb-VfC" firstAttribute="leading" secondItem="Xhv-2W-8DJ" secondAttribute="leading" id="XXe-9r-PIl"/>
-                            <constraint firstItem="kee-Qh-qUX" firstAttribute="leading" secondItem="Xhv-2W-8DJ" secondAttribute="leading" id="bd5-sB-Uhf"/>
-                            <constraint firstAttribute="trailing" secondItem="kee-Qh-qUX" secondAttribute="trailing" id="gRN-zw-Cth"/>
-                            <constraint firstAttribute="trailing" secondItem="fpc-qb-VfC" secondAttribute="trailing" id="rzF-wZ-fYc"/>
                             <constraint firstItem="D9c-6w-C5t" firstAttribute="bottom" secondItem="v68-Rw-hCJ" secondAttribute="bottom" id="teK-Uc-DO5"/>
                             <constraint firstItem="v68-Rw-hCJ" firstAttribute="top" secondItem="D9c-6w-C5t" secondAttribute="top" id="ydq-nj-JlV"/>
                         </constraints>
@@ -327,15 +299,42 @@
                     </view>
                     <connections>
                         <outlet property="postContentTableView" destination="v68-Rw-hCJ" id="gQ0-Zy-jrA"/>
+                        <segue destination="NhN-WK-avK" kind="show" identifier="showPostOnWeb" id="Aba-hs-zo3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5x-y5-696" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1980" y="17"/>
         </scene>
+        <!--Post History Web View Controller-->
+        <scene sceneID="PBJ-Ip-OWD">
+            <objects>
+                <viewController id="NhN-WK-avK" customClass="PostHistoryWebViewController" customModule="SteemitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lct-bm-w1H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AEo-hD-yp6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qXe-fc-51K" firstAttribute="bottom" secondItem="AEo-hD-yp6" secondAttribute="bottom" id="Ok5-KX-RfP"/>
+                            <constraint firstItem="AEo-hD-yp6" firstAttribute="leading" secondItem="lct-bm-w1H" secondAttribute="leading" id="Pf6-O3-mM4"/>
+                            <constraint firstAttribute="trailing" secondItem="AEo-hD-yp6" secondAttribute="trailing" id="Zm1-xM-SNV"/>
+                            <constraint firstItem="AEo-hD-yp6" firstAttribute="top" secondItem="qXe-fc-51K" secondAttribute="top" id="qUf-HH-w9s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qXe-fc-51K"/>
+                    </view>
+                    <connections>
+                        <outlet property="webViewView" destination="AEo-hD-yp6" id="SF3-bg-Y7v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wo7-g6-CTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2844" y="17"/>
+        </scene>
     </scenes>
-    <resources>
-        <image name="background" width="720" height="960"/>
-        <image name="backgroundWhite" width="400" height="666"/>
-    </resources>
 </document>
