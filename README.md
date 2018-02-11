@@ -55,6 +55,10 @@ Don't forget to set identifiers for widget usage or run app on a device.
 
 * Post history page added. Now you can display a user's posts and pending payouts history for last week (0-7 days).
 
+#### 1.5
+
+* Post history web view added for post. 
+
 The app is in progress, but already functional.
 
 You can contribute to the app, just do a pull request.
