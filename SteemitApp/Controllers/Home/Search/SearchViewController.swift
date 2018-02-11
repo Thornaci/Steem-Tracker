@@ -18,6 +18,10 @@ class SearchViewController: BaseViewController {
         view.addGestureRecognizer(dismissGesture)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        usernameTextField.becomeFirstResponder()
+    }
+    
     @IBAction func showInfo(_ sender: Any) {
         performSegue(withIdentifier: "chooseAction", sender: nil)
     }
