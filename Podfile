@@ -13,6 +13,7 @@ target 'SteemitApp' do
   pod 'Charts', '~> 3.0.5'
   pod 'DateToolsSwift', '~> 2.0.1'
   pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
 
 end
 
