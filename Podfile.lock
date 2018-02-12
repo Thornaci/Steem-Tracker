@@ -49,8 +49,8 @@ DEPENDENCIES:
   - Alamofire (~> 4.5)
   - Charts (~> 3.0.5)
   - DateToolsSwift (~> 2.0.1)
-  - Firebase/Core
-  - Firebase/Messaging
+  - Firebase/Core (~> 4.8.2)
+  - Firebase/Messaging (~> 4.8.2)
   - HockeySDK (~> 5.1.2)
   - MBProgressHUD (~> 1.1.0)
   - ObjectMapper (~> 3.1)
@@ -73,6 +73,6 @@ SPEC CHECKSUMS:
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
 
-PODFILE CHECKSUM: 8e97160fd8c27a176d80fb81ac8fe0ab2e0c2200
+PODFILE CHECKSUM: d1f8f62533f549d2d5a0df850353cb4754650771
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0

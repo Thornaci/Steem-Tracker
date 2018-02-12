@@ -12,8 +12,8 @@ target 'SteemitApp' do
   pod 'HockeySDK', '~> 5.1.2'
   pod 'Charts', '~> 3.0.5'
   pod 'DateToolsSwift', '~> 2.0.1'
-  pod 'Firebase/Core'
-  pod 'Firebase/Messaging'
+  pod 'Firebase/Core', '~> 4.8.2'
+  pod 'Firebase/Messaging', '~> 4.8.2'
 
 end
 
