@@ -10,12 +10,12 @@
 		8F0D2DA319ADFBAC93253D59 /* Pods_SteemitAppWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */; };
 		ABFFC2526324D20A127D4979 /* Pods_SteemitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEC947916BFFF1BA92135A0 /* Pods_SteemitApp.framework */; };
 		C00B710E202E45DE00219433 /* PostHistoryWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B710D202E45DE00219433 /* PostHistoryWebViewController.swift */; };
-		C01DD9EF2030755E00A32855 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C01DD9EE2030755D00A32855 /* GoogleService-Info.plist */; };
 		C0420037201E04A700311654 /* FollowersViewControllerTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */; };
 		C042003A201E0F2000311654 /* FollowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0420038201E0F2000311654 /* FollowerTableViewCell.swift */; };
 		C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0420039201E0F2000311654 /* FollowerTableViewCell.xib */; };
 		C048DE5A2031B13E0070C5D5 /* SteemitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C048DE592031B13E0070C5D5 /* SteemitAppTests.swift */; };
 		C048DE682031B14A0070C5D5 /* SteemitAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C048DE672031B14A0070C5D5 /* SteemitAppUITests.swift */; };
+		C048DE702031DE6E0070C5D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C048DE6F2031DE6E0070C5D5 /* GoogleService-Info.plist */; };
 		C055BDBF2026049E002CFFDE /* PostHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055BDBE2026049E002CFFDE /* PostHistoryModel.swift */; };
 		C055BDC2202608B5002CFFDE /* PostHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055BDC1202608B5002CFFDE /* PostHistoryViewController.swift */; };
 		C055BDC5202676A1002CFFDE /* DayValueXAxisFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055BDC4202676A1002CFFDE /* DayValueXAxisFormatter.swift */; };
@@ -115,7 +115,6 @@
 		852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemitAppWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0007AF82013A40700C533F7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00B710D202E45DE00219433 /* PostHistoryWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryWebViewController.swift; sourceTree = "<group>"; };
-		C01DD9EE2030755D00A32855 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewControllerTableViewExtension.swift; sourceTree = "<group>"; };
 		C0420038201E0F2000311654 /* FollowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerTableViewCell.swift; sourceTree = "<group>"; };
 		C0420039201E0F2000311654 /* FollowerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowerTableViewCell.xib; sourceTree = "<group>"; };
@@ -125,6 +124,7 @@
 		C048DE652031B14A0070C5D5 /* SteemitAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteemitAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C048DE672031B14A0070C5D5 /* SteemitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteemitAppUITests.swift; sourceTree = "<group>"; };
 		C048DE692031B14B0070C5D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C048DE6F2031DE6E0070C5D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C055BDBE2026049E002CFFDE /* PostHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryModel.swift; sourceTree = "<group>"; };
 		C055BDC1202608B5002CFFDE /* PostHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryViewController.swift; sourceTree = "<group>"; };
 		C055BDC4202676A1002CFFDE /* DayValueXAxisFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayValueXAxisFormatter.swift; sourceTree = "<group>"; };
@@ -477,8 +477,8 @@
 				C0FBCA632001288C0098633F /* AppDelegate.swift */,
 				C0FBCA6A2001288C0098633F /* Assets.xcassets */,
 				C0FBCA6C2001288C0098633F /* LaunchScreen.storyboard */,
-				C01DD9EE2030755D00A32855 /* GoogleService-Info.plist */,
 				C0FBCA6F2001288C0098633F /* Info.plist */,
+				C048DE6F2031DE6E0070C5D5 /* GoogleService-Info.plist */,
 			);
 			path = SteemitApp;
 			sourceTree = "<group>";
@@ -675,7 +675,7 @@
 				C091EE372019DA120010209F /* Follower.storyboard in Resources */,
 				C0ADEB712020E85B0053C3BF /* Information.storyboard in Resources */,
 				C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */,
-				C01DD9EF2030755E00A32855 /* GoogleService-Info.plist in Resources */,
+				C048DE702031DE6E0070C5D5 /* GoogleService-Info.plist in Resources */,
 				C0FBCA6E2001288C0098633F /* LaunchScreen.storyboard in Resources */,
 				C0FBCA6B2001288C0098633F /* Assets.xcassets in Resources */,
 			);
