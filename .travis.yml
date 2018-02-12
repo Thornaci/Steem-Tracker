@@ -2,11 +2,10 @@ language: swift
 osx_image: xcode9.2
 xcode_project: SteemitApp.xcode_workspace
 xcode_scheme: SteemitApp
-podfile: path/to/Podfile
+podfile: Podfile
 install:
   - bundle install
   - bundle update
-  - bundle exec pod install
 script:
   - fastlane runTests
 os: osx
