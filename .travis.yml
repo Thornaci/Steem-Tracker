@@ -2,7 +2,6 @@ language: swift
 osx_image: xcode9.2
 xcode_project: SteemitApp.xcode_workspace
 xcode_scheme: SteemitApp
-podfile: Podfile
 install:
   - bundle install
   - bundle update
