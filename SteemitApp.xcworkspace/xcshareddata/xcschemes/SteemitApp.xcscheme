@@ -40,16 +40,6 @@
                ReferencedContainer = "container:SteemitApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C048DE642031B14A0070C5D5"
-               BuildableName = "SteemitAppUITests.xctest"
-               BlueprintName = "SteemitAppUITests"
-               ReferencedContainer = "container:SteemitApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
