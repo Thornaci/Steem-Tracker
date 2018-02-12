@@ -4,6 +4,7 @@ install:
   - bundle install
   - bundle update
   - pod install --project-directory=/Users/travis/build/Thornaci/Steem-Tracker/
+  - pod update --project-directory=/Users/travis/build/Thornaci/Steem-Tracker/
 script:
   - fastlane runTests
 xcode_project: SteemitApp.xcode_workspace
