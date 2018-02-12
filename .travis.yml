@@ -1,0 +1,5 @@
+language: swift
+xcode_project: SteemitApp.xcode_workspace
+xcode_scheme: SteemitApp
+podfile: path/to/Podfile
+os: osx

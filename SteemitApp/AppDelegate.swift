@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         BITHockeyManager.shared().authenticator.authenticateInstallation()
         BITHockeyManager.shared().isStoreUpdateManagerEnabled = true
         
-//        FirebaseApp.configure()
+        FirebaseApp.configure()
         
         Messaging.messaging().delegate = self
 

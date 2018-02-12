@@ -10,9 +10,12 @@
 		8F0D2DA319ADFBAC93253D59 /* Pods_SteemitAppWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */; };
 		ABFFC2526324D20A127D4979 /* Pods_SteemitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEC947916BFFF1BA92135A0 /* Pods_SteemitApp.framework */; };
 		C00B710E202E45DE00219433 /* PostHistoryWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B710D202E45DE00219433 /* PostHistoryWebViewController.swift */; };
+		C01DD9EF2030755E00A32855 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C01DD9EE2030755D00A32855 /* GoogleService-Info.plist */; };
 		C0420037201E04A700311654 /* FollowersViewControllerTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */; };
 		C042003A201E0F2000311654 /* FollowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0420038201E0F2000311654 /* FollowerTableViewCell.swift */; };
 		C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0420039201E0F2000311654 /* FollowerTableViewCell.xib */; };
+		C048DE5A2031B13E0070C5D5 /* SteemitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C048DE592031B13E0070C5D5 /* SteemitAppTests.swift */; };
+		C048DE682031B14A0070C5D5 /* SteemitAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C048DE672031B14A0070C5D5 /* SteemitAppUITests.swift */; };
 		C055BDBF2026049E002CFFDE /* PostHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055BDBE2026049E002CFFDE /* PostHistoryModel.swift */; };
 		C055BDC2202608B5002CFFDE /* PostHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055BDC1202608B5002CFFDE /* PostHistoryViewController.swift */; };
 		C055BDC5202676A1002CFFDE /* DayValueXAxisFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055BDC4202676A1002CFFDE /* DayValueXAxisFormatter.swift */; };
@@ -68,6 +71,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C048DE5C2031B13E0070C5D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0FBCA582001288C0098633F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0FBCA5F2001288C0098633F;
+			remoteInfo = SteemitApp;
+		};
+		C048DE6A2031B14B0070C5D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0FBCA582001288C0098633F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0FBCA5F2001288C0098633F;
+			remoteInfo = SteemitApp;
+		};
 		C0F8BF2A20063807009C1585 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C0FBCA582001288C0098633F /* Project object */;
@@ -98,9 +115,16 @@
 		852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemitAppWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0007AF82013A40700C533F7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00B710D202E45DE00219433 /* PostHistoryWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryWebViewController.swift; sourceTree = "<group>"; };
+		C01DD9EE2030755D00A32855 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewControllerTableViewExtension.swift; sourceTree = "<group>"; };
 		C0420038201E0F2000311654 /* FollowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerTableViewCell.swift; sourceTree = "<group>"; };
 		C0420039201E0F2000311654 /* FollowerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowerTableViewCell.xib; sourceTree = "<group>"; };
+		C048DE572031B13E0070C5D5 /* SteemitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteemitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C048DE592031B13E0070C5D5 /* SteemitAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteemitAppTests.swift; sourceTree = "<group>"; };
+		C048DE5B2031B13E0070C5D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C048DE652031B14A0070C5D5 /* SteemitAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteemitAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C048DE672031B14A0070C5D5 /* SteemitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteemitAppUITests.swift; sourceTree = "<group>"; };
+		C048DE692031B14B0070C5D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C055BDBE2026049E002CFFDE /* PostHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryModel.swift; sourceTree = "<group>"; };
 		C055BDC1202608B5002CFFDE /* PostHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryViewController.swift; sourceTree = "<group>"; };
 		C055BDC4202676A1002CFFDE /* DayValueXAxisFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayValueXAxisFormatter.swift; sourceTree = "<group>"; };
@@ -163,6 +187,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C048DE542031B13E0070C5D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C048DE622031B14A0070C5D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0F8BF1D20063807009C1585 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,6 +230,24 @@
 				48F10E37E9A471DBBEE6AB16 /* Pods-SteemitAppWidget.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C048DE582031B13E0070C5D5 /* SteemitAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C048DE592031B13E0070C5D5 /* SteemitAppTests.swift */,
+				C048DE5B2031B13E0070C5D5 /* Info.plist */,
+			);
+			path = SteemitAppTests;
+			sourceTree = "<group>";
+		};
+		C048DE662031B14A0070C5D5 /* SteemitAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C048DE672031B14A0070C5D5 /* SteemitAppUITests.swift */,
+				C048DE692031B14B0070C5D5 /* Info.plist */,
+			);
+			path = SteemitAppUITests;
 			sourceTree = "<group>";
 		};
 		C062EF432003644A00B9C3D2 /* Manager */ = {
@@ -386,6 +442,8 @@
 			children = (
 				C0FBCA622001288C0098633F /* SteemitApp */,
 				C0F8BF2320063807009C1585 /* SteemitAppWidget */,
+				C048DE582031B13E0070C5D5 /* SteemitAppTests */,
+				C048DE662031B14A0070C5D5 /* SteemitAppUITests */,
 				C0FBCA612001288C0098633F /* Products */,
 				535C3CD53E73AA5FD8688EF3 /* Pods */,
 				C62F8F808C49CB57FB8FE8A7 /* Frameworks */,
@@ -397,6 +455,8 @@
 			children = (
 				C0FBCA602001288C0098633F /* SteemitApp.app */,
 				C0F8BF2020063807009C1585 /* SteemitAppWidget.appex */,
+				C048DE572031B13E0070C5D5 /* SteemitAppTests.xctest */,
+				C048DE652031B14A0070C5D5 /* SteemitAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -417,6 +477,7 @@
 				C0FBCA632001288C0098633F /* AppDelegate.swift */,
 				C0FBCA6A2001288C0098633F /* Assets.xcassets */,
 				C0FBCA6C2001288C0098633F /* LaunchScreen.storyboard */,
+				C01DD9EE2030755D00A32855 /* GoogleService-Info.plist */,
 				C0FBCA6F2001288C0098633F /* Info.plist */,
 			);
 			path = SteemitApp;
@@ -436,6 +497,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C048DE562031B13E0070C5D5 /* SteemitAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C048DE602031B13E0070C5D5 /* Build configuration list for PBXNativeTarget "SteemitAppTests" */;
+			buildPhases = (
+				C048DE532031B13E0070C5D5 /* Sources */,
+				C048DE542031B13E0070C5D5 /* Frameworks */,
+				C048DE552031B13E0070C5D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C048DE5D2031B13E0070C5D5 /* PBXTargetDependency */,
+			);
+			name = SteemitAppTests;
+			productName = SteemitAppTests;
+			productReference = C048DE572031B13E0070C5D5 /* SteemitAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C048DE642031B14A0070C5D5 /* SteemitAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C048DE6C2031B14B0070C5D5 /* Build configuration list for PBXNativeTarget "SteemitAppUITests" */;
+			buildPhases = (
+				C048DE612031B14A0070C5D5 /* Sources */,
+				C048DE622031B14A0070C5D5 /* Frameworks */,
+				C048DE632031B14A0070C5D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C048DE6B2031B14B0070C5D5 /* PBXTargetDependency */,
+			);
+			name = SteemitAppUITests;
+			productName = SteemitAppUITests;
+			productReference = C048DE652031B14A0070C5D5 /* SteemitAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		C0F8BF1F20063807009C1585 /* SteemitAppWidget */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0F8BF2F20063807009C1585 /* Build configuration list for PBXNativeTarget "SteemitAppWidget" */;
@@ -487,6 +584,16 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Burak Tayfun";
 				TargetAttributes = {
+					C048DE562031B13E0070C5D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C0FBCA5F2001288C0098633F;
+					};
+					C048DE642031B14A0070C5D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C0FBCA5F2001288C0098633F;
+					};
 					C0F8BF1F20063807009C1585 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -528,11 +635,27 @@
 			targets = (
 				C0FBCA5F2001288C0098633F /* SteemitApp */,
 				C0F8BF1F20063807009C1585 /* SteemitAppWidget */,
+				C048DE562031B13E0070C5D5 /* SteemitAppTests */,
+				C048DE642031B14A0070C5D5 /* SteemitAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C048DE552031B13E0070C5D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C048DE632031B14A0070C5D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0F8BF1E20063807009C1585 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -552,6 +675,7 @@
 				C091EE372019DA120010209F /* Follower.storyboard in Resources */,
 				C0ADEB712020E85B0053C3BF /* Information.storyboard in Resources */,
 				C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */,
+				C01DD9EF2030755E00A32855 /* GoogleService-Info.plist in Resources */,
 				C0FBCA6E2001288C0098633F /* LaunchScreen.storyboard in Resources */,
 				C0FBCA6B2001288C0098633F /* Assets.xcassets in Resources */,
 			);
@@ -666,6 +790,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C048DE532031B13E0070C5D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C048DE5A2031B13E0070C5D5 /* SteemitAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C048DE612031B14A0070C5D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C048DE682031B14A0070C5D5 /* SteemitAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C0F8BF1C20063807009C1585 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -727,6 +867,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C048DE5D2031B13E0070C5D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0FBCA5F2001288C0098633F /* SteemitApp */;
+			targetProxy = C048DE5C2031B13E0070C5D5 /* PBXContainerItemProxy */;
+		};
+		C048DE6B2031B14B0070C5D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0FBCA5F2001288C0098633F /* SteemitApp */;
+			targetProxy = C048DE6A2031B14B0070C5D5 /* PBXContainerItemProxy */;
+		};
 		C0F8BF2B20063807009C1585 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C0F8BF1F20063807009C1585 /* SteemitAppWidget */;
@@ -754,6 +904,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C048DE5E2031B13E0070C5D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B86NRAU7G;
+				INFOPLIST_FILE = SteemitAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thornaci.SteemitAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SteemitApp.app/SteemitApp";
+			};
+			name = Debug;
+		};
+		C048DE5F2031B13E0070C5D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B86NRAU7G;
+				INFOPLIST_FILE = SteemitAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thornaci.SteemitAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SteemitApp.app/SteemitApp";
+			};
+			name = Release;
+		};
+		C048DE6D2031B14B0070C5D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B86NRAU7G;
+				INFOPLIST_FILE = SteemitAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thornaci.SteemitAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SteemitApp;
+			};
+			name = Debug;
+		};
+		C048DE6E2031B14B0070C5D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3B86NRAU7G;
+				INFOPLIST_FILE = SteemitAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thornaci.SteemitAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SteemitApp;
+			};
+			name = Release;
+		};
 		C0F8BF2D20063807009C1585 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA0219D4F81438D9F9135D69 /* Pods-SteemitAppWidget.debug.xcconfig */;
@@ -936,6 +1148,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C048DE602031B13E0070C5D5 /* Build configuration list for PBXNativeTarget "SteemitAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C048DE5E2031B13E0070C5D5 /* Debug */,
+				C048DE5F2031B13E0070C5D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C048DE6C2031B14B0070C5D5 /* Build configuration list for PBXNativeTarget "SteemitAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C048DE6D2031B14B0070C5D5 /* Debug */,
+				C048DE6E2031B14B0070C5D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C0F8BF2F20063807009C1585 /* Build configuration list for PBXNativeTarget "SteemitAppWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
