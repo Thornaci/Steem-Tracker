@@ -3,7 +3,6 @@ osx_image: xcode9.2
 install:
   - bundle install
   - bundle update
-  - pod install --project-directory=/Users/travis/build/Thornaci/Steem-Tracker/
   - pod update --project-directory=/Users/travis/build/Thornaci/Steem-Tracker/
 script:
   - fastlane runTests
