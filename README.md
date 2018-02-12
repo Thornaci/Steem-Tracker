@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/Thornaci/Steem-Tracker.svg?branch=master)](https://travis-ci.org/Thornaci/Steem-Tracker)
-![Swift 3.1.x](https://img.shields.io/badge/Swift-3.1.x-orange.svg)
+![Swift 4.0.x](https://img.shields.io/badge/Swift-3.1.x-orange.svg)
 ![iOS 9.0+](https://img.shields.io/badge/iOS-9.0+-orange.svg)
 
 Steem Tracker
