@@ -1,9 +1,10 @@
+setup_travis
 fastlane_version "2.64.1"
 
 default_platform :ios
 
 platform :ios do
-  	lane :pushToSprint
+  	lane :pushToSprint do
 
   	  	version = get_version_number()
     	git_tag = "Version-" + version
@@ -16,6 +17,7 @@ platform :ios do
       		local_branch: 'dev', 
       		remote_branch: 'sprint'
       	)  
+  	end
 
 	lane :pushToDev do
 
@@ -26,7 +28,11 @@ platform :ios do
     	push_to_git_remote(remote: 'origin', 
       		local_branch: 'dev', 
       		remote_branch: 'dev'
-      	)      
-  end
+      	)   
+    end  
+
+    lane :runTests do
+    	scan(scheme: "SteemitApp", code_coverage: true, device: "iPhone 6")
+    end 
 end
 
