@@ -6,6 +6,7 @@ podfile: path/to/Podfile
 install:
   - bundle install
   - bundle update
+  - bundle exec pod install
 script:
   - fastlane runTests
 os: osx
