@@ -31,6 +31,11 @@ fastlane ios pushToDev
 fastlane ios runTests
 ```
 
+### ios slatherr
+```
+fastlane ios slatherr
+```
+
 
 ----
 

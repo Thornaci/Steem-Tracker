@@ -7,7 +7,7 @@ install:
 script:
   - fastlane runTests
 after_success:
-  - cd $TRAVIS_BUILD_DIR && slather
+  - cd /Users/travis/build/Thornaci/Steem-Tracker/reports && slather
 xcode_project: SteemitApp.xcode_workspace
 xcode_scheme: SteemitApp
 os: osx
