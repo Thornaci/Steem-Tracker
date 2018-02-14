@@ -1,7 +1,6 @@
-ci_service: travis_pro
-ci_access_token: coveralltoken
 coverage_service: coveralls
-xcodeproj: SteemitApp.xcworkspace
+xcodeproj: SteemitApp.xcodeproj
+coverage_service: cobertura_xml
 source_directory: SteemitApp
 ignore:
   - SteemitApp/*
