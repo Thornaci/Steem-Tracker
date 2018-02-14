@@ -15,7 +15,7 @@
 		C0420037201E04A700311654 /* FollowersViewControllerTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */; };
 		C042003A201E0F2000311654 /* FollowerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0420038201E0F2000311654 /* FollowerTableViewCell.swift */; };
 		C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0420039201E0F2000311654 /* FollowerTableViewCell.xib */; };
-		C048DE5A2031B13E0070C5D5 /* SteemitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C048DE592031B13E0070C5D5 /* SteemitAppTests.swift */; };
+		C048DE5A2031B13E0070C5D5 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C048DE592031B13E0070C5D5 /* NetworkManagerTests.swift */; };
 		C055BDBF2026049E002CFFDE /* PostHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055BDBE2026049E002CFFDE /* PostHistoryModel.swift */; };
 		C055BDC2202608B5002CFFDE /* PostHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055BDC1202608B5002CFFDE /* PostHistoryViewController.swift */; };
 		C055BDC5202676A1002CFFDE /* DayValueXAxisFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055BDC4202676A1002CFFDE /* DayValueXAxisFormatter.swift */; };
@@ -34,6 +34,11 @@
 		C062EF632003B6EE00B9C3D2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062EF622003B6EE00B9C3D2 /* UserModel.swift */; };
 		C0656515202CC08C005F9089 /* PostContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0656513202CC08C005F9089 /* PostContentTableViewCell.swift */; };
 		C0656516202CC08C005F9089 /* PostContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0656514202CC08C005F9089 /* PostContentTableViewCell.xib */; };
+		C066E6F62034D6A200B7AB05 /* SteemitAccount.json in Resources */ = {isa = PBXBuildFile; fileRef = C066E6F52034D6A200B7AB05 /* SteemitAccount.json */; };
+		C066E6F82034DC9700B7AB05 /* SteemitAccountFollowerAndFollowingCount.json in Resources */ = {isa = PBXBuildFile; fileRef = C066E6F72034DC9700B7AB05 /* SteemitAccountFollowerAndFollowingCount.json */; };
+		C066E6FC2034DFC900B7AB05 /* SteemitAccountFollowingList.json in Resources */ = {isa = PBXBuildFile; fileRef = C066E6FB2034DFC900B7AB05 /* SteemitAccountFollowingList.json */; };
+		C066E7022034E24700B7AB05 /* SteemitAccountPostsHistory.json in Resources */ = {isa = PBXBuildFile; fileRef = C066E7012034E24700B7AB05 /* SteemitAccountPostsHistory.json */; };
+		C066E7052034E4CA00B7AB05 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C066E7042034E4CA00B7AB05 /* ModelTests.swift */; };
 		C073B1802022F26E00598305 /* TagHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073B17F2022F26E00598305 /* TagHistoryModel.swift */; };
 		C07C623D202A21AB004A5378 /* PostHistoryContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07C623C202A21AB004A5378 /* PostHistoryContentsViewController.swift */; };
 		C07C6240202A2900004A5378 /* PostHistoryContentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07C623F202A2900004A5378 /* PostHistoryContentsTableViewController.swift */; };
@@ -68,6 +73,7 @@
 		C0FBCA642001288C0098633F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FBCA632001288C0098633F /* AppDelegate.swift */; };
 		C0FBCA6B2001288C0098633F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FBCA6A2001288C0098633F /* Assets.xcassets */; };
 		C0FBCA6E2001288C0098633F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FBCA6C2001288C0098633F /* LaunchScreen.storyboard */; };
+		D51D139E6E6D49F559E93863 /* Pods_SteemitAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECEF90FB8D479C22D812E9F /* Pods_SteemitAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,8 +108,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0ECEF90FB8D479C22D812E9F /* Pods_SteemitAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemitAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BF7076AEE3214DC3D50282 /* Pods-SteemitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteemitApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SteemitApp/Pods-SteemitApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3BE005DEA10862922C2D2F66 /* Pods-SteemitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteemitAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SteemitAppTests/Pods-SteemitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		48F10E37E9A471DBBEE6AB16 /* Pods-SteemitAppWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteemitAppWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-SteemitAppWidget/Pods-SteemitAppWidget.release.xcconfig"; sourceTree = "<group>"; };
+		4BAC1CF9A2001BC21835FB2D /* Pods-SteemitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SteemitAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SteemitAppTests/Pods-SteemitAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		5CEC947916BFFF1BA92135A0 /* Pods_SteemitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemitAppWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0007AF82013A40700C533F7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +123,7 @@
 		C0420038201E0F2000311654 /* FollowerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerTableViewCell.swift; sourceTree = "<group>"; };
 		C0420039201E0F2000311654 /* FollowerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowerTableViewCell.xib; sourceTree = "<group>"; };
 		C048DE572031B13E0070C5D5 /* SteemitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteemitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C048DE592031B13E0070C5D5 /* SteemitAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteemitAppTests.swift; sourceTree = "<group>"; };
+		C048DE592031B13E0070C5D5 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		C048DE5B2031B13E0070C5D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C055BDBE2026049E002CFFDE /* PostHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryModel.swift; sourceTree = "<group>"; };
 		C055BDC1202608B5002CFFDE /* PostHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +143,11 @@
 		C062EF622003B6EE00B9C3D2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		C0656513202CC08C005F9089 /* PostContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentTableViewCell.swift; sourceTree = "<group>"; };
 		C0656514202CC08C005F9089 /* PostContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostContentTableViewCell.xib; sourceTree = "<group>"; };
+		C066E6F52034D6A200B7AB05 /* SteemitAccount.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SteemitAccount.json; sourceTree = "<group>"; };
+		C066E6F72034DC9700B7AB05 /* SteemitAccountFollowerAndFollowingCount.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SteemitAccountFollowerAndFollowingCount.json; sourceTree = "<group>"; };
+		C066E6FB2034DFC900B7AB05 /* SteemitAccountFollowingList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SteemitAccountFollowingList.json; sourceTree = "<group>"; };
+		C066E7012034E24700B7AB05 /* SteemitAccountPostsHistory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SteemitAccountPostsHistory.json; sourceTree = "<group>"; };
+		C066E7042034E4CA00B7AB05 /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 		C073B17F2022F26E00598305 /* TagHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagHistoryModel.swift; sourceTree = "<group>"; };
 		C07C623C202A21AB004A5378 /* PostHistoryContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryContentsViewController.swift; sourceTree = "<group>"; };
 		C07C623F202A2900004A5378 /* PostHistoryContentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryContentsTableViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51D139E6E6D49F559E93863 /* Pods_SteemitAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +226,8 @@
 				F6B15CA4796AE835B98F4CCF /* Pods-SteemitApp.release.xcconfig */,
 				EA0219D4F81438D9F9135D69 /* Pods-SteemitAppWidget.debug.xcconfig */,
 				48F10E37E9A471DBBEE6AB16 /* Pods-SteemitAppWidget.release.xcconfig */,
+				3BE005DEA10862922C2D2F66 /* Pods-SteemitAppTests.debug.xcconfig */,
+				4BAC1CF9A2001BC21835FB2D /* Pods-SteemitAppTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -218,7 +235,8 @@
 		C048DE582031B13E0070C5D5 /* SteemitAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				C048DE592031B13E0070C5D5 /* SteemitAppTests.swift */,
+				C066E7032034E48D00B7AB05 /* ModelTests */,
+				C066E6F12034D56200B7AB05 /* NetworkManagerTests */,
 				C048DE5B2031B13E0070C5D5 /* Info.plist */,
 			);
 			path = SteemitAppTests;
@@ -300,6 +318,34 @@
 				C062EF5C2003B06600B9C3D2 /* CurrencyTypes.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		C066E6F12034D56200B7AB05 /* NetworkManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C066E6F22034D57100B7AB05 /* MockNetworkDatas */,
+				C048DE592031B13E0070C5D5 /* NetworkManagerTests.swift */,
+			);
+			path = NetworkManagerTests;
+			sourceTree = "<group>";
+		};
+		C066E6F22034D57100B7AB05 /* MockNetworkDatas */ = {
+			isa = PBXGroup;
+			children = (
+				C066E6F52034D6A200B7AB05 /* SteemitAccount.json */,
+				C066E6F72034DC9700B7AB05 /* SteemitAccountFollowerAndFollowingCount.json */,
+				C066E6FB2034DFC900B7AB05 /* SteemitAccountFollowingList.json */,
+				C066E7012034E24700B7AB05 /* SteemitAccountPostsHistory.json */,
+			);
+			path = MockNetworkDatas;
+			sourceTree = "<group>";
+		};
+		C066E7032034E48D00B7AB05 /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				C066E7042034E4CA00B7AB05 /* ModelTests.swift */,
+			);
+			path = ModelTests;
 			sourceTree = "<group>";
 		};
 		C07C623E202A21B0004A5378 /* Post History Content */ = {
@@ -462,6 +508,7 @@
 				5CEC947916BFFF1BA92135A0 /* Pods_SteemitApp.framework */,
 				C0F8BF2120063807009C1585 /* NotificationCenter.framework */,
 				852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */,
+				0ECEF90FB8D479C22D812E9F /* Pods_SteemitAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -473,9 +520,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C048DE602031B13E0070C5D5 /* Build configuration list for PBXNativeTarget "SteemitAppTests" */;
 			buildPhases = (
+				A66B98430C1604762A225624 /* [CP] Check Pods Manifest.lock */,
 				C048DE532031B13E0070C5D5 /* Sources */,
 				C048DE542031B13E0070C5D5 /* Frameworks */,
 				C048DE552031B13E0070C5D5 /* Resources */,
+				77FF0CEB8157FC791725BA9F /* [CP] Embed Pods Frameworks */,
+				5486316FECB9A2559840935A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -594,6 +644,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C066E6FC2034DFC900B7AB05 /* SteemitAccountFollowingList.json in Resources */,
+				C066E6F62034D6A200B7AB05 /* SteemitAccount.json in Resources */,
+				C066E6F82034DC9700B7AB05 /* SteemitAccountFollowerAndFollowingCount.json in Resources */,
+				C066E7022034E24700B7AB05 /* SteemitAccountPostsHistory.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +698,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5486316FECB9A2559840935A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SteemitAppTests/Pods-SteemitAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6E8E43B6C85149FC686A5BCB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -657,6 +726,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SteemitAppWidget/Pods-SteemitAppWidget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77FF0CEB8157FC791725BA9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SteemitAppTests/Pods-SteemitAppTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac-Defines-NSData+zlib/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb-iOS11.2/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SteemitAppTests/Pods-SteemitAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		91B0B7B824DFF4B80EA85759 /* [CP] Copy Pods Resources */ = {
@@ -687,12 +778,12 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac-Defines-Logger-NSData+zlib/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb-iOS9.0/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -709,6 +800,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SteemitApp/Pods-SteemitApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A66B98430C1604762A225624 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SteemitAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E2FAC0CF0EDA9230AFCA14D4 /* [CP] Check Pods Manifest.lock */ = {
@@ -736,7 +845,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C048DE5A2031B13E0070C5D5 /* SteemitAppTests.swift in Sources */,
+				C048DE5A2031B13E0070C5D5 /* NetworkManagerTests.swift in Sources */,
+				C066E7052034E4CA00B7AB05 /* ModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -835,6 +945,7 @@
 /* Begin XCBuildConfiguration section */
 		C048DE5E2031B13E0070C5D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BE005DEA10862922C2D2F66 /* Pods-SteemitAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -851,6 +962,7 @@
 		};
 		C048DE5F2031B13E0070C5D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BAC1CF9A2001BC21835FB2D /* Pods-SteemitAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

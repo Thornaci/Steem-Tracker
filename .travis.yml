@@ -6,6 +6,8 @@ install:
   - pod update --project-directory=/Users/travis/build/Thornaci/Steem-Tracker/
 script:
   - fastlane runTests
+after_success:
+  - cd $TRAVIS_BUILD_DIR && slather
 xcode_project: SteemitApp.xcode_workspace
 xcode_scheme: SteemitApp
 os: osx
