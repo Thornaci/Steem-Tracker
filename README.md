@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/Thornaci/Steem-Tracker.svg?branch=master)](https://travis-ci.org/Thornaci/Steem-Tracker)
 ![Swift 4.0.x](https://img.shields.io/badge/Swift-4.0.x-orange.svg)
 ![iOS 9.0+](https://img.shields.io/badge/iOS-9.0+-orange.svg)
+[![Coverage Status](https://coveralls.io/repos/github/Thornaci/Steem-Tracker/badge.svg?branch=master)](https://coveralls.io/github/Thornaci/Steem-Tracker?branch=master)
 
 Steem Tracker
 =======
