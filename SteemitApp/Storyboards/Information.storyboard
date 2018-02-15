@@ -80,7 +80,7 @@
                                         </connections>
                                     </segmentedControl>
                                 </subviews>
-                                <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="3XQ-aG-vKr" firstAttribute="leading" secondItem="31H-GS-edr" secondAttribute="leading" constant="20" id="0ea-ha-eZS"/>
                                     <constraint firstItem="c21-qx-Bgl" firstAttribute="centerX" secondItem="F7j-3t-8jD" secondAttribute="centerX" id="3f8-tH-dMf"/>

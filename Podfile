@@ -1,9 +1,13 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+use_frameworks!
+
+def shared_pods
+    pod 'Firebase/Core', '~> 4.8.2'
+end
+
 target 'SteemitApp' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
 
   pod 'Alamofire', '~> 4.5'
   pod 'ObjectMapper', '~> 3.1'
@@ -12,12 +16,15 @@ target 'SteemitApp' do
   pod 'HockeySDK', '~> 5.1.2'
   pod 'Charts', '~> 3.0.5'
   pod 'DateToolsSwift', '~> 2.0.1'
-  pod 'Firebase/Core', '~> 4.8.2'
   pod 'Firebase/Messaging', '~> 4.8.2'
-
+  shared_pods
 end
 
 target 'SteemitAppWidget' do
-use_frameworks!
+    
+end
 
+target 'SteemitAppTests' do
+    shared_pods
+    pod 'OHHTTPStubs/Swift'
 end

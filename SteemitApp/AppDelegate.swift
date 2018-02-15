@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         application.applicationIconBadgeNumber = 0
         
-        BITHockeyManager.shared().configure(withIdentifier: "292b4a0dc15e4fb9af602055958630fd")
+        BITHockeyManager.shared().configure(withIdentifier: "00000000000000000000000000000000")
         BITHockeyManager.shared().start()
         BITHockeyManager.shared().authenticator.authenticateInstallation()
         BITHockeyManager.shared().isStoreUpdateManagerEnabled = true
