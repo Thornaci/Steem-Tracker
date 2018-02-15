@@ -1,7 +1,0 @@
-coverage_service: coveralls
-xcodeproj: SteemitApp.xcodeproj
-coverage_service: cobertura_xml
-source_directory: SteemitApp
-ignore:
-  - SteemitApp/*
-  - Pods/*

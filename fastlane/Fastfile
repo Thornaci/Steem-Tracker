@@ -32,8 +32,8 @@ platform :ios do
     end  
 
     lane :runTests do
-    	# scan(scheme: "SteemitApp", code_coverage: true, device: "iPhone 6")
-    	slather(travis: true, coveralls: true, scheme: "SteemitApp", workspace: "./SteemitApp.xcworkspace", proj: "./SteemitApp.xcodeproj", cobertura_xml: true)
+    	scan(scheme: "SteemitApp", code_coverage: true, device: "iPhone 6")
+    	# slather(travis: true, coveralls: true, scheme: "SteemitApp", workspace: "./SteemitApp.xcworkspace", proj: "./SteemitApp.xcodeproj", cobertura_xml: true)
     end 
 end
 

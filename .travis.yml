@@ -7,7 +7,8 @@ install:
 script:
   - fastlane runTests
 after_success:
-  - cd /Users/travis/build/Thornaci/Steem-Tracker/reports && slather
+  - cd /Users/travis/build/Thornaci/Steem-Tracker/reports
+  - bash <(curl -s https://codecov.io/bash)
 xcode_project: SteemitApp.xcode_workspace
 xcode_scheme: SteemitApp
 os: osx
