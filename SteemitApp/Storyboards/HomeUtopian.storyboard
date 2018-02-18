@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IyT-ic-7Jq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Kefa.ttf">
+            <string>Kefa-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home Utopian View Controller-->
+        <scene sceneID="XV1-ZC-LlD">
+            <objects>
+                <viewController id="pWz-nU-vTh" customClass="HomeUtopianViewController" customModule="SteemitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="As3-9w-fBn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXK-Oj-roZ" customClass="ThoSlider" customModule="SteemitApp" customModuleProvider="target">
+                                <rect key="frame" x="30" y="120" width="315" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%58.04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdZ-rK-bGQ">
+                                        <rect key="frame" x="128" y="10" width="58" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QdZ-rK-bGQ" firstAttribute="centerY" secondItem="SXK-Oj-roZ" secondAttribute="centerY" id="rh7-0u-Ioa"/>
+                                    <constraint firstItem="QdZ-rK-bGQ" firstAttribute="centerX" secondItem="SXK-Oj-roZ" secondAttribute="centerX" id="sBN-FI-kH0"/>
+                                    <constraint firstAttribute="height" constant="40" id="xUf-KO-r2X"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voting Power" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKI-oi-Id4">
+                                <rect key="frame" x="30" y="76.5" width="315" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <color key="textColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Last Vote Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywk-K5-sL2" customClass="ThoLabel" customModule="SteemitApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="190" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-02-18T15:47:03" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gq4-wa-YhC" customClass="ThoLabel" customModule="SteemitApp" customModuleProvider="target">
+                                <rect key="frame" x="144" y="190" width="211" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SXK-Oj-roZ" firstAttribute="top" secondItem="MKI-oi-Id4" secondAttribute="bottom" constant="20" id="6oX-IU-khc"/>
+                            <constraint firstItem="Ywk-K5-sL2" firstAttribute="top" secondItem="SXK-Oj-roZ" secondAttribute="bottom" constant="30" id="9k0-jZ-96k"/>
+                            <constraint firstItem="Gq4-wa-YhC" firstAttribute="top" secondItem="SXK-Oj-roZ" secondAttribute="bottom" constant="30" id="E3X-su-KvO"/>
+                            <constraint firstItem="SXK-Oj-roZ" firstAttribute="leading" secondItem="DeU-JR-VX8" secondAttribute="leading" constant="30" id="F8P-b6-MQA"/>
+                            <constraint firstItem="SXK-Oj-roZ" firstAttribute="top" secondItem="DeU-JR-VX8" secondAttribute="top" constant="120" id="Glr-mR-tvg"/>
+                            <constraint firstItem="MKI-oi-Id4" firstAttribute="trailing" secondItem="SXK-Oj-roZ" secondAttribute="trailing" id="IPG-q8-dEZ"/>
+                            <constraint firstItem="Gq4-wa-YhC" firstAttribute="leading" secondItem="Ywk-K5-sL2" secondAttribute="trailing" constant="10" id="XBN-i4-v5J"/>
+                            <constraint firstItem="MKI-oi-Id4" firstAttribute="leading" secondItem="SXK-Oj-roZ" secondAttribute="leading" id="bPI-AG-f4u"/>
+                            <constraint firstItem="DeU-JR-VX8" firstAttribute="trailing" secondItem="Gq4-wa-YhC" secondAttribute="trailing" constant="20" id="ddr-WT-dvu"/>
+                            <constraint firstItem="Ywk-K5-sL2" firstAttribute="leading" secondItem="DeU-JR-VX8" secondAttribute="leading" constant="20" id="mZc-iQ-cvV"/>
+                            <constraint firstItem="DeU-JR-VX8" firstAttribute="trailing" secondItem="SXK-Oj-roZ" secondAttribute="trailing" constant="30" id="oIq-I3-VMg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DeU-JR-VX8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d5r-k6-BeI">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="fDv-iH-a9h">
+                            <color key="tintColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="closeScreen:" destination="pWz-nU-vTh" id="yK4-W9-SSL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="percentView" destination="SXK-Oj-roZ" id="lbe-xC-tX0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijx-56-pKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455.19999999999999" y="136.28185907046478"/>
+        </scene>
+        <!--Base Navigation View Controller-->
+        <scene sceneID="2d8-xx-5Sw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IyT-ic-7Jq" customClass="BaseNavigationViewController" customModule="SteemitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Kdy-P0-m3o">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pWz-nU-vTh" kind="relationship" relationship="rootViewController" id="6GI-OY-SBP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XsX-lu-wMq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-386" y="136"/>
+        </scene>
+    </scenes>
+</document>

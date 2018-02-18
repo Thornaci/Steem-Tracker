@@ -20,10 +20,6 @@ class SearchViewController: BaseViewController {
         homeView.addGestureRecognizer(dismissGesture)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        usernameTextField.becomeFirstResponder()
-    }
-    
     @IBAction func toggleMenu(_ sender: Any) {
         dismissKeyboard()
         if menuViewLeading.constant < 0 {
@@ -49,7 +45,6 @@ class SearchViewController: BaseViewController {
             optionVC.username = usernameTextField.text!
         } else if segue.identifier == "leftSideMenu" {
             let menuVC = segue.destination as! SideMenuViewController
-            menuVC.categoryList = ["Home", "Utopian-io"]
             menuVC.delegate = self
         }
     }
@@ -61,6 +56,10 @@ class SearchViewController: BaseViewController {
 
 extension SearchViewController: SideMenuViewControllerDelegate {
     func changePage(_ category: String) {
-        print(category)
+        if category == "Utopian-io" {
+            let vc = UIStoryboard.init(name: "HomeUtopian",
+                                       bundle: nil).instantiateInitialViewController()
+            present(vc!, animated: true, completion: nil)
+        }
     }
 }

@@ -65,4 +65,11 @@ struct Helpers {
         }
         return filteredPostsHistory
     }
+    
+//    func changeSPToPercent(_ sp: Int) -> CGFloat {
+//        var steemPower: CGFloat = 0
+//        if sp > 1000 && sp < 10000 {
+//
+//        }
+//    }
 }

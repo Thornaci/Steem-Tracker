@@ -22,6 +22,7 @@ class SideMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        categoryList = HomeCategories.categoryList
         categoriesTableView.register(UINib.init(nibName: categoryTableViewCellIdentifier, bundle: nil), forCellReuseIdentifier: categoryTableViewCellIdentifier)
     }
 }

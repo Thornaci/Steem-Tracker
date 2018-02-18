@@ -13,6 +13,12 @@
 		C034A08A2039964600C9C805 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A0892039964600C9C805 /* SideMenuViewController.swift */; };
 		C034A08D20399DBD00C9C805 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A08B20399DBD00C9C805 /* CategoryTableViewCell.swift */; };
 		C034A08E20399DBD00C9C805 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C034A08C20399DBD00C9C805 /* CategoryTableViewCell.xib */; };
+		C034A0902039BEDB00C9C805 /* HomeUtopian.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C034A08F2039BEDB00C9C805 /* HomeUtopian.storyboard */; };
+		C034A0932039BFBA00C9C805 /* HomeUtopianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A0922039BFBA00C9C805 /* HomeUtopianViewController.swift */; };
+		C034A0952039C09800C9C805 /* HomeCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A0942039C09800C9C805 /* HomeCategories.swift */; };
+		C034A0972039C9DD00C9C805 /* ViewControllerStoryboardIDContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A0962039C9DD00C9C805 /* ViewControllerStoryboardIDContants.swift */; };
+		C034A0992039C9FA00C9C805 /* StoryboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A0982039C9FA00C9C805 /* StoryboardConstants.swift */; };
+		C034A09B2039DA2800C9C805 /* ThoSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A09A2039DA2800C9C805 /* ThoSlider.swift */; };
 		C03D22C02032180B0077F1F5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C03D22BF2032180A0077F1F5 /* Info.plist */; };
 		C03D22C2203218A50077F1F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C03D22C1203218A50077F1F5 /* GoogleService-Info.plist */; };
 		C0420037201E04A700311654 /* FollowersViewControllerTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */; };
@@ -123,6 +129,12 @@
 		C034A0892039964600C9C805 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		C034A08B20399DBD00C9C805 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		C034A08C20399DBD00C9C805 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		C034A08F2039BEDB00C9C805 /* HomeUtopian.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeUtopian.storyboard; sourceTree = "<group>"; };
+		C034A0922039BFBA00C9C805 /* HomeUtopianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUtopianViewController.swift; sourceTree = "<group>"; };
+		C034A0942039C09800C9C805 /* HomeCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategories.swift; sourceTree = "<group>"; };
+		C034A0962039C9DD00C9C805 /* ViewControllerStoryboardIDContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStoryboardIDContants.swift; sourceTree = "<group>"; };
+		C034A0982039C9FA00C9C805 /* StoryboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardConstants.swift; sourceTree = "<group>"; };
+		C034A09A2039DA2800C9C805 /* ThoSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoSlider.swift; sourceTree = "<group>"; };
 		C03D22BF2032180A0077F1F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C03D22C1203218A50077F1F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewControllerTableViewExtension.swift; sourceTree = "<group>"; };
@@ -246,6 +258,14 @@
 			path = "Custom View Controllers";
 			sourceTree = "<group>";
 		};
+		C034A0912039BF0E00C9C805 /* HomeUtopian */ = {
+			isa = PBXGroup;
+			children = (
+				C034A0922039BFBA00C9C805 /* HomeUtopianViewController.swift */,
+			);
+			path = HomeUtopian;
+			sourceTree = "<group>";
+		};
 		C048DE582031B13E0070C5D5 /* SteemitAppTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,9 +289,10 @@
 			isa = PBXGroup;
 			children = (
 				C091EE392019DA310010209F /* Follower */,
-				C091EE382019DA290010209F /* Home */,
-				C0ADEB722020E8C90053C3BF /* Information */,
 				C0ADEB7D2020F7C40053C3BF /* History */,
+				C091EE382019DA290010209F /* Home */,
+				C034A0912039BF0E00C9C805 /* HomeUtopian */,
+				C0ADEB722020E8C90053C3BF /* Information */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -279,10 +300,11 @@
 		C062EF452003645C00B9C3D2 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				C062EF4A200364B800B9C3D2 /* Home.storyboard */,
 				C091EE362019DA120010209F /* Follower.storyboard */,
-				C0ADEB702020E85B0053C3BF /* Information.storyboard */,
 				C0ADEB7B2020F7B80053C3BF /* History.storyboard */,
+				C062EF4A200364B800B9C3D2 /* Home.storyboard */,
+				C034A08F2039BEDB00C9C805 /* HomeUtopian.storyboard */,
+				C0ADEB702020E85B0053C3BF /* Information.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -330,6 +352,9 @@
 			children = (
 				C062EF582003968500B9C3D2 /* CoinTypes.swift */,
 				C062EF5C2003B06600B9C3D2 /* CurrencyTypes.swift */,
+				C034A0942039C09800C9C805 /* HomeCategories.swift */,
+				C034A0962039C9DD00C9C805 /* ViewControllerStoryboardIDContants.swift */,
+				C034A0982039C9FA00C9C805 /* StoryboardConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -455,6 +480,7 @@
 			children = (
 				C0BD90422023A329009B58E7 /* ThoButton.swift */,
 				C0CDD8EF2028730E004C8A28 /* ThoLabel.swift */,
+				C034A09A2039DA2800C9C805 /* ThoSlider.swift */,
 			);
 			path = "Custom Components";
 			sourceTree = "<group>";
@@ -690,6 +716,7 @@
 				C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */,
 				C03D22C02032180B0077F1F5 /* Info.plist in Resources */,
 				C03D22C2203218A50077F1F5 /* GoogleService-Info.plist in Resources */,
+				C034A0902039BEDB00C9C805 /* HomeUtopian.storyboard in Resources */,
 				C0FBCA6E2001288C0098633F /* LaunchScreen.storyboard in Resources */,
 				C0FBCA6B2001288C0098633F /* Assets.xcassets in Resources */,
 			);
@@ -886,19 +913,24 @@
 				C0B899E12014A78B00A45554 /* UIColorExtension.swift in Sources */,
 				C0ADEB762020EA290053C3BF /* OptionsViewControllerTableViewExtension.swift in Sources */,
 				C0CDD8F02028730E004C8A28 /* ThoLabel.swift in Sources */,
+				C034A09B2039DA2800C9C805 /* ThoSlider.swift in Sources */,
 				C055BDBF2026049E002CFFDE /* PostHistoryModel.swift in Sources */,
 				C0F8BF1A200503B2009C1585 /* UIViewExtension.swift in Sources */,
+				C034A0972039C9DD00C9C805 /* ViewControllerStoryboardIDContants.swift in Sources */,
 				C055BDC2202608B5002CFFDE /* PostHistoryViewController.swift in Sources */,
 				C062EF592003968500B9C3D2 /* CoinTypes.swift in Sources */,
 				C0B899EC2014D21600A45554 /* Helpers.swift in Sources */,
 				C073B1802022F26E00598305 /* TagHistoryModel.swift in Sources */,
 				C034A08A2039964600C9C805 /* SideMenuViewController.swift in Sources */,
 				C034A08D20399DBD00C9C805 /* CategoryTableViewCell.swift in Sources */,
+				C034A0932039BFBA00C9C805 /* HomeUtopianViewController.swift in Sources */,
 				C07C623D202A21AB004A5378 /* PostHistoryContentsViewController.swift in Sources */,
 				C0B899E92014C15100A45554 /* FavoriteTableViewCell.swift in Sources */,
 				C0ADEB792020EBDE0053C3BF /* OptionModel.swift in Sources */,
+				C034A0992039C9FA00C9C805 /* StoryboardConstants.swift in Sources */,
 				C062EF49200364A900B9C3D2 /* NetworkManager.swift in Sources */,
 				C0656515202CC08C005F9089 /* PostContentTableViewCell.swift in Sources */,
+				C034A0952039C09800C9C805 /* HomeCategories.swift in Sources */,
 				C062EF4E200364EB00B9C3D2 /* BaseViewController.swift in Sources */,
 				C062EF5F2003B10200B9C3D2 /* TextChanger.swift in Sources */,
 				C0420037201E04A700311654 /* FollowersViewControllerTableViewExtension.swift in Sources */,
