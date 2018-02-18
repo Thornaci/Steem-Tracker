@@ -10,15 +10,17 @@
 		8F0D2DA319ADFBAC93253D59 /* Pods_SteemitAppWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */; };
 		ABFFC2526324D20A127D4979 /* Pods_SteemitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEC947916BFFF1BA92135A0 /* Pods_SteemitApp.framework */; };
 		C00B710E202E45DE00219433 /* PostHistoryWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B710D202E45DE00219433 /* PostHistoryWebViewController.swift */; };
-		C034A08A2039964600C9C805 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A0892039964600C9C805 /* SideMenuViewController.swift */; };
-		C034A08D20399DBD00C9C805 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A08B20399DBD00C9C805 /* CategoryTableViewCell.swift */; };
-		C034A08E20399DBD00C9C805 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C034A08C20399DBD00C9C805 /* CategoryTableViewCell.xib */; };
+		C034A08A2039964600C9C805 /* ThoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A0892039964600C9C805 /* ThoListViewController.swift */; };
+		C034A08D20399DBD00C9C805 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A08B20399DBD00C9C805 /* TitleTableViewCell.swift */; };
+		C034A08E20399DBD00C9C805 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C034A08C20399DBD00C9C805 /* TitleTableViewCell.xib */; };
 		C034A0902039BEDB00C9C805 /* HomeUtopian.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C034A08F2039BEDB00C9C805 /* HomeUtopian.storyboard */; };
 		C034A0932039BFBA00C9C805 /* HomeUtopianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A0922039BFBA00C9C805 /* HomeUtopianViewController.swift */; };
 		C034A0952039C09800C9C805 /* HomeCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A0942039C09800C9C805 /* HomeCategories.swift */; };
 		C034A0972039C9DD00C9C805 /* ViewControllerStoryboardIDContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A0962039C9DD00C9C805 /* ViewControllerStoryboardIDContants.swift */; };
 		C034A0992039C9FA00C9C805 /* StoryboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A0982039C9FA00C9C805 /* StoryboardConstants.swift */; };
 		C034A09B2039DA2800C9C805 /* ThoSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A09A2039DA2800C9C805 /* ThoSlider.swift */; };
+		C034A09E203A15F700C9C805 /* UtopianModeratorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A09D203A15F700C9C805 /* UtopianModeratorModel.swift */; };
+		C034A0A0203A204100C9C805 /* ModeratorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A09F203A204100C9C805 /* ModeratorListViewController.swift */; };
 		C03D22C02032180B0077F1F5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C03D22BF2032180A0077F1F5 /* Info.plist */; };
 		C03D22C2203218A50077F1F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C03D22C1203218A50077F1F5 /* GoogleService-Info.plist */; };
 		C0420037201E04A700311654 /* FollowersViewControllerTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */; };
@@ -126,15 +128,17 @@
 		852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemitAppWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0007AF82013A40700C533F7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00B710D202E45DE00219433 /* PostHistoryWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryWebViewController.swift; sourceTree = "<group>"; };
-		C034A0892039964600C9C805 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
-		C034A08B20399DBD00C9C805 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
-		C034A08C20399DBD00C9C805 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		C034A0892039964600C9C805 /* ThoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoListViewController.swift; sourceTree = "<group>"; };
+		C034A08B20399DBD00C9C805 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		C034A08C20399DBD00C9C805 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		C034A08F2039BEDB00C9C805 /* HomeUtopian.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeUtopian.storyboard; sourceTree = "<group>"; };
 		C034A0922039BFBA00C9C805 /* HomeUtopianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUtopianViewController.swift; sourceTree = "<group>"; };
 		C034A0942039C09800C9C805 /* HomeCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategories.swift; sourceTree = "<group>"; };
 		C034A0962039C9DD00C9C805 /* ViewControllerStoryboardIDContants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStoryboardIDContants.swift; sourceTree = "<group>"; };
 		C034A0982039C9FA00C9C805 /* StoryboardConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardConstants.swift; sourceTree = "<group>"; };
 		C034A09A2039DA2800C9C805 /* ThoSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThoSlider.swift; sourceTree = "<group>"; };
+		C034A09D203A15F700C9C805 /* UtopianModeratorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtopianModeratorModel.swift; sourceTree = "<group>"; };
+		C034A09F203A204100C9C805 /* ModeratorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeratorListViewController.swift; sourceTree = "<group>"; };
 		C03D22BF2032180A0077F1F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C03D22C1203218A50077F1F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewControllerTableViewExtension.swift; sourceTree = "<group>"; };
@@ -253,7 +257,7 @@
 		C034A0882039961E00C9C805 /* Custom View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C034A0892039964600C9C805 /* SideMenuViewController.swift */,
+				C034A0892039964600C9C805 /* ThoListViewController.swift */,
 			);
 			path = "Custom View Controllers";
 			sourceTree = "<group>";
@@ -262,8 +266,17 @@
 			isa = PBXGroup;
 			children = (
 				C034A0922039BFBA00C9C805 /* HomeUtopianViewController.swift */,
+				C034A09F203A204100C9C805 /* ModeratorListViewController.swift */,
 			);
 			path = HomeUtopian;
+			sourceTree = "<group>";
+		};
+		C034A09C203A15CE00C9C805 /* Utopian */ = {
+			isa = PBXGroup;
+			children = (
+				C034A09D203A15F700C9C805 /* UtopianModeratorModel.swift */,
+			);
+			path = Utopian;
 			sourceTree = "<group>";
 		};
 		C048DE582031B13E0070C5D5 /* SteemitAppTests */ = {
@@ -323,6 +336,7 @@
 		C062EF512003682600B9C3D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C034A09C203A15CE00C9C805 /* Utopian */,
 				C062EF5220036ACF00B9C3D2 /* CoinModel.swift */,
 				C062EF622003B6EE00B9C3D2 /* UserModel.swift */,
 				C0ADEB782020EBDE0053C3BF /* OptionModel.swift */,
@@ -469,8 +483,8 @@
 				C0420039201E0F2000311654 /* FollowerTableViewCell.xib */,
 				C0656513202CC08C005F9089 /* PostContentTableViewCell.swift */,
 				C0656514202CC08C005F9089 /* PostContentTableViewCell.xib */,
-				C034A08B20399DBD00C9C805 /* CategoryTableViewCell.swift */,
-				C034A08C20399DBD00C9C805 /* CategoryTableViewCell.xib */,
+				C034A08B20399DBD00C9C805 /* TitleTableViewCell.swift */,
+				C034A08C20399DBD00C9C805 /* TitleTableViewCell.xib */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -710,7 +724,7 @@
 				C0ADEB7C2020F7B80053C3BF /* History.storyboard in Resources */,
 				C0B899EA2014C15100A45554 /* FavoriteTableViewCell.xib in Resources */,
 				C0656516202CC08C005F9089 /* PostContentTableViewCell.xib in Resources */,
-				C034A08E20399DBD00C9C805 /* CategoryTableViewCell.xib in Resources */,
+				C034A08E20399DBD00C9C805 /* TitleTableViewCell.xib in Resources */,
 				C091EE372019DA120010209F /* Follower.storyboard in Resources */,
 				C0ADEB712020E85B0053C3BF /* Information.storyboard in Resources */,
 				C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */,
@@ -921,8 +935,8 @@
 				C062EF592003968500B9C3D2 /* CoinTypes.swift in Sources */,
 				C0B899EC2014D21600A45554 /* Helpers.swift in Sources */,
 				C073B1802022F26E00598305 /* TagHistoryModel.swift in Sources */,
-				C034A08A2039964600C9C805 /* SideMenuViewController.swift in Sources */,
-				C034A08D20399DBD00C9C805 /* CategoryTableViewCell.swift in Sources */,
+				C034A08A2039964600C9C805 /* ThoListViewController.swift in Sources */,
+				C034A08D20399DBD00C9C805 /* TitleTableViewCell.swift in Sources */,
 				C034A0932039BFBA00C9C805 /* HomeUtopianViewController.swift in Sources */,
 				C07C623D202A21AB004A5378 /* PostHistoryContentsViewController.swift in Sources */,
 				C0B899E92014C15100A45554 /* FavoriteTableViewCell.swift in Sources */,
@@ -933,6 +947,7 @@
 				C034A0952039C09800C9C805 /* HomeCategories.swift in Sources */,
 				C062EF4E200364EB00B9C3D2 /* BaseViewController.swift in Sources */,
 				C062EF5F2003B10200B9C3D2 /* TextChanger.swift in Sources */,
+				C034A0A0203A204100C9C805 /* ModeratorListViewController.swift in Sources */,
 				C0420037201E04A700311654 /* FollowersViewControllerTableViewExtension.swift in Sources */,
 				C0ADEB7F2020F7F60053C3BF /* TagHistoryViewController.swift in Sources */,
 				C062EF5620038FE500B9C3D2 /* DateExtension.swift in Sources */,
@@ -946,6 +961,7 @@
 				C062EF612003B31500B9C3D2 /* SearchViewController.swift in Sources */,
 				C0E56AE9202DA26600E0A249 /* BaseTabBarViewController.swift in Sources */,
 				C0F8BF182004FBFB009C1585 /* PopupManager.swift in Sources */,
+				C034A09E203A15F700C9C805 /* UtopianModeratorModel.swift in Sources */,
 				C062EF472003649500B9C3D2 /* InfoViewController.swift in Sources */,
 				C0BD90432023A329009B58E7 /* ThoButton.swift in Sources */,
 				C062EF5D2003B06600B9C3D2 /* CurrencyTypes.swift in Sources */,

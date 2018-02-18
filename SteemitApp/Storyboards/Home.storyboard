@@ -304,10 +304,10 @@
             </objects>
             <point key="canvasLocation" x="1447" y="122"/>
         </scene>
-        <!--Side Menu View Controller-->
+        <!--Tho List View Controller-->
         <scene sceneID="q4A-u8-qJe">
             <objects>
-                <viewController id="P38-vF-xpq" customClass="SideMenuViewController" customModule="SteemitApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="P38-vF-xpq" customClass="ThoListViewController" customModule="SteemitApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9xS-gR-kyW">
                         <rect key="frame" x="0.0" y="0.0" width="200" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

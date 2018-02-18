@@ -44,7 +44,8 @@ class SearchViewController: BaseViewController {
             let optionVC = segue.destination as! OptionsViewController
             optionVC.username = usernameTextField.text!
         } else if segue.identifier == "leftSideMenu" {
-            let menuVC = segue.destination as! SideMenuViewController
+            let menuVC = segue.destination as! ThoListViewController
+            menuVC.categoryList = HomeCategories.categoryList
             menuVC.delegate = self
         }
     }
@@ -54,7 +55,7 @@ class SearchViewController: BaseViewController {
     }
 }
 
-extension SearchViewController: SideMenuViewControllerDelegate {
+extension SearchViewController: ThoListViewControllerDelegate {
     func changePage(_ category: String) {
         if category == "Utopian-io" {
             let vc = UIStoryboard.init(name: "HomeUtopian",

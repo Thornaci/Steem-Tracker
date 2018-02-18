@@ -66,10 +66,14 @@ struct Helpers {
         return filteredPostsHistory
     }
     
-//    func changeSPToPercent(_ sp: Int) -> CGFloat {
-//        var steemPower: CGFloat = 0
-//        if sp > 1000 && sp < 10000 {
-//
-//        }
-//    }
+    func calculateVotePower(_ lastVoteTime: String, _ lastVotePower: Int) {
+        let date = Date();
+        
+        var formatter = DateFormatter();
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss";
+        let defaultTimeZoneStr = formatter.string(from: date);
+        formatter.timeZone = TimeZone(abbreviation: "UTC");
+        let utcTimeZoneStr = formatter.string(from: date);
+        print(utcTimeZoneStr)
+    }
 }

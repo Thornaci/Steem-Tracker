@@ -1,5 +1,5 @@
 //
-//  CategoryTableViewCell.swift
+//  TitleTableViewCell.swift
 //  SteemitApp
 //
 //  Created by Burak Tayfun on 2/18/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CategoryTableViewCell: UITableViewCell {
+class TitleTableViewCell: UITableViewCell {
 
     @IBOutlet weak var headerLabel: UILabel!
 }
