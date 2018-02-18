@@ -10,6 +10,9 @@
 		8F0D2DA319ADFBAC93253D59 /* Pods_SteemitAppWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */; };
 		ABFFC2526324D20A127D4979 /* Pods_SteemitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CEC947916BFFF1BA92135A0 /* Pods_SteemitApp.framework */; };
 		C00B710E202E45DE00219433 /* PostHistoryWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00B710D202E45DE00219433 /* PostHistoryWebViewController.swift */; };
+		C034A08A2039964600C9C805 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A0892039964600C9C805 /* SideMenuViewController.swift */; };
+		C034A08D20399DBD00C9C805 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C034A08B20399DBD00C9C805 /* CategoryTableViewCell.swift */; };
+		C034A08E20399DBD00C9C805 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C034A08C20399DBD00C9C805 /* CategoryTableViewCell.xib */; };
 		C03D22C02032180B0077F1F5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C03D22BF2032180A0077F1F5 /* Info.plist */; };
 		C03D22C2203218A50077F1F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C03D22C1203218A50077F1F5 /* GoogleService-Info.plist */; };
 		C0420037201E04A700311654 /* FollowersViewControllerTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */; };
@@ -117,6 +120,9 @@
 		852814DD7BACC71EFCEBA815 /* Pods_SteemitAppWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SteemitAppWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0007AF82013A40700C533F7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00B710D202E45DE00219433 /* PostHistoryWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHistoryWebViewController.swift; sourceTree = "<group>"; };
+		C034A0892039964600C9C805 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		C034A08B20399DBD00C9C805 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		C034A08C20399DBD00C9C805 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		C03D22BF2032180A0077F1F5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C03D22C1203218A50077F1F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C0420036201E04A700311654 /* FollowersViewControllerTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewControllerTableViewExtension.swift; sourceTree = "<group>"; };
@@ -230,6 +236,14 @@
 				4BAC1CF9A2001BC21835FB2D /* Pods-SteemitAppTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C034A0882039961E00C9C805 /* Custom View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C034A0892039964600C9C805 /* SideMenuViewController.swift */,
+			);
+			path = "Custom View Controllers";
 			sourceTree = "<group>";
 		};
 		C048DE582031B13E0070C5D5 /* SteemitAppTests */ = {
@@ -430,6 +444,8 @@
 				C0420039201E0F2000311654 /* FollowerTableViewCell.xib */,
 				C0656513202CC08C005F9089 /* PostContentTableViewCell.swift */,
 				C0656514202CC08C005F9089 /* PostContentTableViewCell.xib */,
+				C034A08B20399DBD00C9C805 /* CategoryTableViewCell.swift */,
+				C034A08C20399DBD00C9C805 /* CategoryTableViewCell.xib */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -489,6 +505,7 @@
 				C062EF572003967100B9C3D2 /* Constants */,
 				C0B899E62014C13300A45554 /* Custom Cells */,
 				C0BD90412023A30F009B58E7 /* Custom Components */,
+				C034A0882039961E00C9C805 /* Custom View Controllers */,
 				C062EF5420038FD400B9C3D2 /* Utils */,
 				C062EF512003682600B9C3D2 /* Models */,
 				C062EF4C200364D700B9C3D2 /* Base */,
@@ -667,6 +684,7 @@
 				C0ADEB7C2020F7B80053C3BF /* History.storyboard in Resources */,
 				C0B899EA2014C15100A45554 /* FavoriteTableViewCell.xib in Resources */,
 				C0656516202CC08C005F9089 /* PostContentTableViewCell.xib in Resources */,
+				C034A08E20399DBD00C9C805 /* CategoryTableViewCell.xib in Resources */,
 				C091EE372019DA120010209F /* Follower.storyboard in Resources */,
 				C0ADEB712020E85B0053C3BF /* Information.storyboard in Resources */,
 				C042003B201E0F2000311654 /* FollowerTableViewCell.xib in Resources */,
@@ -874,6 +892,8 @@
 				C062EF592003968500B9C3D2 /* CoinTypes.swift in Sources */,
 				C0B899EC2014D21600A45554 /* Helpers.swift in Sources */,
 				C073B1802022F26E00598305 /* TagHistoryModel.swift in Sources */,
+				C034A08A2039964600C9C805 /* SideMenuViewController.swift in Sources */,
+				C034A08D20399DBD00C9C805 /* CategoryTableViewCell.swift in Sources */,
 				C07C623D202A21AB004A5378 /* PostHistoryContentsViewController.swift in Sources */,
 				C0B899E92014C15100A45554 /* FavoriteTableViewCell.swift in Sources */,
 				C0ADEB792020EBDE0053C3BF /* OptionModel.swift in Sources */,
