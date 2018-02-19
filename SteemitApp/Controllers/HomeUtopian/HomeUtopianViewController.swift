@@ -17,12 +17,12 @@ class HomeUtopianViewController: BaseViewController {
     @IBOutlet weak var steemPowerPercentLabel: UILabel!
     @IBOutlet weak var lastVoteTimeLabel: ThoLabel!
     @IBOutlet weak var postNumberLabel: ThoLabel!
-    @IBOutlet weak var moderatorNumberLabel: ThoLabel!
+    @IBOutlet weak var moderatorNumberButton: ThoButton!
     
+    @IBOutlet weak var totalPendingPostsCount: UILabel!
     var moderators = [UtopianModeratorModel]()
     
     override func viewDidLoad() {
-        navigationItem.title = "Utopian"
         getUtopianInfo()
     }
     
@@ -35,15 +35,34 @@ class HomeUtopianViewController: BaseViewController {
         
         nm.getUtopianModeratorList(success: { (mods) in
             self.moderators = mods
+            self.moderatorNumberButton.setTitle("\(self.moderators.count)", for: .normal)
+
+        }) { (error) in
+            print(error)
+        }
+        
+        nm.getUtopianTotalPostCount(success: { totalPostCount in
+            self.postNumberLabel.text = "\(totalPostCount)"
+        }) { (error) in
+            print(error)
+        }
+        
+        nm.getUtopianPendingPostCount(success: { (pendingPosts) in
+            self.totalPendingPostsCount.text = "\(pendingPosts.total)"
         }) { (error) in
             print(error)
         }
     }
     
     private func updateUserInfo(_ user: UserModel) {
-        percentView.updateBar(user.votingPower/10000)
-        steemPowerPercentLabel.text = "%\(user.votingPower/100)"
-        lastVoteTimeLabel.text = user.lastvoteTime?.replacingOccurrences(of: "T", with: " ")
+        if let voteTime = user.lastvoteTime {
+            let totalVP = helper.calculateVotePower(voteTime, user.votingPower)
+            percentView.updateBar(totalVP / 100)
+            steemPowerPercentLabel.text = "% " + String(format: "%.2f", totalVP)
+            
+        }
+        
+        lastVoteTimeLabel.text = Date.UTCToLocal(date: (user.lastvoteTime?.replacingOccurrences(of: "T", with: " "))!)
     }
     
     @IBAction func showMods(_ sender: Any) {

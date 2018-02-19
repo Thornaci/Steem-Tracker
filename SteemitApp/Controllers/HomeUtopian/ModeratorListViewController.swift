@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ModeratorListViewController: UIViewController {
+class ModeratorListViewController: BaseViewController {
     
     var moderators = [UtopianModeratorModel]()
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         navigationItem.title = "Moderators"
         navigationController?.navigationBar.topItem?.title = ""
     }

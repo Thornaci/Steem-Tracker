@@ -75,6 +75,7 @@
 		C0E56AE7202D9B7B00E0A249 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E56AE6202D9B7B00E0A249 /* BaseNavigationViewController.swift */; };
 		C0E56AE9202DA26600E0A249 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E56AE8202DA26600E0A249 /* BaseTabBarViewController.swift */; };
 		C0E56AEB202DA45100E0A249 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E56AEA202DA45100E0A249 /* UIImageExtension.swift */; };
+		C0EEAA8D203B61DF0038BAB7 /* UtopianPendingPostsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EEAA8C203B61DF0038BAB7 /* UtopianPendingPostsModel.swift */; };
 		C0F8BF182004FBFB009C1585 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F8BF172004FBFB009C1585 /* PopupManager.swift */; };
 		C0F8BF1A200503B2009C1585 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F8BF19200503B2009C1585 /* UIViewExtension.swift */; };
 		C0F8BF2220063807009C1585 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F8BF2120063807009C1585 /* NotificationCenter.framework */; };
@@ -195,6 +196,7 @@
 		C0E56AE6202D9B7B00E0A249 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		C0E56AE8202DA26600E0A249 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		C0E56AEA202DA45100E0A249 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		C0EEAA8C203B61DF0038BAB7 /* UtopianPendingPostsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtopianPendingPostsModel.swift; sourceTree = "<group>"; };
 		C0F8BF172004FBFB009C1585 /* PopupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
 		C0F8BF19200503B2009C1585 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		C0F8BF2020063807009C1585 /* SteemitAppWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SteemitAppWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				C034A09D203A15F700C9C805 /* UtopianModeratorModel.swift */,
+				C0EEAA8C203B61DF0038BAB7 /* UtopianPendingPostsModel.swift */,
 			);
 			path = Utopian;
 			sourceTree = "<group>";
@@ -942,6 +945,7 @@
 				C0B899E92014C15100A45554 /* FavoriteTableViewCell.swift in Sources */,
 				C0ADEB792020EBDE0053C3BF /* OptionModel.swift in Sources */,
 				C034A0992039C9FA00C9C805 /* StoryboardConstants.swift in Sources */,
+				C0EEAA8D203B61DF0038BAB7 /* UtopianPendingPostsModel.swift in Sources */,
 				C062EF49200364A900B9C3D2 /* NetworkManager.swift in Sources */,
 				C0656515202CC08C005F9089 /* PostContentTableViewCell.swift in Sources */,
 				C034A0952039C09800C9C805 /* HomeCategories.swift in Sources */,

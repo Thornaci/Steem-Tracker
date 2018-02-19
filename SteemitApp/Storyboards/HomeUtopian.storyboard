@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXK-Oj-roZ" customClass="ThoSlider" customModule="SteemitApp" customModuleProvider="target">
-                                <rect key="frame" x="30" y="120" width="315" height="40"/>
+                                <rect key="frame" x="30" y="160" width="315" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdZ-rK-bGQ">
                                         <rect key="frame" x="146.5" y="10" width="21.5" height="21"/>
@@ -49,55 +49,74 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary Of Utopian-io" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBA-M1-oIp">
+                                <rect key="frame" x="20" y="20" width="335" height="25.5"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="22"/>
+                                <color key="textColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voting Power" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKI-oi-Id4">
-                                <rect key="frame" x="30" y="76.5" width="315" height="23.5"/>
+                                <rect key="frame" x="30" y="116.5" width="315" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <color key="textColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Last Vote Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywk-K5-sL2" customClass="ThoLabel" customModule="SteemitApp" customModuleProvider="target">
-                                <rect key="frame" x="20" y="190" width="114" height="21"/>
+                                <rect key="frame" x="20" y="230" width="114" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-02-18T15:47:03" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gq4-wa-YhC" customClass="ThoLabel" customModule="SteemitApp" customModuleProvider="target">
-                                <rect key="frame" x="144" y="190" width="211" height="21"/>
+                                <rect key="frame" x="144" y="230" width="211" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MS4-X9-bpc" customClass="ThoLabel" customModule="SteemitApp" customModuleProvider="target">
-                                <rect key="frame" x="20" y="231" width="75.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Moderator :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr9-ME-1ZD" customClass="ThoLabel" customModule="SteemitApp" customModuleProvider="target">
-                                <rect key="frame" x="20" y="272" width="130.5" height="21"/>
+                                <rect key="frame" x="20" y="271" width="75.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0E-51-d1x" customClass="ThoLabel" customModule="SteemitApp" customModuleProvider="target">
-                                <rect key="frame" x="346" y="231" width="8.5" height="21"/>
+                                <rect key="frame" x="346" y="271" width="8.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3K8-vJ-0g9" customClass="ThoLabel" customModule="SteemitApp" customModuleProvider="target">
-                                <rect key="frame" x="346.5" y="272" width="8.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Pending Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giA-vD-3yv" customClass="ThoLabel" customModule="SteemitApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="312" width="142.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LK9-Yh-dL8" customClass="ThoButton" customModule="SteemitApp" customModuleProvider="target">
-                                <rect key="frame" x="144" y="366" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWj-8o-iN7" customClass="ThoLabel" customModule="SteemitApp" customModuleProvider="target">
+                                <rect key="frame" x="346.5" y="312" width="8.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Moderator :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr9-ME-1ZD" customClass="ThoLabel" customModule="SteemitApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="353" width="130.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LK9-Yh-dL8" customClass="ThoButton" customModule="SteemitApp" customModuleProvider="target">
+                                <rect key="frame" x="325" y="349" width="30" height="30"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.1450980392" green="0.83529411760000005" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -107,24 +126,31 @@
                         </subviews>
                         <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="LK9-Yh-dL8" firstAttribute="centerY" secondItem="pr9-ME-1ZD" secondAttribute="centerY" id="0WO-uc-odS"/>
                             <constraint firstItem="SXK-Oj-roZ" firstAttribute="top" secondItem="MKI-oi-Id4" secondAttribute="bottom" constant="20" id="6oX-IU-khc"/>
                             <constraint firstItem="Ywk-K5-sL2" firstAttribute="top" secondItem="SXK-Oj-roZ" secondAttribute="bottom" constant="30" id="9k0-jZ-96k"/>
-                            <constraint firstItem="DeU-JR-VX8" firstAttribute="trailing" secondItem="3K8-vJ-0g9" secondAttribute="trailing" constant="20" id="Bgv-4f-j1E"/>
                             <constraint firstItem="pr9-ME-1ZD" firstAttribute="leading" secondItem="DeU-JR-VX8" secondAttribute="leading" constant="20" id="CKl-cT-y8S"/>
+                            <constraint firstItem="giA-vD-3yv" firstAttribute="leading" secondItem="DeU-JR-VX8" secondAttribute="leading" constant="20" id="DgN-2n-OJ7"/>
                             <constraint firstItem="Gq4-wa-YhC" firstAttribute="top" secondItem="SXK-Oj-roZ" secondAttribute="bottom" constant="30" id="E3X-su-KvO"/>
                             <constraint firstItem="SXK-Oj-roZ" firstAttribute="leading" secondItem="DeU-JR-VX8" secondAttribute="leading" constant="30" id="F8P-b6-MQA"/>
-                            <constraint firstItem="SXK-Oj-roZ" firstAttribute="top" secondItem="DeU-JR-VX8" secondAttribute="top" constant="120" id="Glr-mR-tvg"/>
+                            <constraint firstItem="SXK-Oj-roZ" firstAttribute="top" secondItem="DeU-JR-VX8" secondAttribute="top" constant="160" id="Glr-mR-tvg"/>
                             <constraint firstItem="DeU-JR-VX8" firstAttribute="trailing" secondItem="H0E-51-d1x" secondAttribute="trailing" constant="20" id="HQv-r6-jt3"/>
                             <constraint firstItem="H0E-51-d1x" firstAttribute="top" secondItem="Gq4-wa-YhC" secondAttribute="bottom" constant="20" id="IHJ-cY-31x"/>
                             <constraint firstItem="MKI-oi-Id4" firstAttribute="trailing" secondItem="SXK-Oj-roZ" secondAttribute="trailing" id="IPG-q8-dEZ"/>
-                            <constraint firstItem="3K8-vJ-0g9" firstAttribute="top" secondItem="pr9-ME-1ZD" secondAttribute="top" id="M5E-zl-PpI"/>
+                            <constraint firstItem="sBA-M1-oIp" firstAttribute="leading" secondItem="DeU-JR-VX8" secondAttribute="leading" constant="20" id="Mb9-Dq-8r4"/>
                             <constraint firstItem="MS4-X9-bpc" firstAttribute="leading" secondItem="DeU-JR-VX8" secondAttribute="leading" constant="20" id="OtF-Wp-cLd"/>
+                            <constraint firstItem="DeU-JR-VX8" firstAttribute="trailing" secondItem="cWj-8o-iN7" secondAttribute="trailing" constant="20" id="SXH-y4-tZF"/>
                             <constraint firstItem="Gq4-wa-YhC" firstAttribute="leading" secondItem="Ywk-K5-sL2" secondAttribute="trailing" constant="10" id="XBN-i4-v5J"/>
                             <constraint firstItem="MKI-oi-Id4" firstAttribute="leading" secondItem="SXK-Oj-roZ" secondAttribute="leading" id="bPI-AG-f4u"/>
+                            <constraint firstItem="DeU-JR-VX8" firstAttribute="trailing" secondItem="sBA-M1-oIp" secondAttribute="trailing" constant="20" id="bmw-5K-aAY"/>
                             <constraint firstItem="DeU-JR-VX8" firstAttribute="trailing" secondItem="Gq4-wa-YhC" secondAttribute="trailing" constant="20" id="ddr-WT-dvu"/>
-                            <constraint firstItem="pr9-ME-1ZD" firstAttribute="top" secondItem="MS4-X9-bpc" secondAttribute="bottom" constant="20" id="gD4-IE-XL9"/>
+                            <constraint firstItem="cWj-8o-iN7" firstAttribute="top" secondItem="H0E-51-d1x" secondAttribute="bottom" constant="20" id="do7-rj-ped"/>
+                            <constraint firstItem="giA-vD-3yv" firstAttribute="top" secondItem="MS4-X9-bpc" secondAttribute="bottom" constant="20" id="jaq-yB-gsW"/>
                             <constraint firstItem="Ywk-K5-sL2" firstAttribute="leading" secondItem="DeU-JR-VX8" secondAttribute="leading" constant="20" id="mZc-iQ-cvV"/>
                             <constraint firstItem="DeU-JR-VX8" firstAttribute="trailing" secondItem="SXK-Oj-roZ" secondAttribute="trailing" constant="30" id="oIq-I3-VMg"/>
+                            <constraint firstItem="sBA-M1-oIp" firstAttribute="top" secondItem="DeU-JR-VX8" secondAttribute="top" constant="20" id="qHX-9J-O04"/>
+                            <constraint firstItem="DeU-JR-VX8" firstAttribute="trailing" secondItem="LK9-Yh-dL8" secondAttribute="trailing" constant="20" id="sRa-ze-Ec4"/>
+                            <constraint firstItem="pr9-ME-1ZD" firstAttribute="top" secondItem="giA-vD-3yv" secondAttribute="bottom" constant="20" id="t8Y-4e-F2G"/>
                             <constraint firstItem="MS4-X9-bpc" firstAttribute="top" secondItem="Ywk-K5-sL2" secondAttribute="bottom" constant="20" id="zlg-K8-wrU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DeU-JR-VX8"/>
@@ -139,10 +165,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="lastVoteTimeLabel" destination="Gq4-wa-YhC" id="IOf-hY-xtR"/>
-                        <outlet property="moderatorNumberLabel" destination="3K8-vJ-0g9" id="PTF-e5-lvJ"/>
+                        <outlet property="moderatorNumberButton" destination="LK9-Yh-dL8" id="D4D-FM-mV8"/>
                         <outlet property="percentView" destination="SXK-Oj-roZ" id="lbe-xC-tX0"/>
                         <outlet property="postNumberLabel" destination="H0E-51-d1x" id="SkH-gL-W3Q"/>
                         <outlet property="steemPowerPercentLabel" destination="QdZ-rK-bGQ" id="jU4-pf-X2D"/>
+                        <outlet property="totalPendingPostsCount" destination="cWj-8o-iN7" id="m5z-Gx-qwp"/>
                         <segue destination="1bI-51-vnt" kind="show" identifier="showMods" id="ILV-2m-rd7"/>
                     </connections>
                 </viewController>
@@ -230,6 +257,7 @@
                             <constraint firstItem="J90-Ig-Zjh" firstAttribute="leading" secondItem="dnF-eN-msz" secondAttribute="leading" id="ZpW-25-UFc"/>
                             <constraint firstItem="J90-Ig-Zjh" firstAttribute="top" secondItem="dnF-eN-msz" secondAttribute="top" id="uVF-mE-QHg"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="2U6-SA-UV2"/>
                     </view>
                     <connections>
                         <outlet property="categoriesTableView" destination="J90-Ig-Zjh" id="Cv6-8s-4Yy"/>

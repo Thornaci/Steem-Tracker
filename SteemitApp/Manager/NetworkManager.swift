@@ -14,6 +14,7 @@ struct NetworkManager {
     let endPoint = "https://api.coinmarketcap.com/v1/ticker/"
     let steemEndPoint = "https://api.steemjs.com/"
     let utopianEndPoint = "https://api.utopian.io/api/"
+    let utopianPlusEndPoint = "https://utopian.plus/"
     
     func getSteemitPrice(currency: String,
                          success: @escaping (_ result: CoinModel) -> Void,
@@ -193,8 +194,45 @@ struct NetworkManager {
         }
     }
     
-    func getUtopianPostHistory() {
-        
+    func getUtopianTotalPostCount(success: @escaping (_ result: Int) -> Void,
+                                  failure: @escaping (_ error: String) -> Void) {
+        let path = utopianEndPoint + "posts?limit=1&skip=0"
+        BaseNetwork.sharedInstance.getRequest(path: path, success: { (data) in
+            
+            guard let responseJSON = data as? Dictionary<String, AnyObject> else {
+                failure("Error reading response")
+                return
+            }
+            
+            if let totalCount = responseJSON["total"] as? Int {
+                success(totalCount)
+            } else {
+                success(0)
+            }
+        }) { (error) in
+            failure(error)
+        }
+    }
+    
+    func getUtopianPendingPostCount(success: @escaping (_ result: UtopianPendingPostsModel) -> Void,
+                                    failure: @escaping (_ error: String) -> Void) {
+        let path = utopianPlusEndPoint + "unreviewedPosts.json"
+        BaseNetwork.sharedInstance.getRequest(path: path, success: { (data) in
+            
+            guard let responseJSON = data as? Dictionary<String, AnyObject> else {
+                failure("Error reading response")
+                return
+            }
+            
+            guard let pendingPosts: UtopianPendingPostsModel = Mapper<UtopianPendingPostsModel>().map(JSONObject: responseJSON) else {
+                failure("Error reading response")
+                return
+            }
+            
+            success(pendingPosts)
+        }) { (error) in
+            failure(error)
+        }
     }
     
     func getUtopianModeratorList(success: @escaping (_ result: [UtopianModeratorModel]) -> Void,

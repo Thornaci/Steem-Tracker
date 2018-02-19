@@ -6,7 +6,6 @@
 //  Copyright © 2018 Burak Tayfun. All rights reserved.
 //
 
-import UIKit
 import ObjectMapper
 
 struct UtopianModeratorModel: Mappable {
