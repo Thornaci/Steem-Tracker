@@ -65,4 +65,22 @@ struct Helpers {
         }
         return filteredPostsHistory
     }
+    
+    func calculateVotePower(_ lastVoteTime: String, _ lastVotePower: CGFloat) -> CGFloat {
+        let datea = Date();
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        dateFormatter.timeZone = TimeZone(abbreviation: "GMT+0:00")
+        let lastVoteDate = dateFormatter.date(from: lastVoteTime)
+        
+        let differenceInSeconds = datea.timeIntervalSince(lastVoteDate!)
+        let generatedVP = differenceInSeconds * 10000 / 86400 / 5
+        let totalVP = (lastVotePower + CGFloat(generatedVP)) / 100
+        if totalVP > 100 {
+            return 100
+        } else {
+            return totalVP
+        }
+    }
 }

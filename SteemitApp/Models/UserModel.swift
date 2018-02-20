@@ -16,17 +16,19 @@ struct UserModel: Mappable {
     var profileUrl: String?
     var sbdBalance: String?
     var steemBalance: String?
-    var votingPower: String?
+    var votingPower: CGFloat = 0
+    var lastvoteTime: String?
     
     init?(map: Map) {
         
     }
     
     mutating func mapping(map: Map) {
-        username <- map["name"]
-        sbdBalance <- map["sbd_balance"]
-        steemBalance <- map["balance"]
-        votingPower <- map["voting_power"]
+        username        <- map["name"]
+        sbdBalance      <- map["sbd_balance"]
+        steemBalance    <- map["balance"]
+        votingPower     <- map["voting_power"]
+        lastvoteTime    <- map["last_vote_time"]
         
         var jsonMetadata: String = ""
         jsonMetadata <- map["json_metadata"]
