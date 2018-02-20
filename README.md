@@ -64,6 +64,10 @@ Don't forget to set identifiers for widget usage or run app on a device.
 
 * Post history web view added for post. 
 
+#### 1.6
+
+* Utopian-io support added. Now you can get informations about Utopian-io platform.
+
 The app is in progress, but already functional.
 
 You can contribute to the app, just do a pull request.
