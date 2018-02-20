@@ -25,6 +25,7 @@ class ModeratorListViewController: BaseViewController {
             for mod in moderators {
                 names.append(mod.name!)
             }
+            names = names.sorted { $0 < $1 }
             menuVC.categoryList = names
             menuVC.delegate = self
         }
@@ -33,6 +34,9 @@ class ModeratorListViewController: BaseViewController {
 
 extension ModeratorListViewController: ThoListViewControllerDelegate {
     func changePage(_ category: String) {
-        
+        let vc = UIStoryboard.init(name: "Information",
+                                   bundle: nil).instantiateViewController(withIdentifier: "infoVC") as! InfoViewController
+        vc.username = category
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
