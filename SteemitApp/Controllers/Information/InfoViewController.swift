@@ -18,6 +18,9 @@ class InfoViewController: BaseViewController {
     @IBOutlet weak var sbdBalanceLabel: ThoLabel!
     @IBOutlet weak var equivalentCurrencyLabel: ThoLabel!
     @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var coverImageView: UIImageView!
+
+    @IBOutlet weak var informationsScroolView: UIScrollView!
     
     @IBOutlet weak var currenciesSegmentControl: UISegmentedControl!
     
@@ -34,6 +37,10 @@ class InfoViewController: BaseViewController {
         rightBarButton.tintColor = UIColor.barTintColor()
         navigationItem.rightBarButtonItem = rightBarButton
         
+    }
+    
+    override func viewDidLayoutSubviews() {
+        informationsScroolView.isScrollEnabled = true
     }
     
     @objc func addTapped() {
@@ -83,6 +90,10 @@ class InfoViewController: BaseViewController {
             UserGlobals.sharedInstance.userMoney = user.sbdBalance
             if let profileUrl = user.profileUrl {
                 self.profileImageView.sd_setImage(with: URL.init(string: profileUrl), placeholderImage: UIImage.init(named: "freeProfile"))
+            }
+            
+            if let profileCoverUrl = user.profileCoverUrl {
+                self.coverImageView.sd_setImage(with: URL.init(string: profileCoverUrl), placeholderImage: UIImage.init(named: "backgroundWhite"))
             }
             
             self.getEquivalentCurrencyPrice()

@@ -3,7 +3,7 @@ PODS:
   - Charts (3.0.5):
     - Charts/Core (= 3.0.5)
   - Charts/Core (3.0.5)
-  - DateToolsSwift (2.0.3)
+  - DateToolsSwift (4.0.0)
   - Firebase/Core (4.8.2):
     - FirebaseAnalytics (= 4.0.9)
     - FirebaseCore (= 4.0.14)
@@ -13,10 +13,10 @@ PODS:
   - FirebaseAnalytics (4.0.9):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - nanopb (~> 0.3)
   - FirebaseCore (4.0.14):
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
   - FirebaseInstanceID (2.0.8):
     - FirebaseCore (~> 4.0)
   - FirebaseMessaging (2.0.8):
@@ -28,7 +28,7 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.3)
   - GoogleToolboxForMac/Logger (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
-  - GoogleToolboxForMac/NSData+zlib (2.1.3):
+  - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
     - GoogleToolboxForMac/Defines (= 2.1.3)
   - HockeySDK (5.1.2):
     - HockeySDK/DefaultLib (= 5.1.2)
@@ -61,7 +61,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - Charts (~> 3.0.5)
-  - DateToolsSwift (~> 2.0.1)
+  - DateToolsSwift (~> 4.0.0)
   - Firebase/Core (~> 4.8.2)
   - Firebase/Messaging (~> 4.8.2)
   - HockeySDK (~> 5.1.2)
@@ -70,10 +70,29 @@ DEPENDENCIES:
   - OHHTTPStubs/Swift
   - SDWebImage (~> 4.2.3)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Charts
+    - DateToolsSwift
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - GoogleToolboxForMac
+    - HockeySDK
+    - MBProgressHUD
+    - nanopb
+    - ObjectMapper
+    - OHHTTPStubs
+    - Protobuf
+    - SDWebImage
+
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
-  DateToolsSwift: bf69bf9056d9e53c5c03f06e51f219b9b8b02f9e
+  DateToolsSwift: 875d97ff9e3a5d54abdd67a269b3f51c757b71ab
   Firebase: 7d3b8cd837ad9fcd391657734c0d56dab8e9a5a3
   FirebaseAnalytics: 388b630c15713f5dbf364071f5f3d6077fb52f4e
   FirebaseCore: 2e0b98fb2d64ca8140136beff15772bdd14d2dd7
@@ -88,6 +107,6 @@ SPEC CHECKSUMS:
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   SDWebImage: 791bb72962b3492327ddcac4b1880bd1b5458431
 
-PODFILE CHECKSUM: 5268280d22f4af38e10003c4f4554375e6892d21
+PODFILE CHECKSUM: df742617443b01b985d05d81583dfd5eb817c30c
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

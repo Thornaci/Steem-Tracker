@@ -14,6 +14,7 @@ struct UserModel: Mappable {
     var username: String?
     var aboutUser: String?
     var profileUrl: String?
+    var profileCoverUrl: String?
     var sbdBalance: String?
     var steemBalance: String?
     var votingPower: CGFloat = 0
@@ -30,17 +31,19 @@ struct UserModel: Mappable {
         votingPower     <- map["voting_power"]
         lastvoteTime    <- map["last_vote_time"]
         
-        var jsonMetadata: String = ""
+        let tc = TextChanger()
+        var jsonMetadata = ""
         jsonMetadata <- map["json_metadata"]
-        jsonMetadata = jsonMetadata.replacingOccurrences(of: "{", with: "").replacingOccurrences(of: "}", with: "")
-        let array = jsonMetadata.split(separator: "\"")
-        for index in 0...array.count {
-            if index + 2 < array.count {
-                if array[index].description == "profile_image" {
-                    profileUrl = array[index+2].description
-                } else if array[index].description == "about" {
-                    aboutUser = array[index+2].description
-                }
+        let metaDataAsDict = tc.convertToDictionary(text: jsonMetadata)
+        if metaDataAsDict != nil, let profile = metaDataAsDict!["profile"] as? [String: String]{
+            if let about = profile["about"] {
+                aboutUser = about
+            }
+            if let imageUrl = profile["profile_image"] {
+                profileUrl = imageUrl
+            }
+            if let coverUrl = profile["cover_image"] {
+                profileCoverUrl = coverUrl
             }
         }
     }

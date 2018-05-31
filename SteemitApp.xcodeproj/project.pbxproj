@@ -585,7 +585,6 @@
 				C048DE542031B13E0070C5D5 /* Frameworks */,
 				C048DE552031B13E0070C5D5 /* Resources */,
 				77FF0CEB8157FC791725BA9F /* [CP] Embed Pods Frameworks */,
-				5486316FECB9A2559840935A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -605,7 +604,6 @@
 				C0F8BF1C20063807009C1585 /* Sources */,
 				C0F8BF1D20063807009C1585 /* Frameworks */,
 				C0F8BF1E20063807009C1585 /* Resources */,
-				6E8E43B6C85149FC686A5BCB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -758,36 +756,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5486316FECB9A2559840935A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SteemitAppTests/Pods-SteemitAppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6E8E43B6C85149FC686A5BCB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SteemitAppWidget/Pods-SteemitAppWidget-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		77FF0CEB8157FC791725BA9F /* [CP] Embed Pods Frameworks */ = {

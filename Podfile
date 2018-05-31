@@ -15,7 +15,7 @@ target 'SteemitApp' do
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'HockeySDK', '~> 5.1.2'
   pod 'Charts', '~> 3.0.5'
-  pod 'DateToolsSwift', '~> 2.0.1'
+  pod 'DateToolsSwift', '~> 4.0.0'
   pod 'Firebase/Messaging', '~> 4.8.2'
   shared_pods
 end
