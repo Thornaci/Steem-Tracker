@@ -8,8 +8,6 @@ Steem Tracker
 
 #### Steem Tracker allows you to reach user's account. You can write name of users which may you interest, then you can see the details of users. you can see the name, information, Steem range and SBD income of the users. you have the chance to see another currency position. Another feature of the app, there is a widget option. Via that feature you can reach some information of user.
 
-Steem Tracker is now available on the [App Store](https://itunes.apple.com/tr/app/steem-tracker/id1332315103?mt=8)
-
 # Installation
 
 <strong> 1. Install [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) from the AppStore </strong>
